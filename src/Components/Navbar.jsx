@@ -38,7 +38,7 @@ const Navbar = () => {
                             <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">About</Link>
                             <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Contact</Link>
                         </li>
-                        <li className="flex border rounded-full border-[rgba(231,206,152,0.8)]">
+                        <li className="flex border rounded-full border-[rgba(231,206,152,0.8)] overflow-hidden">
                             <button className='px-3 hover:bg-[#f5f1e4] border-[#000] cursor-pointer'>DE</button>
                             <button className='px-3 hover:bg-[#f5f1e4] border-[#000] cursor-pointer'>EN</button>
                         </li>
