@@ -12,7 +12,7 @@ const Blog = () => {
     return (
         <>
             {/* ================== Blog Section Start ================== */}
-            <section className='py-20'>
+            <section className='py-20 tracking-widest'>
                 <div className="container">
 
                     <CommonHead commonHead={t.blog?.head} />

@@ -13,7 +13,7 @@ const Process = () => {
     return (
         <>
             {/* ================== Process Section Start ================== */}
-            <section id='process' className='py-20'>
+            <section id='process' className='py-20 tracking-widest'>
                 <div className="container">
                     <CommonHead commonHead={t.process?.head} />
                     <CommonHeadInfo commonHeadInfo={t.process?.headInfo} />
