@@ -9,7 +9,7 @@ const Footer = () => {
             {/* ================== Footer Part Start ================== */}
             <footer className='py-20 border-t-1 border-[#999999]'>
                 <div className="container">
-                    <ul className='flex justify-between pb-10'>
+                    <ul className='flex flex-wrap lg:flex-nowrap justify-between pb-10 gap-10 lg:gap-4'>
                         <li className='w-[348px] flex flex-col gap-4 tracking-widest'>
                             <h2 className='flex items-center gap-2 font-bold text-2xl tracking-widest'>
                                 <RiShareLine className='text-4xl' />Codaro
@@ -49,7 +49,7 @@ const Footer = () => {
                         </li>
                     </ul>
 
-                    <ul className='flex justify-between pt-10 border-t tracking-widest text-lg'>
+                    <ul className='flex flex-col lg:flex-row gap-6 lg:gap-0 items-center justify-between pt-10 border-t tracking-widest text-lg'>
                         <li>
                             © 2024 Codaro. All rights reserved.
                         </li>

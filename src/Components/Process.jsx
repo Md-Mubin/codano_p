@@ -43,7 +43,7 @@ const Process = () => {
                         {processSteps.map((step, index) => (
                             <ul
                                 key={index}
-                                className={`flex items-center justify-between gap-10 ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
+                                className={`flex flex-col lg:flex-row items-center justify-between gap-10 ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
                                 <li className="flex items-center justify-center w-20 h-20 rounded-full bg-[#e8f0fb] text-2xl font-bold text-[#1a1a1a]">
                                     {step.number}
                                 </li>

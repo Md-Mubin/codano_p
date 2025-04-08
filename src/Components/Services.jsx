@@ -75,7 +75,7 @@ const Services = () => {
                         {services.map((service, index) => (
                             <ul
                                 key={index}
-                                className="w-[348px] p-6 rounded-2xl border-t-4 border-[#000] shadow-lg hover:shadow-xl duration-200 cursor-pointer">
+                                className="w-full lg:w-[348px] p-6 rounded-2xl border-t-4 border-[#000] shadow-lg hover:shadow-xl duration-200 cursor-pointer">
 
                                 <li className="text-2xl bg-[#e6f0ff] p-3 w-fit rounded-full flex items-center justify-center">
                                     {service.icon}

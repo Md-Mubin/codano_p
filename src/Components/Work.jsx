@@ -100,7 +100,7 @@ const Work = () => {
                     <CommonHeadInfo commonHeadInfo={"Discover a selection of our most successful projects. Each project is the result of close collaboration with our clients and reflects our passion for excellent design and technical innovation."} />
 
                     <div className='mt-10'>
-                        <div className="flex justify-center gap-6 mb-10">
+                        <div className="flex flex-wrap justify-center gap-6 mb-10">
                             {categories.map((category) => (
                                 <button
                                     key={category}

@@ -2,11 +2,13 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { RiShareLine } from "react-icons/ri"
+import { HiBarsArrowDown, HiBarsArrowUp } from "react-icons/hi2"
 
 const Navbar = () => {
 
     // all hooks 
     const [scrolling, setScrolling] = useState(false) // for scrolling nav effect
+    const [nav, setNav] = useState(false)
 
     // useEffect for handleing the scroll effect
     useEffect(() => {
@@ -27,9 +29,11 @@ const Navbar = () => {
     return (
         <>
             {/* ================== Navbar Part Start ================== */}
-            <nav className={`p-6 sticky top-0 backdrop-blur-sm ${scrolling ? "shadow-sm" : "shadow-none"}`}>
+            <nav className={`p-6 sticky top-0 backdrop-blur-sm tracking-widest ${scrolling ? "shadow-sm" : "shadow-none"}`}>
                 <div className="container">
-                    <ul className="flex items-center justify-between">
+
+                    {/* main navbar (from lg to upper device)*/}
+                    <ul className="items-center justify-between hidden lg:flex">
                         <li className="text-xl font-bold flex items-center gap-2 tracking-widest">
                             <RiShareLine className='text-3xl' />Codaro
                         </li>
@@ -47,6 +51,35 @@ const Navbar = () => {
                             <button className='px-3 hover:bg-[#f5f1e4] border-[#000] cursor-pointer'>EN</button>
                         </li>
                     </ul>
+
+                    {/* responsive navbar(xsm to lg device) */}
+                    <ul className="flex items-center justify-between lg:hidden relative">
+                        <li className="text-xl font-bold flex items-center gap-2 tracking-widest">
+                            <RiShareLine className='text-3xl' />Codaro
+                        </li>
+
+                        <li className='flex items-start gap-6'>
+                            <div className="flex border rounded-full border-[rgba(231,206,152,0.8)] overflow-hidden">
+                                <button className='px-3 hover:bg-[#f5f1e4] border-[#000] cursor-pointer'>DE</button>
+                                <button className='px-3 hover:bg-[#f5f1e4] border-[#000] cursor-pointer'>EN</button>
+                            </div>
+                            <button onClick={() => setNav(!nav)} className='text-4xl'>
+                                {
+                                    nav ? <HiBarsArrowUp /> : <HiBarsArrowDown />
+                                }
+                            </button>
+                        </li>
+
+                    </ul>
+                    <div className={`flex-col gap-4 font-medium text-xl backdrop-blur-sm mt-6 text-end duration-200 ${nav ? "flex" : "hidden"}`}>
+                        <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Home</Link>
+                        <Link href="#services" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Services</Link>
+                        <Link href="#process" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Process</Link>
+                        <Link href="#work" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Portfolio</Link>
+                        <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Testimonials</Link>
+                        <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">About</Link>
+                        <Link href="#contact" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Contact</Link>
+                    </div>
                 </div>
             </nav>
             {/* ================== Navbar Part End ================== */}

@@ -13,8 +13,8 @@ const Contact = () => {
                     <CommonHead commonHead={"Contact"} />
                     <CommonHeadInfo commonHeadInfo={"Ready to start your next digital project? Contact us for a no-obligation conversation. We look forward to learning more about your goals and how we can help you achieve them."} />
 
-                    <div className="flex items-start justify-between mt-24 tracking-widest">
-                        <form className="w-[730px] p-6 shadow-lg rounded-lg">
+                    <div className="flex flex-col lg:flex-row lg:items-start items-center mt-24 tracking-widest">
+                        <form className="w-full lg:w-[730px] p-6 shadow-lg rounded-lg">
                             <ul>
                                 <li>
                                     <label className="block text-sm font-medium mt-2">Name*</label>
@@ -75,7 +75,7 @@ const Contact = () => {
                         </form>
 
                         {/* Contact Information */}
-                        <ul className="mb-16 w-[728px]">
+                        <ul className="mb-16 mt-10 lg:mt-0 lg:w-[728px]">
                             <li>
                                 <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
                                 <ul className="space-y-2 text-gray-600">

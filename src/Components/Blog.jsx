@@ -34,7 +34,7 @@ const Blog = () => {
 
                     <CommonHead commonHead={"Blog & Insights"} />
 
-                    <div className='flex justify-between gap-10 mt-24'>
+                    <div className='flex flex-col lg:flex-row justify-between gap-10 mt-24'>
                         {
                             blogCards.map((items) => (
                                 <ul
