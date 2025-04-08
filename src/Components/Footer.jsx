@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 import { RiShareLine } from "react-icons/ri"
-import { LuFacebook, LuLinkedin, LuInstagram, LuTwitter  } from "react-icons/lu"
+import { LuFacebook, LuLinkedin, LuInstagram, LuTwitter } from "react-icons/lu"
 
 const Footer = () => {
     return (
         <>
+            {/* ================== Footer Part Start ================== */}
             <footer className='py-20 border-t-1 border-[#999999]'>
                 <div className="container">
                     <ul className='flex justify-between pb-10'>
@@ -15,10 +16,10 @@ const Footer = () => {
                             </h2>
                             <p>We are an award-winning digital agency creating innovative solutions for modern businesses.</p>
                             <span className='mt-4 flex gap-8 items-center text-2xl'>
-                                <LuFacebook/>
-                                <LuInstagram/>
-                                <LuTwitter/>
-                                <LuLinkedin/>
+                                <LuFacebook />
+                                <LuInstagram />
+                                <LuTwitter />
+                                <LuLinkedin />
                             </span>
                         </li>
 
@@ -61,6 +62,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </footer>
+            {/* ================== Footer Part End ================== */}
         </>
     )
 }

@@ -8,9 +8,10 @@ import CommonHeadInfo from '@/Commons/CommonHeadInfo'
 
 const Services = () => {
 
+    // all the info as api to render the component fast
     const services = [
         {
-            icon: <IoCodeOutline/>,
+            icon: <IoCodeOutline />,
             title: "Web Development",
             description:
                 "Custom websites and web applications using cutting-edge technologies like React, Next.js, and Node.js. We develop responsive, fast, and user-friendly solutions that support your business goals and delight your customers.",
@@ -23,7 +24,7 @@ const Services = () => {
             ]
         },
         {
-            icon: <CiMobile2/>,
+            icon: <CiMobile2 />,
             title: "App Development",
             description:
                 "Native and hybrid apps for iOS and Android with seamless user experience. From concept to App Store publication, we guide you through the entire process and ensure your app meets the highest standards.",
@@ -36,7 +37,7 @@ const Services = () => {
             ]
         },
         {
-            icon: <LuPenTool/>,
+            icon: <LuPenTool />,
             title: "UI/UX Design",
             description:
                 "User-friendly and aesthetically pleasing designs that strengthen your brand. We create intuitive interfaces that delight your customers and motivate them to take action, based on comprehensive user research and proven design principles.",
@@ -49,7 +50,7 @@ const Services = () => {
             ]
         },
         {
-            icon: <FiUsers/>,
+            icon: <FiUsers />,
             title: "Digital Marketing",
             description:
                 "SEO, content marketing, and social media strategies for increased visibility. We help you reach your target audience and strengthen your online presence, with data-driven campaigns and continuous optimization for maximum results.",
@@ -65,10 +66,11 @@ const Services = () => {
 
     return (
         <>
+            {/* ================== Service Section Start ================== */}
             <section id='services' className="py-20">
                 <div className="container">
-                    <CommonHead commonHead={"Our Services"}/>
-                    <CommonHeadInfo commonHeadInfo={"We offer a comprehensive range of digital services to help your business grow and thrive in the digital world. Our expert team works closely with you to develop tailored solutions that meet your specific requirements."}/>
+                    <CommonHead commonHead={"Our Services"} />
+                    <CommonHeadInfo commonHeadInfo={"We offer a comprehensive range of digital services to help your business grow and thrive in the digital world. Our expert team works closely with you to develop tailored solutions that meet your specific requirements."} />
                     <div className="flex flex-wrap justify-between gap-6 mt-10">
                         {services.map((service, index) => (
                             <ul
@@ -99,6 +101,7 @@ const Services = () => {
                     </div>
                 </div>
             </section>
+            {/* ================== Service Section End ================== */}
         </>
     )
 }

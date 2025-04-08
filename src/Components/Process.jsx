@@ -4,6 +4,7 @@ import React from 'react'
 
 const Process = () => {
 
+    // all the info as api to render the component fast
     const processSteps = [
         {
             number: "01",
@@ -32,6 +33,7 @@ const Process = () => {
 
     return (
         <>
+            {/* ================== Process Section Start ================== */}
             <section id='process' className='py-20'>
                 <div className="container">
                     <CommonHead commonHead={"Our Process"} />
@@ -57,6 +59,7 @@ const Process = () => {
                     </div>
                 </div>
             </section>
+            {/* ================== Process Section End ================== */}
         </>
     )
 }

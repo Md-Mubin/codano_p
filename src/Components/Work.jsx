@@ -5,6 +5,17 @@ import React, { useState } from 'react'
 
 const Work = () => {
 
+    // use state hooks
+    const [selectedCategory, setSelectedCategory] = useState("All")
+
+    // all the filteration
+    const categories = ["All", "Web", "App", "Design"]
+    const filteredProjects = selectedCategory === "All"
+        ? projects
+        : projects.filter(project => project.category === selectedCategory)
+
+
+    // all the info as api to render the component fast
     const projects = [
         {
             id: 1,
@@ -80,16 +91,9 @@ const Work = () => {
         }
     ];
 
-    const categories = ["All", "Web", "App", "Design"]
-
-    const [selectedCategory, setSelectedCategory] = useState("All")
-
-    const filteredProjects = selectedCategory === "All"
-        ? projects
-        : projects.filter(project => project.category === selectedCategory)
-
     return (
         <>
+            {/* ================== Work Section Start ================== */}
             <section id='work' className='py-20'>
                 <div className="container">
                     <CommonHead commonHead={"Our Work"} />
@@ -143,6 +147,7 @@ const Work = () => {
                     </div>
                 </div>
             </section>
+            {/* ================== Work Section End ================== */}
         </>
     )
 }

@@ -15,7 +15,7 @@ const Blog = () => {
             id: 2,
             date: "February 28, 2024",
             blogHead: "Why Performance is Crucial for Your Website",
-            blogDescription : "A fast website is not only good for user experience but also for SEO and conversion rates. In today's digital landscape, where users are becoming increasingly impatient and...."
+            blogDescription: "A fast website is not only good for user experience but also for SEO and conversion rates. In today's digital landscape, where users are becoming increasingly impatient and...."
         },
 
         {
@@ -28,6 +28,7 @@ const Blog = () => {
 
     return (
         <>
+            {/* ================== Blog Section Start ================== */}
             <section className='py-20'>
                 <div className="container">
 
@@ -39,7 +40,7 @@ const Blog = () => {
                                 <ul
                                     key={items.id}
                                     className='shadow-lg hover:shadow-xl pb-10 rounded-2xl overflow-hidden'>
-                                   
+
                                     <li className='w-full h-[250px] bg-blue-100'>
                                         <img src="#" alt="" />
                                     </li>
@@ -63,9 +64,9 @@ const Blog = () => {
                             ))
                         }
                     </div>
-
                 </div>
             </section>
+            {/* ================== Blog Section End ================== */}
         </>
     )
 }

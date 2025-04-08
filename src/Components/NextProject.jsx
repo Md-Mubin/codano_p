@@ -3,6 +3,7 @@ import React from 'react'
 const NextProject = () => {
     return (
         <>
+            {/* ================== Next-Project Section Start ================== */}
             <section className='py-20'>
                 <div className="container">
                     <ul className='flex justify-between items-center'>
@@ -18,6 +19,7 @@ const NextProject = () => {
                     </ul>
                 </div>
             </section>
+            {/* ================== Next-Project Section End ================== */}
         </>
     )
 }

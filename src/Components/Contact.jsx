@@ -6,6 +6,7 @@ import { FiMapPin, FiPhone, FiMail } from "react-icons/fi"
 const Contact = () => {
     return (
         <>
+            {/* ================== Contact Section Start ================== */}
             <section id='contact' className='py-20'>
                 <div className="container">
 
@@ -128,11 +129,9 @@ const Contact = () => {
                             </li>
                         </ul>
                     </div>
-
-                    {/* FAQ */}
-
                 </div>
             </section>
+            {/* ================== Contact Section End ================== */}
         </>
     )
 }
