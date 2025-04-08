@@ -8,13 +8,6 @@ const Work = () => {
     // use state hooks
     const [selectedCategory, setSelectedCategory] = useState("All")
 
-    // all the filteration
-    const categories = ["All", "Web", "App", "Design"]
-    const filteredProjects = selectedCategory === "All"
-        ? projects
-        : projects.filter(project => project.category === selectedCategory)
-
-
     // all the info as api to render the component fast
     const projects = [
         {
@@ -90,6 +83,13 @@ const Work = () => {
             category: "Web"
         }
     ];
+
+    // all the filteration
+    const categories = ["All", "Web", "App", "Design"]
+    const filteredProjects = selectedCategory === "All"
+        ? projects
+        : projects.filter(project => project.category === selectedCategory)
+
 
     return (
         <>
