@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 const HeroSection = () => {
     return (
         <>
-            <section className='pt-[100px]'>
+            <section className='py-[100px]'>
                 <div className="container">
                     <ul className='flex items-center justify-between'>
                         <li>
