@@ -1,9 +1,13 @@
+"use client"
 import Link from 'next/link'
 import React from 'react'
 import { RiShareLine } from "react-icons/ri"
 import { LuFacebook, LuLinkedin, LuInstagram, LuTwitter } from "react-icons/lu"
+import { useLanguage } from '../../public/contexts/LanguageContext'
 
 const Footer = () => {
+    const {t} = useLanguage()
+
     return (
         <>
             {/* ================== Footer Part Start ================== */}
@@ -14,7 +18,7 @@ const Footer = () => {
                             <h2 className='flex items-center gap-2 font-bold text-2xl tracking-widest'>
                                 <RiShareLine className='text-4xl' />Codaro
                             </h2>
-                            <p>We are an award-winning digital agency creating innovative solutions for modern businesses.</p>
+                            <p>{t.footer?.footerInfo}</p>
                             <span className='mt-4 flex gap-8 items-center text-2xl'>
                                 <LuFacebook />
                                 <LuInstagram />
@@ -24,40 +28,40 @@ const Footer = () => {
                         </li>
 
                         <li className='w-[348px] flex flex-col gap-4 tracking-widest'>
-                            <h3 className='font-bold text-xl'>Company</h3>
-                            <Link href="#">About Us</Link>
-                            <Link href="#">Team</Link>
-                            <Link href="#">Careers</Link>
-                            <Link href="#">Contact</Link>
+                            <h3 className='font-bold text-xl'>{t.footer?.footerCom}</h3>
+                            <Link href="#">{t.footer?.footerAbt}</Link>
+                            <Link href="#">{t.footer?.footerTeam}</Link>
+                            <Link href="#">{t.footer?.footerCareers}</Link>
+                            <Link href="#">{t.footer?.footerContact}</Link>
                         </li>
 
                         <li className='w-[348px] flex flex-col gap-4 tracking-widest'>
-                            <h3 className='font-bold text-xl'>Services</h3>
-                            <Link href="#">Web Development</Link>
-                            <Link href="#">App Development</Link>
-                            <Link href="#">UI/UX Design</Link>
-                            <Link href="#">Digital Marketing</Link>
+                            <h3 className='font-bold text-xl'>{t.footer?.footerSer}</h3>
+                            <Link href="#">{t.footer?.footerWeb}</Link>
+                            <Link href="#">{t.footer?.footerApp}</Link>
+                            <Link href="#">{t.footer?.footerUi}</Link>
+                            <Link href="#">{t.footer?.footerDigital}</Link>
                         </li>
 
                         <li className='w-[348px] flex flex-col gap-4 tracking-widest'>
-                            <h3 className='font-bold text-xl'>Subscribe to our newsletter</h3>
-                            <p>Get the latest updates and offers</p>
+                            <h3 className='font-bold text-xl'>{t.footer?.footerSubscribe}</h3>
+                            <p>{t.footer?.footerSubInfo}</p>
                             <span className='flex items-center gap-4'>
-                                <input type="text" className='w-[250px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm' placeholder='Your Email Address' />
-                                <button className='px-6 py-2 hover:bg-blue-100 duration-200 rounded-xl cursor-pointer'>Subscribe</button>
+                                <input type="text" className='w-[250px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm' placeholder={t.footer?.footerEmailPlcae} />
+                                <button className='px-6 py-2 hover:bg-blue-100 duration-200 rounded-xl cursor-pointer'>{t.footer?.footerBtn}</button>
                             </span>
                         </li>
                     </ul>
 
                     <ul className='flex flex-col lg:flex-row gap-6 lg:gap-0 items-center justify-between pt-10 border-t tracking-widest text-lg'>
                         <li>
-                            © 2024 Codaro. All rights reserved.
+                           {t.footer?.footerRights}
                         </li>
 
                         <li className='flex gap-6'>
-                            <a href="#" className='hover:translate-y-[-2px] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02]'>Privacy Policy</a>
-                            <a href="#" className='hover:translate-y-[-2px] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02]'>Terms of Service</a>
-                            <a href="#" className='hover:translate-y-[-2px] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02]'>Imprint</a>
+                            <a href="#" className='hover:translate-y-[-2px] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02]'>{t.footer?.footerPolicy}</a>
+                            <a href="#" className='hover:translate-y-[-2px] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02]'>{t.footer?.footerTerms}</a>
+                            <a href="#" className='hover:translate-y-[-2px] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02]'>{t.footer?.footerImprint}</a>
                         </li>
                     </ul>
                 </div>

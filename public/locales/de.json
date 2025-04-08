@@ -1,0 +1,295 @@
+{
+    "navbar": {
+        "home": "Startseite",
+        "services": "Leistungen",
+        "process": "Prozess",
+        "portfolio": "Portfolio",
+        "testimonials": "Referenzen",
+        "about": "Über uns",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "littleHead": "Preisgekrönte Digitalagentur",
+        "head": "Wir gestalten digitale Erlebnisse der Zukunft",
+        "headInfo": "Ihre Webagentur für moderne, innovative und maßgeschneiderte digitale Lösungen, die Ihr Unternehmen auf das nächste Level bringen",
+        "startProjectBtn": "Projekt starten",
+        "exploreBtn": "Portfolio entdecken",
+        "counter1": "Kundenzufriedenheit",
+        "counter2": "Abgeschlossene Projekte",
+        "counter3": "Jahre Erfahrung"
+    },
+    "service": {
+        "head": "Unsere Leistungen",
+        "headInfo": "Wir bieten ein umfassendes Spektrum an digitalen Dienstleistungen, die Ihrem Unternehmen helfen, in der digitalen Welt zu wachsen und zu gedeihen. Unser Expertenteam arbeitet eng mit Ihnen zusammen, um maßgeschneiderte Lösungen zu entwickeln, die Ihre spezifischen Anforderungen erfüllen.",
+        "cards": [
+            {
+                "type": "web",
+                "cardTitle": "Webentwicklung",
+                "cardInfo": "Maßgeschneiderte Websites und Webanwendungen mit modernsten Technologien wie React, Next.js und Node.js. Wir entwickeln responsive, schnelle und benutzerfreundliche Lösungen, die Ihre Geschäftsziele unterstützen und Ihre Kunden begeistern.",
+                "features": [
+                    "Responsive Design",
+                    "SEO-Optimierung",
+                    "Content Management",
+                    "E-Commerce Integration",
+                    "Performance-Optimierung"
+                ]
+            },
+            {
+                "type": "app",
+                "cardTitle": "App-Entwicklung",
+                "cardInfo": "Native und hybride Apps für iOS und Android mit nahtloser Benutzererfahrung. Von der Konzeption bis zur Veröffentlichung im App Store begleiten wir Sie durch den gesamten Prozess und stellen sicher, dass Ihre App den höchsten Standards entspricht.",
+                "features": [
+                    "iOS & Android",
+                    "Hybride Lösungen",
+                    "Backend-Integration",
+                    "Push-Benachrichtigungen",
+                    "Offline-Funktionalität"
+                ]
+            },
+            {
+                "type": "ui",
+                "cardTitle": "UI/UX Design",
+                "cardInfo": "Benutzerfreundliche und ästhetisch ansprechende Designs, die Ihre Marke stärken. Wir erstellen intuitive Benutzeroberflächen, die Ihre Kunden begeistern und zum Handeln motivieren, basierend auf umfassender Nutzerforschung und bewährten Design-Prinzipien.",
+                "features": [
+                    "Benutzerforschung",
+                    "Wireframing",
+                    "Prototyping",
+                    "Usability-Tests",
+                    "Design-Systeme"
+                ]
+            },
+            {
+                "type": "marketing",
+                "cardTitle": "Digitales Marketing",
+                "cardInfo": "SEO, Content-Marketing und Social-Media-Strategien für mehr Sichtbarkeit. Wir helfen Ihnen, Ihre Zielgruppe zu erreichen und Ihre Online-Präsenz zu stärken, mit datengesteuerten Kampagnen und kontinuierlicher Optimierung für maximale Ergebnisse.",
+                "features": [
+                    "Suchmaschinenoptimierung",
+                    "Content-Strategie",
+                    "Social Media",
+                    "E-Mail-Marketing",
+                    "Analytics & Reporting"
+                ]
+            }
+        ]
+    },
+    "process": {
+        "head": "Unser Prozess",
+        "headInfo": "Unser bewährter Prozess stellt sicher, dass jedes Projekt effizient, transparent und mit höchster Qualität umgesetzt wird. Wir legen großen Wert auf Kommunikation und Zusammenarbeit in jeder Phase.",
+        "steps": [
+            {
+                "stepHead": "Entdeckung & Strategie",
+                "stepInfo": "Wir beginnen mit einem tiefgreifenden Verständnis Ihrer Geschäftsziele, Zielgruppe und Anforderungen. Auf dieser Grundlage entwickeln wir eine maßgeschneiderte Strategie für Ihr Projekt."
+            },
+            {
+                "stepHead": "Konzeption & Design",
+                "stepInfo": "Basierend auf der Strategie erstellen wir Wireframes und Designs, die Ihre Marke perfekt repräsentieren und ein optimales Nutzererlebnis bieten. Iterative Feedbackschleifen stellen sicher, dass das Endergebnis Ihren Vorstellungen entspricht."
+            },
+            {
+                "stepHead": "Entwicklung & Test",
+                "stepInfo": "Unser Entwicklungsteam setzt das Design mit modernsten Technologien um. Regelmäßige Tests und Qualitätssicherung gewährleisten eine fehlerfreie Funktionalität auf allen Geräten und Browsern."
+            },
+            {
+                "stepHead": "Launch & Optimierung",
+                "stepInfo": "Nach dem erfolgreichen Launch begleiten wir Sie weiterhin mit kontinuierlicher Optimierung, Wartung und Support, um sicherzustellen, dass Ihre digitale Lösung langfristig erfolgreich ist."
+            }
+        ]
+    },
+    "work": {
+        "head": "Unsere Arbeiten",
+        "headInfo": "Entdecken Sie eine Auswahl unserer erfolgreichsten Projekte. Jedes Projekt ist das Ergebnis enger Zusammenarbeit mit unseren Kunden und spiegelt unsere Leidenschaft für exzellentes Design und technische Innovation wider.",
+        "allProjects": [
+            {
+                "id": 1,
+                "title": "E-Commerce Plattform",
+                "description": "Moderne Online-Shopping-Erfahrung mit React und Node.js für einen führenden Modehändler. Inklusive Zahlungsabwicklung, Produktverwaltung und Kundenkonto. Die Plattform führte zu einer Umsatzsteigerung von 35% im ersten Jahr.",
+                "tags": [
+                    "React",
+                    "Node.js",
+                    "MongoDB",
+                    "Stripe"
+                ],
+                "highlights": [
+                    "35% Umsatzsteigerung",
+                    "42% mehr mobile Nutzer",
+                    "28% höhere Conversion-Rate"
+                ],
+                "category": "Web"
+            },
+            {
+                "id": 2,
+                "title": "Fitness Tracker App",
+                "description": "Mobile Anwendung zur Verfolgung von Fitnesszielen mit personalisierten Trainingsplänen, Ernährungstagebuch und Fortschrittsanalyse. Die App wurde über 100.000 Mal heruntergeladen und hat eine Bewertung von 4,8/5 Sternen.",
+                "tags": [
+                    "React Native",
+                    "Firebase",
+                    "Redux",
+                    "HealthKit"
+                ],
+                "highlights": [
+                    "100,000+ downloads",
+                    "4.8/5 Sterne Bewertung",
+                    "87% Nutzerretention"
+                ],
+                "category": "App"
+            },
+            {
+                "id": 3,
+                "title": "Corporate Branding",
+                "description": "Komplettes Markendesign für ein Technologieunternehmen, einschließlich Logo, Farbpalette, Typografie und Designrichtlinien für alle Kommunikationskanäle. Das Rebranding führte zu einer deutlich verbesserten Markenwahrnehmung.",
+                "tags": [
+                    "Adobe CC",
+                    "Figma",
+                    "Brand Strategy",
+                    "Motion Design"
+                ],
+                "highlights": [
+                    "42% höhere Markenbekanntheit",
+                    "Auszeichnung für Designexzellenz",
+                    "Einheitliche Markenpräsenz"
+                ],
+                "category": "Design"
+            },
+            {
+                "id": 4,
+                "title": "Immobilien-Portal",
+                "description": "Plattform zur Suche und Verwaltung von Immobilien mit interaktiver Karte, detaillierten Filtermöglichkeiten und virtuellem Rundgang durch die Objekte. Das Portal hat die Vermittlungsrate um 45% gesteigert.",
+                "tags": [
+                    "Next.js",
+                    "TypeScript",
+                    "PostgreSQL",
+                    "Google Maps API"
+                ],
+                "highlights": [
+                    "45% höhere Vermittlungsrate",
+                    "65% mehr Leads",
+                    "Reduzierte Suchzeit um 30%"
+                ],
+                "category": "Web"
+            },
+            {
+                "id": 5,
+                "title": "Reiseführer App",
+                "description": "Interaktiver Reiseführer mit Offline-Karten, Sehenswürdigkeiten, Restaurantempfehlungen und personalisierten Reiserouten. Die App wurde in mehreren Reisemagazinen empfohlen.",
+                "tags": [
+                    "Flutter",
+                    "Firebase",
+                    "MapBox",
+                    "AI Recommendations"
+                ],
+                "highlights": [
+                    "250,000+ Downloads",
+                    "Featured im App Store",
+                    "Durchschnittlich 45 Min. tägliche Nutzung"
+                ],
+                "category": "App"
+            },
+            {
+                "id": 6,
+                "title": "Online Banking Dashboard",
+                "description": "Benutzerfreundliches Dashboard für Online-Banking mit Echtzeit-Transaktionen, Finanzanalysen und Budgetplanung. Das neue Interface hat die Nutzerzufriedenheit um 40% verbessert.",
+                "tags": [
+                    "Vue.js",
+                    "D3.js",
+                    "Node.js",
+                    "PostgreSQL"
+                ],
+                "highlights": [
+                    "40% höhere Nutzerzufriedenheit",
+                    "28% mehr aktive Nutzer",
+                    "Reduzierte Support-Anfragen um 35%"
+                ],
+                "category": "Web"
+            }
+        ]
+    },
+    "blog": {
+        "head": "Blog & Insights",
+        "blogCards": [
+            {
+                "id": 1,
+                "date": "15. März 2024",
+                "blogHead": "Die Zukunft des Web Designs: Trends für 2024",
+                "blogDescription": "Entdecken Sie die neuesten Design-Trends, die das Web im kommenden Jahr prägen werden, von 3D-Elementen bis zu Micro-Interaktionen. In den letzten Jahren hat sich das...."
+            },
+            {
+                "id": 2,
+                "date": "28. Februar 2024",
+                "blogHead": "Warum Performance für Ihre Website entscheidend ist",
+                "blogDescription": "Eine schnelle Website ist nicht nur gut für die Benutzererfahrung, sondern auch für SEO und Conversion-Raten. In der heutigen digitalen Landschaft, wo Benutzer...."
+            },
+            {
+                "id": 3,
+                "date": "10. Februar 2024",
+                "blogHead": "Die Rolle von KI in der modernen Webentwicklung",
+                "blogDescription": "Künstliche Intelligenz revolutioniert die Art und Weise, wie wir Websites und Anwendungen entwickeln. In den letzten Jahren haben KI-gestützte Tools und Technologien einen...."
+            }
+        ]
+    },
+    "nextProject": {
+        "head": "Bereit für Ihr nächstes Projekt?",
+        "headInfo": "Lassen Sie uns gemeinsam etwas Großartiges schaffen. Kontaktieren Sie uns noch heute für ein unverbindliches Gespräch.",
+        "getinTouchBtn": "Kontakt aufnehmen",
+        "portfolioBtn": "Portfolio ansehen"
+    },
+    "contact": {
+        "head": "Kontakt",
+        "headInfo": "Bereit, Ihr nächstes digitales Projekt zu starten? Kontaktieren Sie uns für ein unverbindliches Gespräch. Wir freuen uns darauf, mehr über Ihre Ziele zu erfahren und wie wir Ihnen helfen können, diese zu erreichen.",
+        "form": {
+            "name": "Name",
+            "namePlaceholder": "Ihr Name",
+            "email": "E-Mail",
+            "emailPlaceholder": "Ihre E-Mail",
+            "phone": "Telefon",
+            "phonePlaceholder": "Ihre Telefonnumme",
+            "company": "Unternehmen",
+            "companyPlaceholder": "Ihr Unternehmen",
+            "budget": "Budget",
+            "budgetPlaceholder": "Bitte wählen",
+            "projectDes": "Projektbeschreibung ",
+            "projectDesPlaceholder": "Beschreiben Sie Ihr Projekt",
+            "sendBtn": "Anfrage senden"
+        },
+        "questionArea": {
+            "contactHead": "Kontaktinformationen",
+            "address": "Adresse",
+            "addressInfo": "Musterstraße 123, 10115 Berlin",
+            "contactEmailInfo": "info@codaro.de",
+            "askQuestionHead": "Häufig gestellte Fragen",
+            "allQuestionCard": [
+                {
+                    "question": "Wie lange dauert die Entwicklung einer Website?",
+                    "answer": "Die Entwicklungsdauer hängt von der Komplexität des Projekts ab. Eine einfache Website kann in 4-6 Wochen fertiggestellt sein, während komplexere Projekte 3-6 Monate in Anspruch nehmen können."
+                },
+                {
+                    "question": "Welche Informationen benötigen Sie für ein Angebot?",
+                    "answer": "Für ein genaues Angebot benötigen wir Informationen über den Projektumfang, gewünschte Funktionen, Zeitrahmen und Budget. Je detaillierter Ihre Anfrage, desto präziser kann unser Angebot sein."
+                },
+                {
+                    "question": "Bieten Sie auch Wartung und Support nach dem Launch an?",
+                    "answer": "Ja, wir bieten verschiedene Wartungs- und Support-Pakete an, um sicherzustellen, dass Ihre Website oder App optimal funktioniert und stets auf dem neuesten Stand ist."
+                }
+            ]
+        }
+    },
+    "footer" : {
+        "footerInfo" : "Wir sind eine preisgekrönte Digitalagentur, die innovative Lösungen für moderne Unternehmen entwickelt.",
+        "footerCom" : "Unternehmen",
+        "footerAbt" : "Über uns",
+        "footerTeam" : "Team",
+        "footerCareers" : "Karriere",
+        "footerContact" : "Kontakt",
+        "footerSer" : "Leistungen",
+        "footerWeb" : "Webentwicklung",
+        "footerApp" : "App-Entwicklung",
+        "footerUi" : "UI/UX Design",
+        "footerDigital" : "Digitales Marketing",
+        "footerSubscribe" : "Newsletter abonnieren",
+        "footerSubInfo" : "Erhalten Sie die neuesten Updates und Angebote",
+        "footerEmailPlcae" : "Ihre E-Mail-Adresse",
+        "footerBtn" : "Abonnieren",
+        "footerRights" : "© 2024 Codaro. Alle Rechte vorbehalten.",
+        "footerPolicy" : "Datenschutz",
+        "footerTerms" : "AGB",
+        "footerImprint" : "Impressum"
+    }
+}

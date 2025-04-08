@@ -3,12 +3,14 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { RiShareLine } from "react-icons/ri"
 import { HiBarsArrowDown, HiBarsArrowUp } from "react-icons/hi2"
+import { useLanguage } from '../../public/contexts/LanguageContext'
 
 const Navbar = () => {
 
     // all hooks 
     const [scrolling, setScrolling] = useState(false) // for scrolling nav effect
     const [nav, setNav] = useState(false)
+    const { t, language, changeLanguage } = useLanguage()
 
     // useEffect for handleing the scroll effect
     useEffect(() => {
@@ -38,17 +40,17 @@ const Navbar = () => {
                             <RiShareLine className='text-3xl' />Codaro
                         </li>
                         <li className="flex gap-10 font-medium">
-                            <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Home</Link>
-                            <Link href="#services" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Services</Link>
-                            <Link href="#process" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Process</Link>
-                            <Link href="#work" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Portfolio</Link>
-                            <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Testimonials</Link>
-                            <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">About</Link>
-                            <Link href="#contact" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Contact</Link>
+                            <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.home}</Link>
+                            <Link href="#services" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.services}</Link>
+                            <Link href="#process" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.process}</Link>
+                            <Link href="#work" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.portfolio}</Link>
+                            <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.testimonials}</Link>
+                            <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.about}</Link>
+                            <Link href="#contact" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.contact}</Link>
                         </li>
                         <li className="flex border rounded-full border-[rgba(231,206,152,0.8)] overflow-hidden">
-                            <button className='px-3 hover:bg-[#f5f1e4] border-[#000] cursor-pointer'>DE</button>
-                            <button className='px-3 hover:bg-[#f5f1e4] border-[#000] cursor-pointer'>EN</button>
+                            <button onClick={() => changeLanguage("de")} className={`px-3 hover:bg-[#fcfaf6] border-[#000] cursor-pointer ${language === "de" ? "bg-[#f5f1e4]" : "bg-none"}`}>DE</button>
+                            <button onClick={() => changeLanguage("en")} className={`px-3 hover:bg-[#fcfaf6] border-[#000] cursor-pointer ${language === "en" ? "bg-[#f5f1e4]" : "bg-none"}`}>EN</button>
                         </li>
                     </ul>
 
@@ -60,8 +62,8 @@ const Navbar = () => {
 
                         <li className='flex items-start gap-6'>
                             <div className="flex border rounded-full border-[rgba(231,206,152,0.8)] overflow-hidden">
-                                <button className='px-3 hover:bg-[#f5f1e4] border-[#000] cursor-pointer'>DE</button>
-                                <button className='px-3 hover:bg-[#f5f1e4] border-[#000] cursor-pointer'>EN</button>
+                                <button onClick={() => changeLanguage("de")} className={`px-3 hover:bg-[#fcfaf6] border-[#000] cursor-pointer ${language === "de" ? "bg-[#f5f1e4]" : "bg-none"}`}>DE</button>
+                                <button onClick={() => changeLanguage("en")} className={`px-3 hover:bg-[#fcfaf6] border-[#000] cursor-pointer ${language === "en" ? "bg-[#f5f1e4]" : "bg-none"}`}>EN</button>
                             </div>
                             <button onClick={() => setNav(!nav)} className='text-4xl'>
                                 {
@@ -72,13 +74,13 @@ const Navbar = () => {
 
                     </ul>
                     <div className={`flex-col gap-4 font-medium text-xl backdrop-blur-sm mt-6 text-end duration-200 ${nav ? "flex" : "hidden"}`}>
-                        <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Home</Link>
-                        <Link href="#services" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Services</Link>
-                        <Link href="#process" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Process</Link>
-                        <Link href="#work" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Portfolio</Link>
-                        <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Testimonials</Link>
-                        <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">About</Link>
-                        <Link href="#contact" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Contact</Link>
+                        <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.home}</Link>
+                        <Link href="#services" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.services}</Link>
+                        <Link href="#process" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.process}</Link>
+                        <Link href="#work" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.portfolio}</Link>
+                        <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.testimonials}</Link>
+                        <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.about}</Link>
+                        <Link href="#contact" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.contact}</Link>
                     </div>
                 </div>
             </nav>

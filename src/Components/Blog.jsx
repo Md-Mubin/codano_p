@@ -1,30 +1,13 @@
+"use client"
 import CommonHead from '@/Commons/CommonHead'
 import React from 'react'
+import { useLanguage } from '../../public/contexts/LanguageContext'
 
 const Blog = () => {
 
-    const blogCards = [
-        {
-            id: 1,
-            date: "March 15, 2024",
-            blogHead: "The Future of Web Design: Trends for 2024",
-            blogDescription: "Discover the latest design trends that will shape the web in the coming year, from 3D elements to micro-interactions. Over the past few years, web design has evolved rapidly...."
-        },
+    const {t} = useLanguage()
 
-        {
-            id: 2,
-            date: "February 28, 2024",
-            blogHead: "Why Performance is Crucial for Your Website",
-            blogDescription: "A fast website is not only good for user experience but also for SEO and conversion rates. In today's digital landscape, where users are becoming increasingly impatient and...."
-        },
-
-        {
-            id: 3,
-            date: "February 10, 2024",
-            blogHead: "The Role of AI in Modern Web Development",
-            blogDescription: "Artificial intelligence is revolutionizing the way we develop websites and applications. In recent years, AI-powered tools and technologies have had an enormous impact on web...."
-        }
-    ]
+    const blogCards = t.blog?.blogCards || []
 
     return (
         <>
@@ -32,7 +15,7 @@ const Blog = () => {
             <section className='py-20'>
                 <div className="container">
 
-                    <CommonHead commonHead={"Blog & Insights"} />
+                    <CommonHead commonHead={t.blog?.head} />
 
                     <div className='flex flex-col lg:flex-row justify-between gap-10 mt-24'>
                         {
