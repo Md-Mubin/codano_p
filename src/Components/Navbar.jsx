@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { RiShareLine } from "react-icons/ri"
 
 const Navbar = () => {
 
@@ -28,7 +29,9 @@ const Navbar = () => {
             <nav className={`p-6 sticky top-0 backdrop-blur-sm ${scrolling ? "shadow-sm" : "shadow-none"}`}>
                 <div className="container">
                     <ul className="flex items-center justify-between">
-                        <li className="text-xl font-bold">Codaro</li>
+                        <li className="text-xl font-bold flex items-center gap-2 tracking-widest">
+                            <RiShareLine className='text-3xl'/>Codaro
+                        </li>
                         <li className="flex gap-10 font-medium">
                             <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Home</Link>
                             <Link href="#services" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">Services</Link>

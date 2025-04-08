@@ -1,6 +1,7 @@
 import Navbar from "@/Components/Navbar";
 import "./globals.css";
 import { Roboto } from 'next/font/google'
+import Footer from "@/Components/Footer";
 
 const interFont = Roboto({ weight : "400", preload : false})
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className={interFont.className}>
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
