@@ -1,4 +1,5 @@
 import Blog from "@/Components/Blog";
+import Contact from "@/Components/Contact";
 import HeroSection from "@/Components/HeroSection";
 import NextProject from "@/Components/NextProject";
 import Process from "@/Components/Process";
@@ -14,6 +15,7 @@ export default function Home() {
       <Work/>
       <Blog/>
       <NextProject/>
+      <Contact/>
     </>
   );
 }
