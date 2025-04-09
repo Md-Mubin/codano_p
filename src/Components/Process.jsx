@@ -9,6 +9,20 @@ const Process = () => {
     const { t } = useLanguage()
     const processSteps = t.process || []
 
+    const img = [
+        {
+            image: "https://images.unsplash.com/photo-1664944485848-106ba842e385?q=80&w=2004&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            image: "https://images.unsplash.com/photo-1586936893354-362ad6ae47ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            image: "https://images.unsplash.com/photo-1632910121591-29e2484c0259?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            image: "https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ]
 
     return (
         <>
@@ -23,16 +37,21 @@ const Process = () => {
                             <ul
                                 key={index}
                                 className={`flex items-center justify-between gap-10 ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
+
                                 <li className="flex items-center justify-center w-20 h-20 rounded-full bg-[#e8f0fb] text-2xl font-bold text-[#1a1a1a]">
-                                    {"0"+(index + 1)}
+                                    {"0" + (index + 1)}
                                 </li>
                                 <li className="max-w-xl">
                                     <h3 className="text-xl font-bold mb-2">{step.stepHead}</h3>
                                     <p className="text-gray-700 leading-relaxed">{step.stepInfo}</p>
                                 </li>
-                                <li>
-                                    <img className='w-[600px] h-[200px]' src="#" alt="" />
-                                </li>
+                                {
+                                    img[index] && (
+                                        <li key={index}>
+                                            <img className='w-[600px]' loading='lazy' src={img[index].image} alt={`Step ${index + 1}`} />
+                                        </li>
+                                    )
+                                }
                             </ul>
                         ))}
                     </div>

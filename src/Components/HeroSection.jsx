@@ -12,7 +12,7 @@ const HeroSection = () => {
             {/* ================== Hero Section Start ================== */}
             <section className='py-[100px]'>
                 <div className="container">
-                    <ul className='flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0'>
+                    <ul className='flex flex-col lg:flex-row items-center justify-between gap-10'>
                         <li>
                             <ul className='lg:w-[720px]'>
                                 <li className='w-fit rounded-full px-3 py-1 bg-[#f5f1e4] text-sm font-[#000]'>{t.hero?.littleHead}</li>
@@ -47,8 +47,8 @@ const HeroSection = () => {
                             </ul>
                         </li>
 
-                        <li className='lg:w-[700px] w-full h-[500px] bg-blue-500'>
-                            <img loading='lazy' src="#" alt="" />
+                        <li>
+                            <img loading='lazy' src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="web agency" />
                         </li>
                     </ul>
                 </div>
