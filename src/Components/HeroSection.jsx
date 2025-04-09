@@ -32,15 +32,15 @@ const HeroSection = () => {
 
                                 <li className='flex flex-col lg:flex-row gap-6 justify-around pt-6 text-center'>
                                     <div className='flex flex-col gap-4'>
-                                        <CountUp start={0} end={98} style={{ fontSize: "30px", fontWeight: "700" }} />
+                                        <CountUp start={0} end={100} suffix='+' style={{ fontSize: "30px", fontWeight: "700" }} />
                                         <span>{t.hero?.counter1}</span>
                                     </div>
                                     <div className='flex flex-col gap-4'>
-                                        <CountUp start={0} end={98} style={{ fontSize: "30px", fontWeight: "700" }} />
+                                        <CountUp start={0} end={98} suffix='%' style={{ fontSize: "30px", fontWeight: "700" }} />
                                         <span>{t.hero?.counter2}</span>
                                     </div>
                                     <div className='flex flex-col gap-4'>
-                                        <CountUp start={0} end={98} style={{ fontSize: "30px", fontWeight: "700" }} />
+                                        <CountUp start={0} end={8} suffix='+' style={{ fontSize: "30px", fontWeight: "700" }} />
                                         <span>{t.hero?.counter3}</span>
                                     </div>
                                 </li>
