@@ -17,10 +17,10 @@ const Footer = () => {
         e.preventDefault()
         setSubmiting(true)
         await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
+        setEmail("")
         setTimeout(() => {
             setSubmiting(false)
         }, 1000);
-        setEmail("")
     }
 
     return (
