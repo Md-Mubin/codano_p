@@ -29,7 +29,7 @@ const Blog = () => {
 
                     <CommonHead commonHead={t.blog?.head} />
 
-                    <div className='flex flex-col lg:flex-row justify-between gap-10 mt-24'>
+                    <div className='flex flex-col xl:flex-row justify-between gap-10 mt-24'>
                         {
                             blogCards.map((items, index) => (
                                 <ul

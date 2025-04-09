@@ -8,13 +8,13 @@ import axios from 'axios'
 
 const Footer = () => {
 
-    const {t} = useLanguage()
+    const { t } = useLanguage()
 
     const [email, setEmail] = useState("")
 
-    const handleSubmit = async (e)=>{
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers",{email})
+        await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
         setEmail("")
     }
 
@@ -29,23 +29,12 @@ const Footer = () => {
                                 <RiShareLine className='text-4xl' />Codaro
                             </h2>
                             <p>{t.footer?.footerInfo}</p>
-                            <span className='mt-4 flex gap-8 items-center text-2xl'>
-                                <LuFacebook />
-                                <LuInstagram />
-                                <LuTwitter />
+                            <a href="#" className='mt-4 text-2xl hover:translate-y-[-4px] transition-transform duration-200 w-fit'>
                                 <LuLinkedin />
-                            </span>
+                            </a>
                         </li>
 
-                        <li className='w-[348px] flex flex-col gap-4 tracking-widest'>
-                            <h3 className='font-bold text-xl'>{t.footer?.footerCom}</h3>
-                            <Link href="#">{t.footer?.footerAbt}</Link>
-                            <Link href="#">{t.footer?.footerTeam}</Link>
-                            <Link href="#">{t.footer?.footerCareers}</Link>
-                            <Link href="#">{t.footer?.footerContact}</Link>
-                        </li>
-
-                        <li className='w-[348px] flex flex-col gap-4 tracking-widest'>
+                        <li className='w-[250px] flex flex-col gap-4 tracking-widest'>
                             <h3 className='font-bold text-xl'>{t.footer?.footerSer}</h3>
                             <Link href="#">{t.footer?.footerWeb}</Link>
                             <Link href="#">{t.footer?.footerApp}</Link>
@@ -53,13 +42,13 @@ const Footer = () => {
                             <Link href="#">{t.footer?.footerDigital}</Link>
                         </li>
 
-                        <li className='w-[348px] flex flex-col gap-4 tracking-widest'>
+                        <li className='flex flex-col gap-4 tracking-widest'>
                             <h3 className='font-bold text-xl'>{t.footer?.footerSubscribe}</h3>
                             <p>{t.footer?.footerSubInfo}</p>
 
                             {/* email subscibe form */}
                             <form onSubmit={handleSubmit} className='flex items-center gap-4'>
-                                <input value={email} onChange={(e)=>setEmail(e.target.value)} type="text" className='w-[250px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm' placeholder={t.footer?.footerEmailPlcae} />
+                                <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" className='sm:w-[350px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm' placeholder={t.footer?.footerEmailPlcae} />
                                 <button className='px-6 py-2 hover:bg-blue-100 duration-200 rounded-xl cursor-pointer'>{t.footer?.footerBtn}</button>
                             </form>
                         </li>
@@ -67,7 +56,7 @@ const Footer = () => {
 
                     <ul className='flex flex-col lg:flex-row gap-6 lg:gap-0 items-center justify-between pt-10 border-t tracking-widest text-lg'>
                         <li>
-                           {t.footer?.footerRights}
+                            {t.footer?.footerRights}
                         </li>
 
                         <li className='flex gap-6'>

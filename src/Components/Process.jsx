@@ -36,19 +36,19 @@ const Process = () => {
                         {processSteps.steps?.map((step, index) => (
                             <ul
                                 key={index}
-                                className={`flex items-center justify-between gap-10 ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
+                                className={`flex items-center flex-col lg:flex-row lg:justify-between gap-10 ${index % 2 === 0 ? '' : 'flex-col lg:flex-row-reverse'}`}>
 
                                 <li className="flex items-center justify-center w-20 h-20 rounded-full bg-[#e8f0fb] text-2xl font-bold text-[#1a1a1a]">
                                     {"0" + (index + 1)}
                                 </li>
-                                <li className="max-w-xl">
+                                <li className="lg:w-[600px]">
                                     <h3 className="text-xl font-bold mb-2">{step.stepHead}</h3>
                                     <p className="text-gray-700 leading-relaxed">{step.stepInfo}</p>
                                 </li>
                                 {
                                     img[index] && (
                                         <li key={index}>
-                                            <img className='w-[600px]' loading='lazy' src={img[index].image} alt={`Step ${index + 1}`} />
+                                            <img className='lg:w-[600px]' loading='lazy' src={img[index].image} alt={`Step ${index + 1}`} />
                                         </li>
                                     )
                                 }

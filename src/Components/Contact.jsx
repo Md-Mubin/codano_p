@@ -89,14 +89,7 @@ const Contact = () => {
                                     <li className='flex items-center gap-4 text-2xl'>
                                         <FiMapPin />
                                         <p className='flex flex-col font-bold text-xl'>{t.contact?.questionArea?.address}
-                                            <span className='font-medium text-lg'>{t.contact?.questionArea?.addressInfo}</span>
-                                        </p>
-                                    </li>
-
-                                    <li className='flex items-center gap-4 text-2xl mt-4'>
-                                        <FiPhone />
-                                        <p className='flex flex-col font-bold text-xl'>{t.contact?.form.phone}
-                                            <span className='font-medium text-lg'>+49 30 1234567</span>
+                                            <span className='font-medium text-lg'>Bussardplatz 11, 85757 Karlsfeld</span>
                                         </p>
                                     </li>
 

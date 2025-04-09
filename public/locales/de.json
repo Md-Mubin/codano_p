@@ -252,7 +252,6 @@
         "questionArea": {
             "contactHead": "Kontaktinformationen",
             "address": "Adresse",
-            "addressInfo": "Musterstraße 123, 10115 Berlin",
             "contactEmailInfo": "info@codaro.de",
             "askQuestionHead": "Häufig gestellte Fragen",
             "allQuestionCard": [
