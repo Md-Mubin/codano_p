@@ -14,7 +14,7 @@ const Footer = () => {
 
     const handleSubmit = async (e)=>{
         e.preventDefault()
-        await axios.post("https://testserver1-stww.onrender.com",{email})
+        await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers",{email})
         setEmail("")
     }
 
@@ -59,7 +59,7 @@ const Footer = () => {
 
                             {/* email subscibe form */}
                             <form onSubmit={handleSubmit} className='flex items-center gap-4'>
-                                <input value={email || ""} onChange={(e)=>setEmail(e.target.value)} type="text" className='w-[250px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm' placeholder={t.footer?.footerEmailPlcae} />
+                                <input onChange={(e)=>setEmail(e.target.value)} type="text" className='w-[250px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm' placeholder={t.footer?.footerEmailPlcae} />
                                 <button className='px-6 py-2 hover:bg-blue-100 duration-200 rounded-xl cursor-pointer'>{t.footer?.footerBtn}</button>
                             </form>
                         </li>
