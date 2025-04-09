@@ -20,7 +20,7 @@ const Contact = () => {
                     <CommonHead commonHead={t.contact?.head} />
                     <CommonHeadInfo commonHeadInfo={t.contact?.headInfo} />
 
-                    <div className="flex flex-col lg:flex-row lg:items-start items-center justify-between mt-24 tracking-widest">
+                    <div className="flex flex-col lg:flex-row lg:items-start items-center justify-between mt-24 tracking-widest gap-10">
                         <form className="w-full lg:w-[730px] p-6 shadow-lg rounded-lg">
                             <ul>
                                 <li>

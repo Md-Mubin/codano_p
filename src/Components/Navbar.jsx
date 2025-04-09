@@ -48,7 +48,7 @@ const Navbar = () => {
                             <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.about}</Link>
                             <Link href="#contact" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.contact}</Link>
                         </li>
-                        <li className="flex border rounded-full border-[rgba(231,206,152,0.8)] overflow-hidden">
+                        <li className="flex border rounded-md border-[rgba(231,206,152,0.8)] overflow-hidden">
                             <button onClick={() => changeLanguage("de")} className={`px-3 hover:bg-[#fcfaf6] border-[#000] cursor-pointer ${language === "de" ? "bg-[#f5f1e4]" : "bg-none"}`}>DE</button>
                             <button onClick={() => changeLanguage("en")} className={`px-3 hover:bg-[#fcfaf6] border-[#000] cursor-pointer ${language === "en" ? "bg-[#f5f1e4]" : "bg-none"}`}>EN</button>
                         </li>
@@ -61,7 +61,7 @@ const Navbar = () => {
                         </li>
 
                         <li className='flex items-start gap-6'>
-                            <div className="flex border rounded-full border-[rgba(231,206,152,0.8)] overflow-hidden">
+                            <div className="flex border rounded-md border-[rgba(231,206,152,0.8)] overflow-hidden">
                                 <button onClick={() => changeLanguage("de")} className={`px-3 hover:bg-[#fcfaf6] border-[#000] cursor-pointer ${language === "de" ? "bg-[#f5f1e4]" : "bg-none"}`}>DE</button>
                                 <button onClick={() => changeLanguage("en")} className={`px-3 hover:bg-[#fcfaf6] border-[#000] cursor-pointer ${language === "en" ? "bg-[#f5f1e4]" : "bg-none"}`}>EN</button>
                             </div>
