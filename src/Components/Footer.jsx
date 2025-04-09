@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { RiShareLine } from "react-icons/ri"
-import { LuFacebook, LuLinkedin, LuInstagram, LuTwitter } from "react-icons/lu"
+import { LuLinkedin } from "react-icons/lu"
 import { useLanguage } from '../../public/contexts/LanguageContext'
 import axios from 'axios'
 
@@ -11,10 +11,15 @@ const Footer = () => {
     const { t } = useLanguage()
 
     const [email, setEmail] = useState("")
+    const [submiting, setSubmiting] = useState(false)
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        setSubmiting(true)
         await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
+        setTimeout(() => {
+            setSubmiting(false)
+        }, 1000);
         setEmail("")
     }
 
@@ -49,7 +54,12 @@ const Footer = () => {
                             {/* email subscibe form */}
                             <form onSubmit={handleSubmit} className='flex items-center gap-4'>
                                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" className='sm:w-[350px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm' placeholder={t.footer?.footerEmailPlcae} />
-                                <button className='px-6 py-2 hover:bg-blue-100 duration-200 rounded-xl cursor-pointer'>{t.footer?.footerBtn}</button>
+                                {
+                                    submiting
+                                        ? <span className='px-6 py-2 hover:bg-blue-100 duration-200 rounded-xl relative'><span className='absolute w-[20px] h-[20px] border-t-2 border-[#000] animate-spin rounded-full top-0'></span></span>
+                                        : <button className='px-6 py-2 hover:bg-blue-100 duration-200 rounded-xl cursor-pointer'>{t.footer?.footerBtn}</button>
+                                }
+
                             </form>
                         </li>
                     </ul>
