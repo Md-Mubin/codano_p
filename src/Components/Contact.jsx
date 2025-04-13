@@ -112,13 +112,18 @@ const Contact = () => {
                                 </ul>
                             </li>
 
+                            {/* questions with answers */}
                             <li className='mt-10 '>
                                 <h2 className="text-2xl font-bold mb-6">{t.contact?.questionArea?.askQuestionHead}</h2>
                                 <ul className="space-y-4">
                                     {
                                         questionCard.map((items, index) => (
                                             <li key={index} className='border border-[#999999] rounded-xl p-6'>
+
+                                                {/* questions */}
                                                 <h3 className="font-bold text-xl mb-2">{items.question}</h3>
+
+                                                {/* answers */}
                                                 <p className="text-gray-600 text-lg">
                                                     {items.answer}
                                                 </p>
