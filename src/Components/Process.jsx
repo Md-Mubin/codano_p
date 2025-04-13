@@ -11,10 +11,10 @@ const Process = () => {
 
     const img = [
         {
-            image: "https://images.unsplash.com/photo-1664944485848-106ba842e385?q=80&w=2004&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/img/stretegy.jpg"
         },
         {
-            image: "https://images.unsplash.com/photo-1586936893354-362ad6ae47ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "img/concept.jpg"
         },
         {
             image: "https://images.unsplash.com/photo-1632910121591-29e2484c0259?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

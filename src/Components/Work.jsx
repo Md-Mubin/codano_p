@@ -20,28 +20,6 @@ const Work = () => {
         ? projects
         : projects.filter(project => project.category === selectedCategory)
 
-    const cardImages = [
-        {
-            image: "https://images.unsplash.com/photo-1648134859196-3aa762e9440d?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            image: "https://images.unsplash.com/photo-1598717873798-1b78ebe04fc2?q=80&w=2004&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            image: "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            image: "https://images.unsplash.com/photo-1734417511653-252ab0709e32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            image: "https://images.unsplash.com/photo-1694087450396-f6b1031b37d7?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            image: "https://images.unsplash.com/photo-1720135885032-b40d518da255?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        }
-    ]
-
-
     return (
         <>
             {/* ================== Work Section Start ================== */}
@@ -67,13 +45,11 @@ const Work = () => {
                             {
                                 filteredProjects.map((project, index) => (
                                     <ul key={project.id} className="bg-white shadow-lg hover:shadow-xl rounded-xl w-[475px] overflow-hidden">
-                                        {
-                                            cardImages[index] && (
-                                                <li>
-                                                    <img className='h-[250px] w-full' loading='lazy' src={cardImages[index].image} alt={`Step ${index + 1}`} />
-                                                </li>
-                                            )
-                                        }
+
+                                        <li>
+                                            <img className='h-[250px] w-full' loading='lazy' src={project.img} alt={``} />
+                                        </li>
+
 
                                         <li className="mt-4 p-4 flex flex-wrap gap-2">
                                             {
@@ -94,8 +70,8 @@ const Work = () => {
                                             <ul className="mt-3 text-sm text-gray-700 space-y-1">
                                                 {
                                                     project.highlights.map((point, i) => (
-                                                        <li key={i} className="flex items-start gap-2">
-                                                            <span className='text-blue-300 font-bold'>✓</span>
+                                                        <li key={i} className="flex items-center gap-2">
+                                                            <span className='text-blue-300 font-bold text-3xl'>•</span>
                                                             <span>{point}</span>
                                                         </li>
                                                     ))

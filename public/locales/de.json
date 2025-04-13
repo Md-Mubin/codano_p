@@ -100,25 +100,28 @@
         "allProjects": [
             {
                 "id": 1,
+                "img": "/img/eComSS.png",
                 "title": "E-Commerce Plattform",
-                "description": "Moderne Online-Shopping-Erfahrung mit React und Node.js für einen führenden Modehändler. Inklusive Zahlungsabwicklung, Produktverwaltung und Kundenkonto. Die Plattform führte zu einer Umsatzsteigerung von 35% im ersten Jahr.",
+                "description": "Modernes Online-Einkaufserlebnis mit React und Node.js zum Erstellen verschiedener E-Commerce-Websites. Beinhaltet Zahlungsabwicklung, Produktverwaltung und Kundenkonten. Die Plattform führte im ersten Jahr zu einer Umsatzsteigerung von 35 %.",
                 "tags": [
-                    "React",
+                    "React.js",
+                    "Next.js",
                     "Node.js",
-                    "MongoDB",
-                    "Stripe"
+                    "MongoDB"
                 ],
                 "highlights": [
-                    "35% Umsatzsteigerung",
-                    "42% mehr mobile Nutzer",
-                    "28% höhere Conversion-Rate"
+                    "Einfaches Kaufen und Weiterverkaufen von Produkten",
+                    "Schneller und Live-Support-Chat",
+                    "Aktualisierte Verfügbarkeit von Artikeln",
+                    "Benutzerprofil zur Verlaufseinsicht, Rabatt und mehr"
                 ],
                 "category": "Web"
             },
             {
                 "id": 2,
+                "img": "/img/mobileApp.png",
                 "title": "Fitness Tracker App",
-                "description": "Mobile Anwendung zur Verfolgung von Fitnesszielen mit personalisierten Trainingsplänen, Ernährungstagebuch und Fortschrittsanalyse. Die App wurde über 100.000 Mal heruntergeladen und hat eine Bewertung von 4,8/5 Sternen.",
+                "description": "Verschiedene mobile App-Entwicklungen mit React Native und Authentifizierungen, um dem Benutzer die Nutzung der Website über mobile Apps auf seinem Telefon zu erleichtern.",
                 "tags": [
                     "React Native",
                     "Firebase",
@@ -126,16 +129,18 @@
                     "HealthKit"
                 ],
                 "highlights": [
-                    "100,000+ downloads",
-                    "4.8/5 Sterne Bewertung",
-                    "87% Nutzerretention"
+                    "Speziell für mobile Erlebnisse entwickelt",
+                    "Zugängliche Layouts mit skalierbaren Komponenten",
+                    "Bereit zur Integration in iOS- & Android-Plattformen",
+                    "Schnellere und anpassbare Apps"
                 ],
                 "category": "App"
             },
             {
                 "id": 3,
+                "img": "/img/strapi.png",
                 "title": "Corporate Branding",
-                "description": "Komplettes Markendesign für ein Technologieunternehmen, einschließlich Logo, Farbpalette, Typografie und Designrichtlinien für alle Kommunikationskanäle. Das Rebranding führte zu einer deutlich verbesserten Markenwahrnehmung.",
+                "description": "Komplettes Markendesign für ein Technologieunternehmen, einschließlich Logo, Farbpalette, Typografie und Designrichtlinien für alle Kommunikationskanäle. Das Rebranding führte zu einer deutlich verbesserten Markenwahrnehmung und Wiedererkennung im Markt.",
                 "tags": [
                     "Adobe CC",
                     "Figma",
@@ -143,60 +148,64 @@
                     "Motion Design"
                 ],
                 "highlights": [
-                    "42% höhere Markenbekanntheit",
-                    "Auszeichnung für Designexzellenz",
-                    "Einheitliche Markenpräsenz"
-                ],
-                "category": "Design"
-            },
-            {
-                "id": 4,
-                "title": "Immobilien-Portal",
-                "description": "Plattform zur Suche und Verwaltung von Immobilien mit interaktiver Karte, detaillierten Filtermöglichkeiten und virtuellem Rundgang durch die Objekte. Das Portal hat die Vermittlungsrate um 45% gesteigert.",
-                "tags": [
-                    "Next.js",
-                    "TypeScript",
-                    "PostgreSQL",
-                    "Google Maps API"
-                ],
-                "highlights": [
-                    "45% höhere Vermittlungsrate",
-                    "65% mehr Leads",
-                    "Reduzierte Suchzeit um 30%"
+                    "Höheres Markenbewusstsein",
+                    "Auszeichnung für Design-Exzellenz",
+                    "Einzigartige Markenpräsenz",
+                    "Hervorstechen am Markt"
                 ],
                 "category": "Web"
             },
             {
-                "id": 5,
-                "title": "Reiseführer App",
-                "description": "Interaktiver Reiseführer mit Offline-Karten, Sehenswürdigkeiten, Restaurantempfehlungen und personalisierten Reiserouten. Die App wurde in mehreren Reisemagazinen empfohlen.",
+                "id": 4,
+                "img": "/img/rombo.png",
+                "title": "Immobilien-Portal",
+                "description": "Eine moderne, mit Tailwind CSS erstellte Animationsbibliothek, die Motion Design einfach, effizient und zugänglich machen soll. Dieses Tool bietet eine nahtlose Integration animierter Komponenten mit vollständiger Unterstützung der Barrierefreiheit. Ideal für Entwickler, die elegante Übergänge und Bewegungseffekte hinzufügen möchten, ohne dabei Leistung oder Benutzerfreundlichkeit zu beeinträchtigen.",
                 "tags": [
-                    "Flutter",
-                    "Firebase",
-                    "MapBox",
-                    "AI Recommendations"
+                    "UI/UX",
+                    "Figma",
+                    "Tailwind CSS",
+                    "API Integration"
+                ],
+                "highlights": [
+                    "Erstellt mit Tailwind CSS",
+                    "Fokus auf Barrierefreiheit",
+                    "Leichtgewichtig und leistungsstark",
+                    "Einfache Integration in moderne Websites"
+                ],
+                "category": "Design"
+            },
+            {
+                "id": 5,
+                "img": "/img/antMotion.png",
+                "title": "Design mit KI",
+                "description": "Motion Design, das mit KI-Integration hervorsticht und entsteht. Einzigartiger Bewegungssensor für einfache Bedienung und Blickfang. Mithilfe der integrierten KI können Sie einzigartige Designs erstellen, die kaum zu übertreffen sind.",
+                "tags": [
+                    "Motion Design",
+                    "Design",
+                    "AI Integration"
                 ],
                 "highlights": [
                     "250,000+ Downloads",
                     "Featured im App Store",
                     "Durchschnittlich 45 Min. tägliche Nutzung"
                 ],
-                "category": "App"
+                "category": "Design"
             },
             {
                 "id": 6,
-                "title": "Online Banking Dashboard",
-                "description": "Benutzerfreundliches Dashboard für Online-Banking mit Echtzeit-Transaktionen, Finanzanalysen und Budgetplanung. Das neue Interface hat die Nutzerzufriedenheit um 40% verbessert.",
+                "img": "/img/linkWarden.png",
+                "title": "SEO & Responsive Website",
+                "description": "Benutzerfreundliche Websites, Portfolios, Blogs usw. mit SEO, damit diese bei der Google-Suchoptimierung hervorstechen. Machen Sie es außerdem schneller, indem Sie die MongoDB-Datenbank verwenden, wir können Tausende von Daten in geringerer Größe speichern.",
                 "tags": [
-                    "Vue.js",
-                    "D3.js",
+                    "React.js",
+                    "Next.js",
                     "Node.js",
-                    "PostgreSQL"
+                    "MongoDB"
                 ],
                 "highlights": [
-                    "40% höhere Nutzerzufriedenheit",
-                    "28% mehr aktive Nutzer",
-                    "Reduzierte Support-Anfragen um 35%"
+                    "Mehr SEO-freundlich",
+                    "Vollständig responsives Webdesign für alle Geräte",
+                    "Reduzierte Datengröße beim Speichern"
                 ],
                 "category": "Web"
             }
@@ -270,25 +279,25 @@
             ]
         }
     },
-    "footer" : {
-        "footerInfo" : "Wir sind eine preisgekrönte Digitalagentur, die innovative Lösungen für moderne Unternehmen entwickelt.",
-        "footerCom" : "Unternehmen",
-        "footerAbt" : "Über uns",
-        "footerTeam" : "Team",
-        "footerCareers" : "Karriere",
-        "footerContact" : "Kontakt",
-        "footerSer" : "Leistungen",
-        "footerWeb" : "Webentwicklung",
-        "footerApp" : "App-Entwicklung",
-        "footerUi" : "UI/UX Design",
-        "footerDigital" : "Digitales Marketing",
-        "footerSubscribe" : "Newsletter abonnieren",
-        "footerSubInfo" : "Erhalten Sie die neuesten Updates und Angebote",
-        "footerEmailPlcae" : "Ihre E-Mail-Adresse",
-        "footerBtn" : "Abonnieren",
-        "footerRights" : "© 2024 Codaro. Alle Rechte vorbehalten.",
-        "footerPolicy" : "Datenschutz",
-        "footerTerms" : "AGB",
-        "footerImprint" : "Impressum"
+    "footer": {
+        "footerInfo": "Wir sind eine preisgekrönte Digitalagentur, die innovative Lösungen für moderne Unternehmen entwickelt.",
+        "footerCom": "Unternehmen",
+        "footerAbt": "Über uns",
+        "footerTeam": "Team",
+        "footerCareers": "Karriere",
+        "footerContact": "Kontakt",
+        "footerSer": "Leistungen",
+        "footerWeb": "Webentwicklung",
+        "footerApp": "App-Entwicklung",
+        "footerUi": "UI/UX Design",
+        "footerDigital": "Digitales Marketing",
+        "footerSubscribe": "Newsletter abonnieren",
+        "footerSubInfo": "Erhalten Sie die neuesten Updates und Angebote",
+        "footerEmailPlcae": "Ihre E-Mail-Adresse",
+        "footerBtn": "Abonnieren",
+        "footerRights": "© 2024 Codaro. Alle Rechte vorbehalten.",
+        "footerPolicy": "Datenschutz",
+        "footerTerms": "AGB",
+        "footerImprint": "Impressum"
     }
 }

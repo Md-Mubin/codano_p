@@ -100,25 +100,28 @@
         "allProjects": [
             {
                 "id": 1,
+                "img" : "/img/eComSS.png",
                 "title": "E-Commerce Platform",
-                "description": "Modern online shopping experience with React and Node.js for a leading fashion retailer. Includes payment processing, product management, and customer accounts. The platform led to a 35% increase in revenue in the first year.",
+                "description": "Modern online shopping experience with React and Node.js for creating various e-commerce websites. Includes payment processing, product management, and customer accounts. The platform led to a 35% increase in revenue in the first year.",
                 "tags": [
-                    "React",
+                    "React.js",
+                    "Next.js",
                     "Node.js",
-                    "MongoDB",
-                    "Stripe"
+                    "MongoDB"
                 ],
                 "highlights": [
-                    "35% revenue increase",
-                    "42% more mobile users",
-                    "28% higher conversion rate"
+                    "Easy to buy and re-sell products",
+                    "Fast and live support chat",
+                    "Updated store items availability",
+                    "User profile to check history, get discount and many more"
                 ],
                 "category": "Web"
             },
             {
                 "id": 2,
-                "title": "Fitness Tracker App",
-                "description": "Mobile application for tracking fitness goals with personalized workout plans, nutrition diary, and progress analysis. The app has been downloaded over 100,000 times and has a rating of 4.8/5 stars.",
+                "img" : "/img/mobileApp.png",
+                "title": "Mobile App Development",
+                "description": "Various mobile app development with react native and authentications to make it easy for the user to use the website through thier phone via mobile apps.",
                 "tags": [
                     "React Native",
                     "Firebase",
@@ -126,77 +129,83 @@
                     "HealthKit"
                 ],
                 "highlights": [
-                    "100,000+ downloads",
-                    "4.8/5 star rating",
-                    "87% user retention"
+                    "Designed specifically for mobile-first experiences",
+                    "Accessible layouts with scalable components",
+                    "Integration-ready for iOS & Android platforms",
+                    "Faster and customizable apps"
                 ],
                 "category": "App"
             },
             {
                 "id": 3,
+                "img" : "/img/strapi.png",
                 "title": "Corporate Branding",
                 "description": "Complete brand design for a technology company, including logo, color palette, typography, and design guidelines for all communication channels. The rebranding led to significantly improved brand perception and recognition in the market.",
                 "tags": [
-                    "Adobe CC",
+                    "Corporate",
                     "Figma",
                     "Brand Strategy",
                     "Motion Design"
                 ],
                 "highlights": [
-                    "42% higher brand awareness",
+                    "Higher brand awareness",
                     "Design excellence award",
-                    "Unified brand presence"
-                ],
-                "category": "Design"
-            },
-            {
-                "id": 4,
-                "title": "Real Estate Portal",
-                "description": "Platform for searching and managing properties with interactive map, detailed filtering options, and virtual property tours. The portal has increased the brokerage rate by 45%.",
-                "tags": [
-                    "Next.js",
-                    "TypeScript",
-                    "PostgreSQL",
-                    "Google Maps API"
-                ],
-                "highlights": [
-                    "45% higher brokerage rate",
-                    "65% more leads",
-                    "Reduced search time by 30%"
+                    "Unique brand presence",
+                    "Outstand in market"
                 ],
                 "category": "Web"
             },
             {
-                "id": 5,
-                "title": "Travel Guide App",
-                "description": "Interactive travel guide with offline maps, attractions, restaurant recommendations, and personalized travel routes. The app has been recommended in several travel magazines.",
+                "id": 4,
+                "img" : "/img/rombo.png",
+                "title": "Motion UI Library",
+                "description": "A modern animation library built with Tailwind CSS, designed to make motion design simple, performant and accessible. This tool provides seamless integration of animated components with full accessibility support. Ideal for developers looking to add sleek transitions and motion effects without secrificing performance or usability. ",
                 "tags": [
-                    "Flutter",
-                    "Firebase",
-                    "MapBox",
-                    "AI Recommendations"
+                    "UI/UX",
+                    "Figma",
+                    "Tailwind CSS",
+                    "API Integration"
+                ],
+                "highlights": [
+                    "Built with Tailwind CSS",
+                    "Focus on accessibility",
+                    "Lightweight and high performance",
+                    "Easy integration in modern websites"
+                ],
+                "category": "Design"
+            },
+            {
+                "id": 5,
+                "img" : "/img/antMotion.png",
+                "title": "Design with AI",
+                "description": "Motion Design which will outstand and create with Ai integration. Unique motion tanplete for easy to use and eye catching. With build in AI help, you can create unique design which is hard to beat.",
+                "tags": [
+                    "Motion Design",
+                    "Design",
+                    "AI Integration"
                 ],
                 "highlights": [
                     "250,000+ downloads",
                     "Featured in App Store",
                     "Average 45 min daily usage"
                 ],
-                "category": "App"
+                "category": "Design"
             },
             {
                 "id": 6,
-                "title": "Online Banking Dashboard",
-                "description": "User-friendly dashboard for online banking with real-time transactions, financial analysis, and budget planning. The new interface has improved user satisfaction by 40%.",
+                "img" : "/img/linkWarden.png",
+                "title": "SEO & Responsive Website",
+                "description": "Websites, portfolio, blog etc websites that are user friendly and SEO to make these outstand on google search optimization. Also, make it faster by using MongoDB Database we can store thousands of data in lower size.",
                 "tags": [
-                    "Vue.js",
-                    "D3.js",
+                    "React.js",
+                    "Next.js",
                     "Node.js",
-                    "PostgreSQL"
+                    "MongoDB"
                 ],
                 "highlights": [
-                    "40% higher user satisfaction",
-                    "28% more active users",
-                    "Reduced support requests by 35%"
+                    "More SEO Friendly",
+                    "Fully functional Responsive web-page for all device ",
+                    "Reduced data size while store"
                 ],
                 "category": "Web"
             }
