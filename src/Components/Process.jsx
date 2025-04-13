@@ -14,13 +14,13 @@ const Process = () => {
             image: "/img/stretegy.jpg"
         },
         {
-            image: "img/concept.jpg"
+            image: "/img/concept.jpg"
         },
         {
-            image: "https://images.unsplash.com/photo-1632910121591-29e2484c0259?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/img/testing.jpg"
         },
         {
-            image: "https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/img/optimize.jpg"
         }
     ]
 

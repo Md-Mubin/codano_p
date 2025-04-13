@@ -4,7 +4,6 @@
         "services": "Services",
         "process": "Process",
         "portfolio": "Portfolio",
-        "testimonials": "Testimonials",
         "about": "About",
         "contact": "Contact"
     },
@@ -254,6 +253,9 @@
             "companyPlaceholder": "Your Company",
             "budget": "Budget",
             "budgetPlaceholder": "Please Select",
+            "budget1" : "$0 - $500",
+            "budget2" : "$500 - $1000",
+            "budget3" : "$1000 - $1500",
             "projectDes": "Project Description *",
             "projectDesPlaceholder": "Describe Your Project",
             "sendBtn": "Send Inquiry"

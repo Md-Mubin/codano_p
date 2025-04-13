@@ -23,6 +23,8 @@ const Contact = () => {
                     <div className="flex flex-col lg:flex-row lg:items-start items-center justify-between mt-24 tracking-widest gap-10">
                         <form className="w-full lg:w-[730px] p-6 shadow-lg rounded-lg">
                             <ul>
+
+                                {/* name */}
                                 <li>
                                     <label className="block text-sm font-medium mt-2">{t.contact?.form.name}*</label>
                                     <input
@@ -31,6 +33,8 @@ const Contact = () => {
                                         className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none"
                                     />
                                 </li>
+
+                                {/* email */}
                                 <li>
                                     <label className="block text-sm font-medium mt-2">{t.contact?.form.email}*</label>
                                     <input
@@ -39,9 +43,8 @@ const Contact = () => {
                                         className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none"
                                     />
                                 </li>
-                            </ul>
 
-                            <ul>
+                                {/* number */}
                                 <li>
                                     <label className="block text-sm font-medium mt-2">{t.contact?.form.phone}</label>
                                     <input
@@ -50,6 +53,8 @@ const Contact = () => {
                                         className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none"
                                     />
                                 </li>
+
+                                {/* company name */}
                                 <li>
                                     <label className="block text-sm font-medium mt-2">{t.contact?.form.company}</label>
                                     <input
@@ -58,23 +63,28 @@ const Contact = () => {
                                         className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none"
                                     />
                                 </li>
+
+                                {/* budget selection */}
+                                <li>
+                                    <label className="block text-sm font-medium mt-2">{t.contact?.form.budget}</label>
+                                    <select className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none">
+                                        <option>{t.contact?.form.budgetPlaceholder}</option>
+                                        <option value="under-500">{t.contact?.form.budget1}</option>
+                                        <option value="500-1000">{t.contact?.form.budget2}</option>
+                                        <option value="1000-5000">{t.contact?.form.budget3}</option>
+                                    </select>
+                                </li>
+
+                                {/* massage area */}
+                                <li>
+                                    <label className="block text-sm font-medium mt-2">{t.contact?.form.projectDes}*</label>
+                                    <textarea
+                                        placeholder={t.contact?.form.projectDesPlaceholder}
+                                        rows="4"
+                                        className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none"
+                                    ></textarea>
+                                </li>
                             </ul>
-
-                            <div>
-                                <label className="block text-sm font-medium mt-2">{t.contact?.form.budget}</label>
-                                <select className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none">
-                                    <option>{t.contact?.form.budgetPlaceholder}</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label className="block text-sm font-medium mt-2">{t.contact?.form.projectDes}*</label>
-                                <textarea
-                                    placeholder={t.contact?.form.projectDesPlaceholder}
-                                    rows="4"
-                                    className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none"
-                                ></textarea>
-                            </div>
 
                             <button className="bg-gray-100 text-[#000] w-full py-4 mt-2 rounded-md hover:bg-gray-300 transition-colors cursor-pointer">
                                 {t.contact?.form.sendBtn}

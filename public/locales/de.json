@@ -4,7 +4,6 @@
         "services": "Leistungen",
         "process": "Prozess",
         "portfolio": "Portfolio",
-        "testimonials": "Referenzen",
         "about": "Über uns",
         "contact": "Kontakt"
     },
@@ -254,6 +253,9 @@
             "companyPlaceholder": "Ihr Unternehmen",
             "budget": "Budget",
             "budgetPlaceholder": "Bitte wählen",
+            "budget1" : "£0 - £500",
+            "budget2" : "£500 - £1000",
+            "budget3" : "£1000 - £1500",
             "projectDes": "Projektbeschreibung ",
             "projectDesPlaceholder": "Beschreiben Sie Ihr Projekt",
             "sendBtn": "Anfrage senden"
