@@ -57,7 +57,7 @@ const Footer = () => {
                                         ? <span className='w-[133.13] h-[40px] px-6 py-2 hover:bg-blue-100 duration-200 rounded-xl flex justify-center items-center'><span className='w-[20px] h-[20px] border-t-2 border-[#000] animate-spin rounded-full top-0'></span></span>
                                         : <button className='px-6 py-2 hover:bg-blue-100 duration-200 rounded-xl cursor-pointer'>{t.footer?.footerBtn}</button>
                                 } */}
-                                <button className='w-[140px] h-[40px] px-6 py-2 border-2 border-[#888888] hover:bg-[#e4e4e4] hover:border-[#e4e4e4] duration-200 rounded-lg cursor-pointer'>
+                                <button className={`w-[140px] h-[40px] px-6 py-2 border-2 border-[#888888] hover:bg-[#e4e4e4] hover:border-[#e4e4e4] duration-200 rounded-lg cursor-pointer flex justify-center items-center ${submiting && "pointer-events-none"}`}>
                                 {
                                     submiting 
                                     ? <span className='w-[20px] h-[20px] border-t-2 border-[#000] animate-spin rounded-full top-0'></span>
