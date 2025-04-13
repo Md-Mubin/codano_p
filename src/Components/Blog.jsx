@@ -36,6 +36,7 @@ const Blog = () => {
                                     key={items.id}
                                     className='shadow-lg hover:shadow-xl pb-10 rounded-2xl overflow-hidden'>
 
+                                    {/* blog images */}
                                     <li>
                                         {
                                             blogImg[index] && (

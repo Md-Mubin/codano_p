@@ -16,7 +16,7 @@ const Work = () => {
 
     // all the filteration
     const categories = ["All", "Web", "App", "Design"]
-    const filteredProjects = selectedCategory === "All"
+    const filteredProjects = selectedCategory === "All" // for all cards
         ? projects
         : projects.filter(project => project.category === selectedCategory)
 
@@ -29,6 +29,8 @@ const Work = () => {
                     <CommonHeadInfo commonHeadInfo={t.work?.headInfo} />
 
                     <div className='mt-10'>
+
+                        {/* for filtering the cards */}
                         <div className="flex flex-wrap justify-center gap-6 mb-10">
                             {
                                 categories.map((category, index) => (
@@ -41,16 +43,18 @@ const Work = () => {
                             }
                         </div>
 
+                        {/* all cards area */}
                         <div className='flex flex-wrap justify-center gap-10'>
                             {
                                 filteredProjects.map((project, index) => (
                                     <ul key={project.id} className="bg-white shadow-lg hover:shadow-xl rounded-xl w-[475px] overflow-hidden">
 
+                                        {/* image */}
                                         <li>
                                             <img className='h-[250px] w-full' loading='lazy' src={project.img} alt={``} />
                                         </li>
 
-
+                                        {/* projects tags */}
                                         <li className="mt-4 p-4 flex flex-wrap gap-2">
                                             {
                                                 project.tags.map((tag, i) => (
