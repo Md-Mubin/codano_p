@@ -19,6 +19,7 @@ const Footer = () => {
     const [showTerms, setShowTerms] = useState(false)
     const [showPolicy, setShowPolicy] = useState(false)
     const [showImprint, setShowImprint] = useState(false)
+    const [msg, setMsg] = useState("")
 
     // for submiting email
     const handleSubmit = async (e) => {
@@ -28,12 +29,22 @@ const Footer = () => {
         // posting data to backend server to store in MongoDB database
         try {
             await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
-                .then(function(response) {
-                        console.log(response)
+                .then(function (response) {
+                    if (response.status === 200 && response.data) {
+                        setMsg(response.data.success)
+                    }
+
+                    else if (response.status === 400 && response.data) {
+                        setMsg(response.data.errMsg)
+                    }
                 })
         } catch (error) {
-            console.error("Cant pass")
+            console.error(response.data.serverErr)
         }
+
+        setTimeout(() => {
+            setMsg("")
+        }, 800);
 
         // after completing store the email in database
         setEmail("") // email input will be empty
@@ -76,7 +87,7 @@ const Footer = () => {
                             {/* email subscibe form */}
                             <form onSubmit={handleSubmit} className='flex items-center gap-4'>
                                 <div className='relative'>
-                                    <label className='absolute top-[-24px] right-0 text-[#888888]'>asdasd</label>
+                                    <label className='absolute top-[-24px] right-0 text-[#888888]'>{msg}</label>
                                     <input
                                         required
                                         name='email'

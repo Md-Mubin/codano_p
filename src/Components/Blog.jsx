@@ -10,7 +10,6 @@ const Blog = () => {
 
     const blogCards = t.blog?.blogCards || []
     const [showCard, setShowCard] = useState(null)
-    console.log(blogCards)
 
     return (
         <>
