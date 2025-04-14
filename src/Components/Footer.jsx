@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { RiShareLine } from "react-icons/ri"
 import { LuLinkedin } from "react-icons/lu"
 import { useLanguage } from '../../public/contexts/LanguageContext'
@@ -28,10 +28,8 @@ const Footer = () => {
         // posting data to backend server to store in MongoDB database
         try {
             await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
-                .then((response) => {
-                    useEffect(()=>{
+                .then(function(response) {
                         console.log(response)
-                    },[])
                 })
         } catch (error) {
             console.error("Cant pass")
