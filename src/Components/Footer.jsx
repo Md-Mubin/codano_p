@@ -27,20 +27,21 @@ const Footer = () => {
         setSubmiting(true)
 
         // posting data to backend server to store in MongoDB database
-        await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
-            .then(function (response) {
-                if (response.status === response.response.status) {
-                    setMsg(response.response.data.success)
-                }
+        try {
 
-                else if (response.status === response.response.status) {
-                    setMsg(response.response.data.errMsg)
-                }
+            const response = await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
+            if (response.status === 200) {
+                setMsg(response.data.success)
+            }
 
-                else if(response.status === 500 && response.data){
-                    setMsg(response.response.data.serverErr)
-                }
-            })
+            else if (response.status === 400) {
+                setMsg(response.response.data.errMsg)
+            }
+        } catch (error) {
+            if (error.response && error.response.status === 500) {
+                setMsg(error.response.data.serverErr)
+            }
+        }
 
 
         setTimeout(() => {
