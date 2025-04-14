@@ -29,16 +29,16 @@ const Footer = () => {
         // posting data to backend server to store in MongoDB database
         await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
             .then(function (response) {
-                if (response.status === 200 && response.data) {
-                    setMsg(response.data.success)
+                if (response.status === response.response.status) {
+                    setMsg(response.response.data.success)
                 }
 
-                else if (response.status === 400 && response.data) {
-                    setMsg(response.data.errMsg)
+                else if (response.status === response.response.status) {
+                    setMsg(response.response.data.errMsg)
                 }
 
-                else if(response.status === 400 && response.data){
-                    setMsg(response.data.serverErr)
+                else if(response.status === 500 && response.data){
+                    setMsg(response.response.data.serverErr)
                 }
             })
 
