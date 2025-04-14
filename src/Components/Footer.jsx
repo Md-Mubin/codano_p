@@ -35,7 +35,7 @@ const Footer = () => {
             }
 
             else if (response.status === 400) {
-                setMsg(response.response.data.errMsg)
+                setMsg(response.data.errMsg)
             }
         } catch (error) {
             if (error.response && error.response.status === 500) {
@@ -46,7 +46,7 @@ const Footer = () => {
 
         setTimeout(() => {
             setMsg("")
-        }, 800);
+        }, 3000);
 
         // after completing store the email in database
         setEmail("") // email input will be empty
