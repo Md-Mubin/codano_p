@@ -215,21 +215,27 @@
         "blogCards": [
             {
                 "id": 1,
+                "img" : "https://images.unsplash.com/photo-1657812159055-7bae416f386d?q=80&w=2144&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 "date": "March 15, 2024",
                 "blogHead": "The Future of Web Design: Trends for 2024",
-                "blogDescription": "Discover the latest design trends that will shape the web in the coming year, from 3D elements to micro-interactions. Over the past few years, web design has evolved rapidly...."
+                "blogDescription": "Discover the latest design trends that will shape the web in the coming year, from 3D elements to micro-interactions. Over the past few years, web design has evolved rapidly....",
+                "fullDescription" : "Discover the latest design trends that will shape the web in the coming year, from 3D elements to micro-interactions. Web design is evolving rapidly, focusing more on user engagement and interactivity. Elements like animated scroll effects, bold typography, and dark mode are becoming essential features rather than just add-ons. Designers are leaning into 3D visuals and immersive layouts to create more realistic and engaging experiences. Micro-interactions, such as hover animations and feedback alerts, help users feel more connected to the interface. Accessibility is also playing a huge role, making websites more inclusive for all users. With AI-driven content personalization and voice UI features emerging, websites are becoming smarter and more responsive. As we move forward, combining aesthetics with performance and usability will be key to effective design. Stay ahead by experimenting, iterating, and keeping the user at the center of every decision."
             },
             {
                 "id": 2,
+                "img" : "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 "date": "February 28, 2024",
                 "blogHead": "Why Performance is Crucial for Your Website",
-                "blogDescription": "A fast website is not only good for user experience but also for SEO and conversion rates. In today's digital landscape, where users are becoming increasingly impatient and...."
+                "blogDescription": "A fast website is not only good for user experience but also for SEO and conversion rates. In today's digital landscape, where users are becoming increasingly impatient and....",
+                "fullDescription" : "A fast website is not only good for user experience but also for SEO and conversion rates. In today's digital world, users expect instant access to content. Even a one-second delay can lead to higher bounce rates and lost opportunities. Speed impacts how long users stay, how they interact, and whether they return. Search engines also prioritize fast-loading sites, which means better visibility and rankings. Optimizing images, minimizing JavaScript, and using efficient hosting are key strategies. Performance is especially important on mobile, where slower networks can exaggerate delays. A quick, responsive site builds trust and encourages users to take action. Whether it's reading a blog or making a purchase, speed plays a major role. In the end, a fast site isn't just a technical win — it's a business advantage."
             },
             {
                 "id": 3,
+                "img" : "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 "date": "February 10, 2024",
                 "blogHead": "The Role of AI in Modern Web Development",
-                "blogDescription": "Artificial intelligence is revolutionizing the way we develop websites and applications. In recent years, AI-powered tools and technologies have had an enormous impact on web...."
+                "blogDescription": "Artificial intelligence is revolutionizing the way we develop websites and applications. In recent years, AI-powered tools and technologies have had an enormous impact on web....",
+                "fullDescription" : "Artificial intelligence is revolutionizing the way we develop websites and applications. In recent years, AI-powered tools have transformed how we design, code, and optimize digital experiences. From automated design suggestions to content generation and smart chatbots, AI is making development faster and more efficient. Developers can now use AI to detect bugs, write code snippets, and personalize user experiences in real time. Tools like ChatGPT and GitHub Copilot are streamlining workflows and reducing development time. On the user side, AI helps deliver tailored content, improving engagement and satisfaction. It's also enabling advanced analytics that help teams make data-driven decisions. As AI continues to evolve, it's becoming an essential part of modern web development — not just a trend, but a core technology shaping the future."
             }
         ]
     },

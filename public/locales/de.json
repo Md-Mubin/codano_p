@@ -215,21 +215,27 @@
         "blogCards": [
             {
                 "id": 1,
+                "img" : "https://images.unsplash.com/photo-1657812159055-7bae416f386d?q=80&w=2144&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 "date": "15. März 2024",
                 "blogHead": "Die Zukunft des Web Designs: Trends für 2024",
-                "blogDescription": "Entdecken Sie die neuesten Design-Trends, die das Web im kommenden Jahr prägen werden, von 3D-Elementen bis zu Micro-Interaktionen. In den letzten Jahren hat sich das...."
+                "blogDescription": "Entdecken Sie die neuesten Design-Trends, die das Web im kommenden Jahr prägen werden, von 3D-Elementen bis zu Micro-Interaktionen. In den letzten Jahren hat sich das....",
+                "fullDescription" : "Entdecken Sie die neuesten Designtrends, die das Web im kommenden Jahr prägen werden - von 3D-Elementen bis hin zu Mikrointeraktionen. Webdesign entwickelt sich rasant weiter und legt den Fokus zunehmend auf Nutzereinbindung und Interaktivität. Elemente wie animierte Scroll-Effekte, prägnante Typografie und der Dunkelmodus werden zu unverzichtbaren Features und nicht mehr nur zu Add-ons. Designer setzen verstärkt auf 3D-Grafiken und immersive Layouts, um realistischere und ansprechendere Erlebnisse zu schaffen. Mikrointeraktionen wie Hover-Animationen und Feedback-Warnmeldungen helfen Nutzern, sich stärker mit der Benutzeroberfläche verbunden zu fühlen. Auch Barrierefreiheit spielt eine große Rolle und macht Websites für alle Nutzer zugänglicher. Mit der zunehmenden KI-gestützten Inhaltspersonalisierung und Sprach-UI-Funktionen werden Websites intelligenter und reaktionsschneller. Die Kombination von Ästhetik mit Leistung und Benutzerfreundlichkeit wird in Zukunft der Schlüssel zu effektivem Design sein. Bleiben Sie an der Spitze, indem Sie experimentieren, iterieren und den Nutzer bei jeder Entscheidung in den Mittelpunkt stellen."
             },
             {
                 "id": 2,
+                "img" : "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 "date": "28. Februar 2024",
                 "blogHead": "Warum Performance für Ihre Website entscheidend ist",
-                "blogDescription": "Eine schnelle Website ist nicht nur gut für die Benutzererfahrung, sondern auch für SEO und Conversion-Raten. In der heutigen digitalen Landschaft, wo Benutzer...."
+                "blogDescription": "Eine schnelle Website ist nicht nur gut für die Benutzererfahrung, sondern auch für SEO und Conversion-Raten. In der heutigen digitalen Landschaft, wo Benutzer....",
+                "fullDescription" : "Eine schnelle Website ist nicht nur gut für die Nutzererfahrung, sondern auch für SEO und Conversion-Raten. In der heutigen digitalen Welt erwarten Nutzer sofortigen Zugriff auf Inhalte. Schon eine Verzögerung von einer Sekunde kann zu höheren Absprungraten und verpassten Chancen führen. Die Geschwindigkeit beeinflusst, wie lange Nutzer verweilen, wie sie interagieren und ob sie wiederkommen. Suchmaschinen priorisieren außerdem schnell ladende Websites, was zu besserer Sichtbarkeit und besseren Rankings führt. Die Optimierung von Bildern, die Minimierung von JavaScript und die Nutzung eines effizienten Hostings sind wichtige Strategien. Die Leistung ist besonders auf Mobilgeräten wichtig, wo langsamere Netzwerke Verzögerungen verstärken können. Eine schnelle, reaktionsschnelle Website schafft Vertrauen und animiert Nutzer zum Handeln. Ob beim Lesen eines Blogs oder beim Tätigen eines Einkaufs - Geschwindigkeit spielt eine entscheidende Rolle. Letztendlich ist eine schnelle Website nicht nur ein technischer Gewinn, sondern ein Geschäftsvorteil."
             },
             {
                 "id": 3,
+                "img" : "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 "date": "10. Februar 2024",
                 "blogHead": "Die Rolle von KI in der modernen Webentwicklung",
-                "blogDescription": "Künstliche Intelligenz revolutioniert die Art und Weise, wie wir Websites und Anwendungen entwickeln. In den letzten Jahren haben KI-gestützte Tools und Technologien einen...."
+                "blogDescription": "Künstliche Intelligenz revolutioniert die Art und Weise, wie wir Websites und Anwendungen entwickeln. In den letzten Jahren haben KI-gestützte Tools und Technologien einen....",
+                "fullDescription" : "Künstliche Intelligenz revolutioniert die Entwicklung von Websites und Anwendungen. KI-gestützte Tools haben in den letzten Jahren die Art und Weise verändert, wie wir digitale Erlebnisse gestalten, programmieren und optimieren. Von automatisierten Designvorschlägen über die Inhaltserstellung bis hin zu intelligenten Chatbots - KI beschleunigt und optimiert die Entwicklung. Entwickler können KI nun nutzen, um Fehler zu erkennen, Code-Snippets zu schreiben und Nutzererlebnisse in Echtzeit zu personalisieren. Tools wie ChatGPT und GitHub Copilot optimieren Arbeitsabläufe und verkürzen die Entwicklungszeit. Auf Nutzerseite hilft KI, maßgeschneiderte Inhalte bereitzustellen und so Engagement und Zufriedenheit zu steigern. Zudem ermöglicht sie erweiterte Analysen, die Teams bei datenbasierten Entscheidungen unterstützen. Mit der Weiterentwicklung von KI wird sie zu einem wesentlichen Bestandteil der modernen Webentwicklung - nicht nur ein Trend, sondern eine zukunftsweisende Kerntechnologie."
             }
         ]
     },
