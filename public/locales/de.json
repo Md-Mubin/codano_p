@@ -215,7 +215,7 @@
         "blogCards": [
             {
                 "id": 1,
-                "img" : "https://images.unsplash.com/photo-1657812159055-7bae416f386d?q=80&w=2144&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "img" : "/img/blog1.jpg",
                 "date": "15. März 2024",
                 "blogHead": "Die Zukunft des Web Designs: Trends für 2024",
                 "blogDescription": "Entdecken Sie die neuesten Design-Trends, die das Web im kommenden Jahr prägen werden, von 3D-Elementen bis zu Micro-Interaktionen. In den letzten Jahren hat sich das....",
@@ -223,7 +223,7 @@
             },
             {
                 "id": 2,
-                "img" : "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "img" : "/img/blog2.jpg",
                 "date": "28. Februar 2024",
                 "blogHead": "Warum Performance für Ihre Website entscheidend ist",
                 "blogDescription": "Eine schnelle Website ist nicht nur gut für die Benutzererfahrung, sondern auch für SEO und Conversion-Raten. In der heutigen digitalen Landschaft, wo Benutzer....",
@@ -231,7 +231,7 @@
             },
             {
                 "id": 3,
-                "img" : "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "img" : "/img/blog3.jpg",
                 "date": "10. Februar 2024",
                 "blogHead": "Die Rolle von KI in der modernen Webentwicklung",
                 "blogDescription": "Künstliche Intelligenz revolutioniert die Art und Weise, wie wir Websites und Anwendungen entwickeln. In den letzten Jahren haben KI-gestützte Tools und Technologien einen....",

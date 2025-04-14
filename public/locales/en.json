@@ -215,7 +215,7 @@
         "blogCards": [
             {
                 "id": 1,
-                "img" : "https://images.unsplash.com/photo-1657812159055-7bae416f386d?q=80&w=2144&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "img" : "/img/blog1.jpg",
                 "date": "March 15, 2024",
                 "blogHead": "The Future of Web Design: Trends for 2024",
                 "blogDescription": "Discover the latest design trends that will shape the web in the coming year, from 3D elements to micro-interactions. Over the past few years, web design has evolved rapidly....",
@@ -223,7 +223,7 @@
             },
             {
                 "id": 2,
-                "img" : "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "img" : "/img/blog2.jpg",
                 "date": "February 28, 2024",
                 "blogHead": "Why Performance is Crucial for Your Website",
                 "blogDescription": "A fast website is not only good for user experience but also for SEO and conversion rates. In today's digital landscape, where users are becoming increasingly impatient and....",
@@ -231,7 +231,7 @@
             },
             {
                 "id": 3,
-                "img" : "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "img" : "/img/blog3.jpg",
                 "date": "February 10, 2024",
                 "blogHead": "The Role of AI in Modern Web Development",
                 "blogDescription": "Artificial intelligence is revolutionizing the way we develop websites and applications. In recent years, AI-powered tools and technologies have had an enormous impact on web....",
