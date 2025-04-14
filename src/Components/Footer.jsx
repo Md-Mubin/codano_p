@@ -26,10 +26,14 @@ const Footer = () => {
         setSubmiting(true)
 
         // posting data to backend server to store in MongoDB database
-        await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
-            .then((response) => {
-                console.log(response)
-            })
+        try {
+            await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
+                .then((response) => {
+                    console.log(response)
+                })
+        } catch (error) {
+            console.error("Cant pass")
+        }
 
         // after completing store the email in database
         setEmail("") // email input will be empty
