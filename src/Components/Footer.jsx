@@ -1,30 +1,42 @@
 "use client"
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { RiShareLine } from "react-icons/ri"
 import { LuLinkedin } from "react-icons/lu"
 import { useLanguage } from '../../public/contexts/LanguageContext'
 import axios from 'axios'
+import PrivatePolicy from '@/Extra/PrivatePolicy'
+import TermsService from '@/Extra/TermsService'
+import Imprint from '@/Extra/Imprint'
 
 const Footer = () => {
 
     const { t } = useLanguage()
 
+    // all hooks
     const [email, setEmail] = useState("")
     const [submiting, setSubmiting] = useState(false)
+    const [showTerms, setShowTerms] = useState(false)
+    const [showPolicy, setShowPolicy] = useState(false)
+    const [showImprint, setShowImprint] = useState(false)
 
+    // for submiting email
     const handleSubmit = async (e) => {
         e.preventDefault()
         setSubmiting(true)
+
+        // posting data to backend server to store in MongoDB database
         await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
-        setEmail("")
-        setSubmiting(false)
+
+        // after completing store the email in database
+        setEmail("") // email input will be empty
+        setSubmiting(false) //submitting will be false
     }
 
     return (
         <>
             {/* ================== Footer Part Start ================== */}
-            <footer className='py-20 border-t-1 border-[#999999]'>
+            <footer className='py-20 border-t-1 border-[#999999] relative'>
                 <div className="container">
                     <ul className='flex flex-wrap lg:flex-nowrap justify-between pb-10 gap-10 lg:gap-4'>
                         <li className='w-[348px] flex flex-col gap-4 tracking-widest'>
@@ -44,10 +56,10 @@ const Footer = () => {
                         {/* footer sercvices */}
                         <li className='w-[250px] flex flex-col gap-4 tracking-widest'>
                             <h3 className='font-bold text-xl'>{t.footer?.footerSer}</h3>
-                            <Link href="#">{t.footer?.footerWeb}</Link>
-                            <Link href="#">{t.footer?.footerApp}</Link>
-                            <Link href="#">{t.footer?.footerUi}</Link>
-                            <Link href="#">{t.footer?.footerDigital}</Link>
+                            <Link href="#work" className='hover:text-[#888888] duration-200' >{t.footer?.footerWeb}</Link>
+                            <Link href="#work" className='hover:text-[#888888] duration-200' >{t.footer?.footerApp}</Link>
+                            <Link href="#work" className='hover:text-[#888888] duration-200' >{t.footer?.footerUi}</Link>
+                            <Link href="#work" className='hover:text-[#888888] duration-200' >{t.footer?.footerDigital}</Link>
                         </li>
 
                         <li className='flex flex-col gap-4 tracking-widest'>
@@ -77,13 +89,41 @@ const Footer = () => {
                         </li>
 
                         <li className='flex gap-6'>
-                            <a href="#" className='hover:translate-y-[-2px] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02]'>{t.footer?.footerPolicy}</a>
-                            <a href="#" className='hover:translate-y-[-2px] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02]'>{t.footer?.footerTerms}</a>
-                            <a href="#" className='hover:translate-y-[-2px] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02]'>{t.footer?.footerImprint}</a>
+                            <button onClick={() => setShowPolicy(!showPolicy)} className='hover:translate-y-[-2px] hover:text-[#888888] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02] cursor-pointer'>{t.footer?.footerPolicy}</button>
+                            <button onClick={() => setShowTerms(!showTerms)} className='hover:translate-y-[-2px] hover:text-[#888888] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02] cursor-pointer'>{t.footer?.footerTerms}</button>
+                            <button onClick={() => setShowImprint(!showImprint)} className='hover:translate-y-[-2px] hover:text-[#888888] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02] cursor-pointer'>{t.footer?.footerImprint}</button>
                         </li>
                     </ul>
                 </div>
+
             </footer>
+
+            {/* Terms & Service */}
+            {
+                showTerms && (
+                    <div className={`w-full top-0 fixed inset-0 z-50 overflow-y-auto`}>
+                        <TermsService show={showTerms} close={() => setShowTerms(false)} />
+                    </div>
+                )
+            }
+
+            {/* private policy */}
+            {
+                showPolicy && (
+                    <div className={`w-full top-0 fixed inset-0 z-50 overflow-y-auto`}>
+                        <PrivatePolicy show={showPolicy} close={() => setShowPolicy(false)} />
+                    </div>
+                )
+            }
+
+            {/* private policy */}
+            {
+                showImprint && (
+                    <div className={`w-full top-0 fixed inset-0 z-50 overflow-y-auto`}>
+                        <Imprint show={showImprint} close={() => setShowImprint(false)} />
+                    </div>
+                )
+            }
             {/* ================== Footer Part End ================== */}
         </>
     )

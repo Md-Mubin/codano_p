@@ -259,9 +259,9 @@
             "companyPlaceholder": "Your Company",
             "budget": "Budget",
             "budgetPlaceholder": "Please Select",
-            "budget1" : "$0 - $500",
-            "budget2" : "$500 - $1000",
-            "budget3" : "$1000 - $1500",
+            "budget1" : "$500 - $1000",
+            "budget2" : "$1000 - $2500",
+            "budget3" : "$2500 - $10000",
             "projectDes": "Project Description *",
             "projectDesPlaceholder": "Describe Your Project",
             "sendBtn": "Send Inquiry"
@@ -304,7 +304,7 @@
         "footerEmailPlcae": "Your Email Address",
         "footerBtn": "Subscribe",
         "footerRights": "© 2024 Codaro. All rights reserved.",
-        "footerPolicy": "Privacy Policy",
+        "footerPolicy": "Private Policy",
         "footerTerms": "Terms of Service",
         "footerImprint": "Imprint"
     }

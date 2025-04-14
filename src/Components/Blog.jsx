@@ -59,8 +59,8 @@ const Blog = () => {
                         {/* read more card */}
                         {
                             showCard && (
-                                <div onClick={() => setShowCard(null)} className="fixed inset-0 bg-[#000000cc] flex justify-center items-center z-50">
-                                    <ul onClick={(e) => e.stopPropagation()} className='w-[1200px] p-10 bg-[#fff] rounded-xl relative z-[100]'>
+                                <div onClick={() => setShowCard(null)} className="fixed inset-0 bg-[#000000cc] xl:flex justify-center items-center z-50">
+                                    <ul onClick={(e) => e.stopPropagation()} className='xl:w-[1200px] pt-10 lg:p-10 bg-[#fff] rounded-xl relative z-[100]'>
                                         <li>
                                             <img className='w-[500px] h-[300px]' src={showCard.img} alt="" />
                                         </li>
@@ -77,7 +77,7 @@ const Blog = () => {
                                             {showCard.fullDescription}
                                         </li>
 
-                                        <li onClick={()=>setShowCard(null)} className='absolute top-10 right-10 text-4xl hover:text-[#598bc7] cursor-pointer'>
+                                        <li onClick={()=>setShowCard(null)} className='absolute top-1 sm:top-10 right-2 sm:right-10 text-4xl hover:text-[#598bc7] cursor-pointer'>
                                             <MdOutlineCancel />
                                         </li>
                                     </ul>
