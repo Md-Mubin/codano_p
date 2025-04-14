@@ -39,7 +39,7 @@ const Footer = () => {
                     }
                 })
         } catch (error) {
-            console.error(response.data.serverErr)
+            setMsg(response.data.serverErr)
         }
 
         setTimeout(() => {
