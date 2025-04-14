@@ -1,8 +1,11 @@
 import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import { Roboto } from 'next/font/google';
-import Footer from "@/Components/Footer";
+// import Footer from "@/Components/Footer";
 import { LanguageProvider } from "../../public/contexts/LanguageContext";
+import dynamic from "next/dynamic";
+
+const Footer = dynamic(() => import("@/Components/Footer"), { ssr: false });
 
 const interFont = Roboto({ weight: "400", preload: false })
 
