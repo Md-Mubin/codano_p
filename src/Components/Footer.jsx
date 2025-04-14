@@ -27,9 +27,9 @@ const Footer = () => {
 
         // posting data to backend server to store in MongoDB database
         await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
-        .then((response)=>{
-            console.log(response)
-        })
+            .then((response) => {
+                console.log(response)
+            })
 
         // after completing store the email in database
         setEmail("") // email input will be empty
@@ -73,7 +73,15 @@ const Footer = () => {
                             <form onSubmit={handleSubmit} className='flex items-center gap-4'>
                                 <div className='relative'>
                                     <label className='absolute top-[-24px] right-0 text-[#888888]'>asdasd</label>
-                                    <input required value={email} onChange={(e) => setEmail(e.target.value)} type="email" className='sm:w-[350px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm' placeholder={t.footer?.footerEmailPlcae} />
+                                    <input
+                                        required
+                                        name='email'
+                                        type="email"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        placeholder={t.footer?.footerEmailPlcae}
+                                        className='sm:w-[350px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm'
+                                    />
                                 </div>
 
                                 <button className={`w-[140px] h-[40px] px-6 py-2 border-2 border-[#888888] hover:bg-[#e4e4e4] hover:border-[#e4e4e4] duration-200 rounded-lg cursor-pointer flex justify-center items-center ${submiting && "pointer-events-none"}`}>
