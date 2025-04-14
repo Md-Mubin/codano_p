@@ -29,7 +29,9 @@ const Footer = () => {
         try {
             await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
                 .then((response) => {
-                    console.log(response)
+                    useEffect(()=>{
+                        console.log(response)
+                    },[])
                 })
         } catch (error) {
             console.error("Cant pass")
