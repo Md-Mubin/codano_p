@@ -29,7 +29,8 @@ const Footer = () => {
         // posting data to backend server to store in MongoDB database
         // try {
 
-             await axios.post("https://test-server-eta-six.vercel.app/api/v1/emailSubscribers", { email })
+            const res = await axios.post("https://test-server-eta-six.vercel.app/api/v1/emailSubscribers", { email }, {withCredentials : true})
+            console.log(res)
             // if (response.status === 200) {
             //     setMsg(response.data.success)
             // }
