@@ -20,7 +20,7 @@ const Footer = () => {
     const [showPolicy, setShowPolicy] = useState(false)
     const [showImprint, setShowImprint] = useState(false)
     const [msg, setMsg] = useState("")
-
+console.log(msg)
     // for submiting email
     const handleSubmit = async (e) => {
         e.preventDefault()
