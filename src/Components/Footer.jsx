@@ -20,7 +20,7 @@ const Footer = () => {
     const [showPolicy, setShowPolicy] = useState(false)
     const [showImprint, setShowImprint] = useState(false)
     const [msg, setMsg] = useState("")
-console.log(msg)
+
     // for submiting email
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -28,19 +28,15 @@ console.log(msg)
 
         // posting data to backend server to store in MongoDB database
         try {
-
             const response = await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
             if (response.data.success) {
                 setMsg(response.data.success)
             }
 
+        } catch (error) {
             if (response.data.errMsg) {
                 setMsg(response.data.errMsg)
             }
-        } catch (error) {
-            // if (error.response && error.response.status === 500) {
-                setMsg("nothing")
-            // }
         }
 
 
