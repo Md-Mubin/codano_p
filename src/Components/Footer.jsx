@@ -34,7 +34,9 @@ const Footer = () => {
             }
 
         } catch (error) {
-            console.log(error)
+            if (error.data.errMsg) {
+                setMsg(error.response.data.errMsg)
+            }
         }
 
 
