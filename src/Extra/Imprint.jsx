@@ -19,14 +19,7 @@ const Imprint = ({ show, close }) => {
                             E-Mail: <a href="mailto:vladik.go@icloud.com">vladik.go@icloud.com</a>
                         </li>
 
-                        <li className='font-bold text-3xl'>Umsatzsteuer-ID</li>
-                        <li className='text-lg mt-4 mb-8'>
-                            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-                            DE999999999
-                        </li>
-
                         <li className='font-bold text-3xl'>EU-Streitschlichtung</li>
-
                         <li className='text-lg mt-4 mb-8'>
                             Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:<br />
                             <a className='text-[#6297d3]' href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a><br />
