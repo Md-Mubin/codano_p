@@ -30,17 +30,17 @@ console.log(msg)
         try {
 
             const response = await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
-            if (response.status === 200 && response.data.success) {
+            if (response.data.success) {
                 setMsg(response.data.success)
             }
 
-            if (response.status === 400 && response.data.errMsg) {
+            if (response.data.errMsg) {
                 setMsg(response.data.errMsg)
             }
         } catch (error) {
-            if (error.response && error.response.status === 500) {
-                setMsg(error.response.data.serverErr)
-            }
+            // if (error.response && error.response.status === 500) {
+                setMsg("nothing")
+            // }
         }
 
 
