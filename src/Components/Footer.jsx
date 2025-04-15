@@ -31,15 +31,15 @@ const Footer = () => {
 
             const response = await axios.post("https://test-server-eta-six.vercel.app/api/v1/emailSubscribers", { email }, {withCredentials : true})
             if (response.status === 200) {
-                setMsg(response.data.success)
+               return setMsg(response.data.success)
             }
 
             else if (response.status === 400) {
-                setMsg(response.data.errMsg)
+               return setMsg(response.data.errMsg)
             }
         } catch (error) {
             if (error.response && error.response.status === 500) {
-                setMsg(error.response.data.serverErr)
+               return setMsg(error.response.data.serverErr)
             }
         }
 
