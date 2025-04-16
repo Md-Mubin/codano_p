@@ -39,7 +39,7 @@ const Footer = () => {
             }
         }
 
-
+        // make the msg label empty after 3 second
         setTimeout(() => {
             setMsg("")
         }, 3000);
@@ -88,7 +88,6 @@ const Footer = () => {
                                     <label className='absolute top-[-24px] right-0 text-[#888888]'>{msg}</label>
                                     <input
                                         required
-                                        name='email'
                                         type="email"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
