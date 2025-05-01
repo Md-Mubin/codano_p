@@ -29,7 +29,7 @@ const Footer = () => {
         // posting data to backend server to store in MongoDB database
         try {
             const response = await subscription.emailSub(email)
-            if (response.data.success) {
+            if (response.success) {
                 setMsg(response.success)
             }
 

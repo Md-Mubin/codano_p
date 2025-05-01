@@ -11,7 +11,7 @@ const api = axios.create({
 // variables
 export const subscription = {
     emailSub : async (email)=>{
-        const res = await api.post("/emailSubscribers", email)
+        const res = await api.post("/emailSubscribers", {email})
         return res.data
     }
 }
