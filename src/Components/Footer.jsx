@@ -8,6 +8,7 @@ import axios from 'axios'
 import PrivatePolicy from '@/Extra/PrivatePolicy'
 import TermsService from '@/Extra/TermsService'
 import Imprint from '@/Extra/Imprint'
+import { subscription } from '@/Services/api'
 
 const Footer = () => {
 
@@ -28,9 +29,9 @@ const Footer = () => {
 
         // posting data to backend server to store in MongoDB database
         try {
-            const response = await axios.post("https://testserver1-stww.onrender.com/api/v1/emailSubscribers", { email })
+            const response = await subscription.emailSub(email)
             if (response.data.success) {
-                setMsg(response.data.success)
+                setMsg(response.success)
             }
 
         } catch (error) {
