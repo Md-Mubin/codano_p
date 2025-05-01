@@ -8,8 +8,8 @@ const api = axios.create({
 })
 
 export const subscription = {
-    emailSub : async (userEmail)=>{
-        const res = await api.post("/emailSubscribers", userEmail)
+    emailSub : async (email)=>{
+        const res = await api.post("/emailSubscribers", email)
         return res.data
     }
 }
