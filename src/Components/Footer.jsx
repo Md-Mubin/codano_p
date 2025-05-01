@@ -4,7 +4,6 @@ import React, { useState } from 'react'
 import { RiShareLine } from "react-icons/ri"
 import { LuLinkedin } from "react-icons/lu"
 import { useLanguage } from '../../public/contexts/LanguageContext'
-import axios from 'axios'
 import PrivatePolicy from '@/Extra/PrivatePolicy'
 import TermsService from '@/Extra/TermsService'
 import Imprint from '@/Extra/Imprint'
