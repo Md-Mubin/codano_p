@@ -93,11 +93,11 @@ const Footer = () => {
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         placeholder={t.footer?.footerEmailPlcae}
-                                        className='sm:w-[350px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm'
+                                        className='w-full sm:w-[350px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm'
                                     />
                                 </div>
 
-                                <button className={`w-[140px] h-[40px] px-6 py-2 border-2 border-[#888888] hover:bg-[#e4e4e4] hover:border-[#e4e4e4] duration-200 rounded-lg cursor-pointer flex justify-center items-center ${submiting && "pointer-events-none"}`}>
+                                <button className={`sm:w-[140px] h-[40px] text-[14px] sm:text-lg px-2 sm:px-6 py-2 border-2 border-[#888888] hover:bg-[#e4e4e4] hover:border-[#e4e4e4] duration-200 rounded-lg cursor-pointer flex justify-center items-center ${submiting && "pointer-events-none"}`}>
                                     {
                                         submiting
                                             ? <span className='w-[20px] h-[20px] border-t-2 border-[#000] animate-spin rounded-full top-0'></span>
@@ -110,12 +110,12 @@ const Footer = () => {
                     </ul>
 
                     {/* all rights reserved part */}
-                    <ul className='flex flex-col lg:flex-row gap-6 lg:gap-0 items-center justify-between pt-10 border-t tracking-widest text-lg'>
+                    <ul className='flex flex-col lg:flex-row gap-6 lg:gap-0 text-center sm:items-center justify-between pt-10 border-t tracking-widest text-lg'>
                         <li>
                             {t.footer?.footerRights}
                         </li>
 
-                        <li className='flex gap-6'>
+                        <li className='flex flex-col sm:flex-row items-start gap-6'>
                             <button onClick={() => setShowPolicy(!showPolicy)} className='hover:translate-y-[-2px] hover:text-[#888888] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02] cursor-pointer'>{t.footer?.footerPolicy}</button>
                             <button onClick={() => setShowTerms(!showTerms)} className='hover:translate-y-[-2px] hover:text-[#888888] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02] cursor-pointer'>{t.footer?.footerTerms}</button>
                             <button onClick={() => setShowImprint(!showImprint)} className='hover:translate-y-[-2px] hover:text-[#888888] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02] cursor-pointer'>{t.footer?.footerImprint}</button>

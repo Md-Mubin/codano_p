@@ -39,7 +39,7 @@ const Navbar = () => {
 
                         {/* nav logo */}
                         <li className="text-xl font-bold flex items-center gap-2 tracking-widest">
-                            <RiShareLine className='text-3xl' />Codano
+                            <RiShareLine className='text-3xl' />Codaro
                         </li>
 
                         {/* nav items/links */}

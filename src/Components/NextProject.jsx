@@ -20,10 +20,10 @@ const NextProject = () => {
 
                         <li className='flex gap-6'>
                             <Link href={"#contact"}>
-                                <button className='px-8 py-2 border-2 border-[#999999] text-[#999999] hover:border-[#222222] hover:text-[#000] duration-200 rounded-lg cursor-pointer tracking-widest'>{t.nextProject?.getinTouchBtn}</button>
+                                <button className='px-4 lg:px-8 py-2 border-2 border-[#999999] text-[#999999] hover:border-[#222222] hover:text-[#000] duration-200 rounded-lg cursor-pointer tracking-widest'>{t.nextProject?.getinTouchBtn}</button>
                             </Link>
                             <Link href={"#work"}>
-                                <button className='px-8 py-2 border-2 border-[#999999] text-[#999999] hover:border-[#222222] hover:text-[#000] duration-200 rounded-lg cursor-pointer tracking-widest'>{t.nextProject?.portfolioBtn}</button>
+                                <button className='px-4 lg:px-8 py-2 border-2 border-[#999999] text-[#999999] hover:border-[#222222] hover:text-[#000] duration-200 rounded-lg cursor-pointer tracking-widest'>{t.nextProject?.portfolioBtn}</button>
                             </Link>
                         </li>
                     </ul>
