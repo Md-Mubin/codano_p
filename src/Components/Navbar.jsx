@@ -31,7 +31,7 @@ const Navbar = () => {
     return (
         <>
             {/* ================== Navbar Part Start ================== */}
-            <nav className={`p-6 sticky top-0 backdrop-blur-sm tracking-widest ${scrolling ? "shadow-sm" : "shadow-none"}`}>
+            <nav className={`p-6 sticky z-[100] top-0 backdrop-blur-sm tracking-widest ${scrolling ? "shadow-sm" : "shadow-none"}`}>
                 <div className="container">
 
                     {/* main navbar (from lg to upper device)*/}
@@ -88,7 +88,6 @@ const Navbar = () => {
                         <Link href="#services" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.services}</Link>
                         <Link href="#process" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.process}</Link>
                         <Link href="#work" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.portfolio}</Link>
-                        <Link href="#" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.about}</Link>
                         <Link href="#contact" className="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000] after:left-0 after:bottom-0 hover:after:w-full after:duration-200">{t.navbar?.contact}</Link>
                     </div>
                 </div>

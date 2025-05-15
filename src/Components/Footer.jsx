@@ -55,7 +55,7 @@ const Footer = () => {
             {/* ================== Footer Part Start ================== */}
             <footer className='py-20 border-t-1 border-[#999999] relative'>
                 <div className="container">
-                    <ul className='flex flex-wrap lg:flex-nowrap justify-between pb-10 gap-10 lg:gap-4'>
+                    <ul className='flex flex-wrap lg:flex-nowrap justify-start lg:justify-between pb-10 gap-10 lg:gap-4'>
                         <li className='w-[348px] flex flex-col gap-4 tracking-widest'>
 
                             {/* footer logo */}
@@ -79,7 +79,7 @@ const Footer = () => {
                             <Link href="#work" className='hover:text-[#888888] duration-200' >{t.footer?.footerDigital}</Link>
                         </li>
 
-                        <li className='flex flex-col gap-4 tracking-widest'>
+                        <li className='flex flex-col items-center gap-4 tracking-widest m-auto'>
                             <h3 className='font-bold text-xl'>{t.footer?.footerSubscribe}</h3>
                             <p>{t.footer?.footerSubInfo}</p>
 
@@ -93,7 +93,7 @@ const Footer = () => {
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         placeholder={t.footer?.footerEmailPlcae}
-                                        className='w-full sm:w-[350px] pl-2 py-1 outline-none ring-2 ring-[#888888] rounded-sm'
+                                        className='w-[250px] sm:w-[350px] pl-2 py-2 outline-none ring-2 ring-[#888888] rounded-sm'
                                     />
                                 </div>
 
