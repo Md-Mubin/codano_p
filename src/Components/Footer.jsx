@@ -128,7 +128,7 @@ const Footer = () => {
             {/* Terms & Service */}
             {
                 showTerms && (
-                    <div className={`w-full top-0 fixed inset-0 z-50 overflow-y-auto`}>
+                    <div className={`w-full top-0 fixed inset-0 z-[200] overflow-y-auto`}>
                         <TermsService show={showTerms} close={() => setShowTerms(false)} />
                     </div>
                 )
@@ -137,7 +137,7 @@ const Footer = () => {
             {/* private policy */}
             {
                 showPolicy && (
-                    <div className={`w-full top-0 fixed inset-0 z-50 overflow-y-auto`}>
+                    <div className={`w-full top-0 fixed inset-0 z-[200] overflow-y-auto`}>
                         <PrivatePolicy show={showPolicy} close={() => setShowPolicy(false)} />
                     </div>
                 )
@@ -146,7 +146,7 @@ const Footer = () => {
             {/* private policy */}
             {
                 showImprint && (
-                    <div className={`w-full top-0 fixed inset-0 z-50 overflow-y-auto`}>
+                    <div className={`w-full top-0 fixed inset-0 z-[200] overflow-y-auto`}>
                         <Imprint show={showImprint} close={() => setShowImprint(false)} />
                     </div>
                 )
