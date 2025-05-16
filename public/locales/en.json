@@ -261,7 +261,7 @@
             "budget1" : "$500 - $1000",
             "budget2" : "$1000 - $2500",
             "budget3" : "$2500 - $10000",
-            "projectDes": "Project Description *",
+            "projectDes": "Project Description",
             "projectDesPlaceholder": "Describe Your Project",
             "sendBtn": "Send Inquiry"
         },
