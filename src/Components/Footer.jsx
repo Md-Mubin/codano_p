@@ -79,7 +79,7 @@ const Footer = () => {
                             <Link href="#work" className='hover:text-[#888888] duration-200' >{t.footer?.footerDigital}</Link>
                         </li>
 
-                        <li className='flex flex-col items-center gap-4 tracking-widest m-auto'>
+                        <li className='flex flex-col items-center lg:items-start gap-4 tracking-widest m-auto lg:m-0'>
                             <h3 className='font-bold text-xl'>{t.footer?.footerSubscribe}</h3>
                             <p>{t.footer?.footerSubInfo}</p>
 
