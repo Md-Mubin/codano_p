@@ -31,15 +31,17 @@ const Navbar = () => {
     return (
         <>
             {/* ================== Navbar Part Start ================== */}
-            <nav className={`p-6 sticky z-[100] top-0 backdrop-blur-sm tracking-widest ${scrolling ? "shadow-sm" : "shadow-none"}`}>
+            <nav className={`p-5 sticky z-[100] top-0 backdrop-blur-sm tracking-widest ${scrolling ? "shadow-sm" : "shadow-none"}`}>
                 <div className="container">
 
                     {/* main navbar (from lg to upper device)*/}
                     <ul className="items-center justify-between hidden lg:flex">
 
                         {/* nav logo */}
-                        <li className="text-xl font-bold flex items-center gap-2 tracking-widest">
-                            <RiShareLine className='text-3xl' />Codaro
+                        <li>
+                            <a href="#" className='text-xl font-bold flex items-center gap-2 tracking-widest'>
+                                <RiShareLine className='text-3xl' />Codaro
+                            </a>
                         </li>
 
                         {/* nav items/links */}

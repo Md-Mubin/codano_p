@@ -59,9 +59,13 @@ const Footer = () => {
                         <li className='w-[348px] flex flex-col gap-4 tracking-widest'>
 
                             {/* footer logo */}
-                            <h2 className='flex items-center gap-2 font-bold text-2xl tracking-widest'>
-                                <RiShareLine className='text-4xl' />Codaro
+                            <h2 className='w-fit'>
+                                <a href="#" className='flex items-center gap-2 font-bold text-2xl tracking-widest'>
+                                    <RiShareLine className='text-4xl' />Codaro
+                                </a>
                             </h2>
+
+                            {/* footer info*/}
                             <p>{t.footer?.footerInfo}</p>
 
                             {/* social media */}
