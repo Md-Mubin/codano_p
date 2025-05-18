@@ -26,27 +26,27 @@ const Footer = () => {
         e.preventDefault()
         setSubmiting(true)
 
-        // posting data to backend server to store in MongoDB database
+        const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+
         try {
             const response = await subscription.emailSub(email)
+            await delay(800)
+            setSubmiting(false)
+
             if (response?.success) {
-                setTimeout(() => {
-                    setSubmiting(false) //submitting will be false
-                    setMsg(response.success)
-                    setEmail("") // email input will be empty
-                }, 500);
+                setMsg(response.success)
+                setEmail("")
             }
 
         } catch (error) {
-            if (error.response.data?.errMsg) {
-                setTimeout(() => {
-                    setSubmiting(false) //submitting will be false
-                    setMsg(error.response.data.errMsg)
-                    setEmail("")
-                }, 500);
+            await delay(800)
+            setSubmiting(false)
+
+            if (error.response.data.errMsg) {
+                setMsg(error.response.data.errMsg)
             }
         }
-        setMsg("")
+        setTimeout(() => setMsg(""), 3000);
     }
 
     return (
