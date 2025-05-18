@@ -39,14 +39,14 @@ const Navbar = () => {
 
                         {/* nav logo */}
                         <li>
-                            <a href="#" className='text-xl font-bold flex items-center gap-2 tracking-widest'>
+                            <Link href="/" className='text-xl font-bold flex items-center gap-2 tracking-widest'>
                                 <RiShareLine className='text-3xl' />Codaro
-                            </a>
+                            </Link>
                         </li>
 
                         {/* nav items/links */}
                         <li className="navItems">
-                            <Link href="#">{t.navbar?.home}</Link>
+                            <Link href="/">{t.navbar?.home}</Link>
                             <Link href="#services">{t.navbar?.services}</Link>
                             <Link href="#process">{t.navbar?.process}</Link>
                             <Link href="#work">{t.navbar?.portfolio}</Link>

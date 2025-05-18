@@ -59,9 +59,9 @@ const Footer = () => {
 
                             {/* footer logo */}
                             <h2 className='w-fit'>
-                                <a href="#" className='flex items-center gap-2 font-bold text-2xl tracking-widest'>
+                                <Link href="/" className='flex items-center gap-2 font-bold text-2xl tracking-widest'>
                                     <RiShareLine className='text-4xl' />Codaro
-                                </a>
+                                </Link>
                             </h2>
 
                             {/* footer info*/}
