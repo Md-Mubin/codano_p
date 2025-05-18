@@ -1,15 +1,43 @@
 "use client"
 import CommonHead from '@/Commons/CommonHead'
 import CommonHeadInfo from '@/Commons/CommonHeadInfo'
-import React from 'react'
-import { FiMapPin, FiPhone, FiMail } from "react-icons/fi"
+import React, { useState } from 'react'
+import { FiMapPin, FiMail } from "react-icons/fi"
 import { useLanguage } from '../../public/contexts/LanguageContext'
+import { inquires } from '@/Services/api'
 
 const Contact = () => {
 
     const { t } = useLanguage()
 
     const questionCard = t.contact?.questionArea?.allQuestionCard || []
+
+    // hooks 
+    const [submiting, setSubmiting] = useState(false)
+    const [form, setForm] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        companyName: "",
+        budget: "",
+        description: ""
+    })
+
+    // handle submit inquries datas
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        setSubmiting(true)
+
+        try {
+            const response = await inquires.inquiresData(form.name, form.email, form.phone, form.companyName, form.budget, form.description)
+            console.log(response.success)
+        } catch (error) {
+            console.log(error.response.data.errMsg)
+        }
+
+        setSubmiting(false) //submitting will be false
+    }
+
 
     return (
         <>
@@ -21,15 +49,17 @@ const Contact = () => {
                     <CommonHeadInfo commonHeadInfo={t.contact?.headInfo} />
 
                     <div className="flex flex-col lg:flex-row lg:items-start items-center justify-between mt-24 tracking-widest gap-10">
-                        <form className="w-full lg:w-[730px] p-6 shadow-lg rounded-lg">
+                        <form onSubmit={handleSubmit} className="w-full lg:w-[730px] p-6 shadow-lg rounded-lg">
                             <ul>
 
                                 {/* name */}
                                 <li>
                                     <label className="block text-sm font-medium mt-2">{t.contact?.form.name}*</label>
                                     <input
+                                        required
                                         type="text"
                                         placeholder={t.contact?.form.namePlaceholder}
+                                        onChange={(e) => setForm((prev) => ({ ...prev, name: e.target.value }))}
                                         className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none"
                                     />
                                 </li>
@@ -38,8 +68,10 @@ const Contact = () => {
                                 <li>
                                     <label className="block text-sm font-medium mt-2">{t.contact?.form.email}*</label>
                                     <input
+                                        required
                                         type="email"
                                         placeholder={t.contact?.form.emailPlaceholder}
+                                        onChange={(e) => setForm((prev) => ({ ...prev, email: e.target.value }))}
                                         className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none"
                                     />
                                 </li>
@@ -50,6 +82,7 @@ const Contact = () => {
                                     <input
                                         type="number"
                                         placeholder={t.contact?.form.phonePlaceholder}
+                                        onChange={(e) => setForm((prev) => ({ ...prev, phone: e.target.value }))}
                                         className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none"
                                     />
                                 </li>
@@ -60,6 +93,7 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         placeholder={t.contact?.form.companyPlaceholder}
+                                        onChange={(e) => setForm((prev) => ({ ...prev, companyName: e.target.value }))}
                                         className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none"
                                     />
                                 </li>
@@ -67,7 +101,9 @@ const Contact = () => {
                                 {/* budget selection */}
                                 <li>
                                     <label className="block text-sm font-medium mt-2">{t.contact?.form.budget}</label>
-                                    <select className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none">
+                                    <select
+                                        onChange={(e) => setForm((prev) => ({ ...prev, budget: e.target.value }))}
+                                        className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none">
                                         <option>{t.contact?.form.budgetPlaceholder}</option>
                                         <option value="under-500">{t.contact?.form.budget1}</option>
                                         <option value="500-1000">{t.contact?.form.budget2}</option>
@@ -79,15 +115,21 @@ const Contact = () => {
                                 <li>
                                     <label className="block text-sm font-medium mt-2">{t.contact?.form.projectDes}*</label>
                                     <textarea
+                                        required
                                         placeholder={t.contact?.form.projectDesPlaceholder}
                                         rows="4"
+                                        onChange={(e) => setForm((prev) => ({ ...prev, description: e.target.value }))}
                                         className="w-full p-3 border border-[#999999] rounded-md focus:border-blue-500 outline-none"
                                     ></textarea>
                                 </li>
                             </ul>
 
-                            <button className="bg-gray-100 text-[#000] w-full py-4 mt-2 rounded-md hover:bg-gray-300 transition-colors cursor-pointer">
-                                {t.contact?.form.sendBtn}
+                            <button className={`bg-gray-100 text-[#000] w-full py-4 mt-2 rounded-md hover:bg-gray-300 transition-colors cursor-pointer flex justify-center items-center ${submiting && "pointer-events-none"}`}>
+                                {
+                                    submiting
+                                        ? <span className='w-[20px] h-[20px] border-t-2 border-[#000] animate-spin rounded-full top-0'></span>
+                                        : t.contact?.form?.sendBtn
+                                }
                             </button>
                         </form>
 
@@ -142,3 +184,22 @@ const Contact = () => {
 }
 
 export default Contact
+
+
+// try {
+//     const response = await inquires.inquiresData(...)
+
+//     if (response.success) {
+//         // show success
+//     }
+// } catch (error) {
+//     if (error.response && error.response.data?.errors) {
+//         const fieldErrors = error.response.data.errors;
+//         fieldErrors.forEach(err => {
+//             console.error(`${err.field}: ${err.message}`);
+//             // Optionally update form error state here
+//         });
+//     } else {
+//         console.error("Something went wrong");
+//     }
+// }

@@ -29,25 +29,24 @@ const Footer = () => {
         // posting data to backend server to store in MongoDB database
         try {
             const response = await subscription.emailSub(email)
-            if (response.success) {
-                setMsg(response.success)
+            if (response?.success) {
+                setTimeout(() => {
+                    setSubmiting(false) //submitting will be false
+                    setMsg(response.success)
+                    setEmail("") // email input will be empty
+                }, 500);
             }
 
         } catch (error) {
-            console.log(error)
-            if (error.response.data.errMsg) {
-                setMsg(error.response.data.errMsg)
+            if (error.response.data?.errMsg) {
+                setTimeout(() => {
+                    setSubmiting(false) //submitting will be false
+                    setMsg(error.response.data.errMsg)
+                    setEmail("")
+                }, 500);
             }
         }
-
-        // make the msg label empty after 3 second
-        setTimeout(() => {
-            setMsg("")
-        }, 3000);
-
-        // after completing store the email in database
-        setEmail("") // email input will be empty
-        setSubmiting(false) //submitting will be false
+        setMsg("")
     }
 
     return (
@@ -90,7 +89,10 @@ const Footer = () => {
                             {/* email subscibe form */}
                             <form onSubmit={handleSubmit} className='flex items-center gap-4'>
                                 <div className='relative'>
-                                    <label className='absolute top-[-24px] right-0 text-[#888888]'>{msg}</label>
+                                    {
+                                        msg &&
+                                        <label className='absolute top-[-24px] right-0 text-[#888888] font-medium'>{msg}</label>
+                                    }
                                     <input
                                         required
                                         type="email"
@@ -101,10 +103,10 @@ const Footer = () => {
                                     />
                                 </div>
 
-                                <button className={`sm:w-[140px] h-[40px] text-[14px] sm:text-lg px-2 sm:px-6 py-2 border-2 border-[#888888] hover:bg-[#e4e4e4] hover:border-[#e4e4e4] duration-200 rounded-lg cursor-pointer flex justify-center items-center ${submiting && "pointer-events-none"}`}>
+                                <button className={`w-[100px] sm:w-[140px] h-[40px] text-[14px] sm:text-lg px-2 sm:px-6 py-2 border-2 border-[#888888] hover:bg-[#e4e4e4] hover:border-[#e4e4e4] duration-200 rounded-lg cursor-pointer flex justify-center items-center ${submiting && "pointer-events-none"}`}>
                                     {
                                         submiting
-                                            ? <span className='w-[20px] h-[20px] border-t-2 border-[#000] animate-spin rounded-full top-0'></span>
+                                            ? <span className='w-[20px] h-[20px] border-t-2 border-r-2 border-r-transparent border-[#000] animate-spin rounded-full top-0'></span>
                                             : t.footer?.footerBtn
                                     }
                                 </button>
