@@ -42,12 +42,13 @@ const Contact = () => {
         } catch (error) {
             await delay(500)
             setSubmiting(false)
-            if (error.response.data.errMsg) {
+            
+            if (error.response.data?.errMsg) {
                 setMsg(error.response.data.errMsg)
             }
         }
     }
-    setTimeout(() => setMsg(""), 3000);
+    setTimeout(() => setMsg(""), 5000)
 
     return (
         <>
