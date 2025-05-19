@@ -38,6 +38,7 @@ const Contact = () => {
 
             if (response?.success) {
                 setMsg(response.success)
+                setTimeout(() => setMsg(""), 3000)
             }
         } catch (error) {
             await delay(500)
@@ -45,10 +46,10 @@ const Contact = () => {
             
             if (error.response.data?.errMsg) {
                 setMsg(error.response.data.errMsg)
+                setTimeout(() => setMsg(""), 3000)
             }
         }
     }
-    setTimeout(() => setMsg(""), 5000)
 
     return (
         <>
