@@ -26,7 +26,7 @@ const Footer = () => {
         e.preventDefault()
         setSubmiting(true)
 
-        const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+        const delay = (ms) => new Promise((res) => setTimeout(res, ms))
 
         try {
             const response = await subscription.emailSub(email)

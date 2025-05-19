@@ -14,6 +14,7 @@ const Contact = () => {
 
     // hooks 
     const [submiting, setSubmiting] = useState(false)
+    const [msg, setMsg] = useState("")
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -28,16 +29,25 @@ const Contact = () => {
         e.preventDefault()
         setSubmiting(true)
 
+        const delay = (ms) => new Promise((res) => setTimeout(res, ms))
+
         try {
             const response = await inquires.inquiresData(form.name, form.email, form.phone, form.companyName, form.budget, form.description)
-            console.log(response.success)
+            await delay(500)
+            setSubmiting(false)
+
+            if (response?.success) {
+                setMsg(response.success)
+            }
         } catch (error) {
-            console.log(error.response.data.errMsg)
+            await delay(500)
+            setSubmiting(false)
+            if (error.response.data.errMsg) {
+                setMsg(error.response.data.errMsg)
+            }
         }
-
-        setSubmiting(false) //submitting will be false
     }
-
+    setTimeout(() => setMsg(""), 3000);
 
     return (
         <>
@@ -49,12 +59,16 @@ const Contact = () => {
                     <CommonHeadInfo commonHeadInfo={t.contact?.headInfo} />
 
                     <div className="flex flex-col lg:flex-row lg:items-start items-center justify-between mt-24 tracking-widest gap-10">
-                        <form onSubmit={handleSubmit} className="w-full lg:w-[730px] p-6 shadow-lg rounded-lg">
+                        <form onSubmit={handleSubmit} className="w-full lg:w-[730px] p-6 shadow-lg rounded-lg relative">
+                            {/* {
+                                msg && <span className='absolute top-0 right-4 font-medium text-xl text-[#000] tracking-widest'>{msg}</span>
+                            } */}
+                            <span className='absolute top-5 right-10 font-medium text-lg text-[#000] tracking-widest'>{msg}</span>
                             <ul>
 
                                 {/* name */}
                                 <li>
-                                    <label className="block text-sm font-medium mt-2">{t.contact?.form.name}*</label>
+                                    <label className="block text-sm font-medium mt-2">{t.contact?.form.name}</label>
                                     <input
                                         required
                                         type="text"
@@ -66,7 +80,7 @@ const Contact = () => {
 
                                 {/* email */}
                                 <li>
-                                    <label className="block text-sm font-medium mt-2">{t.contact?.form.email}*</label>
+                                    <label className="block text-sm font-medium mt-2">{t.contact?.form.email}</label>
                                     <input
                                         required
                                         type="email"
@@ -113,7 +127,7 @@ const Contact = () => {
 
                                 {/* massage area */}
                                 <li>
-                                    <label className="block text-sm font-medium mt-2">{t.contact?.form.projectDes}*</label>
+                                    <label className="block text-sm font-medium mt-2">{t.contact?.form.projectDes}</label>
                                     <textarea
                                         required
                                         placeholder={t.contact?.form.projectDesPlaceholder}
@@ -124,10 +138,10 @@ const Contact = () => {
                                 </li>
                             </ul>
 
-                            <button className={`bg-gray-100 text-[#000] w-full py-4 mt-2 rounded-md hover:bg-gray-300 transition-colors cursor-pointer flex justify-center items-center ${submiting && "pointer-events-none"}`}>
+                            <button className={`bg-gray-100 text-[#000] w-full h-[60px] py-4 mt-2 rounded-md hover:bg-gray-300 transition-colors cursor-pointer flex justify-center items-center ${submiting && "pointer-events-none"}`}>
                                 {
                                     submiting
-                                        ? <span className='w-[20px] h-[20px] border-t-2 border-[#000] animate-spin rounded-full top-0'></span>
+                                        ? <span className='w-[20px] h-[20px] border-t-2 border-r-2 border-r-transparent border-[#000] animate-spin rounded-full top-0'></span>
                                         : t.contact?.form?.sendBtn
                                 }
                             </button>
