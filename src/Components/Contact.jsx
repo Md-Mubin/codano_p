@@ -60,10 +60,9 @@ const Contact = () => {
 
                     <div className="flex flex-col lg:flex-row lg:items-start items-center justify-between mt-24 tracking-widest gap-10">
                         <form onSubmit={handleSubmit} className="w-full lg:w-[730px] p-6 shadow-lg rounded-lg relative">
-                            {/* {
-                                msg && <span className='absolute top-0 right-4 font-medium text-xl text-[#000] tracking-widest'>{msg}</span>
-                            } */}
-                            <span className='absolute top-5 right-10 font-medium text-lg text-[#000] tracking-widest'>{msg}</span>
+                            {
+                                msg && <span className='absolute top-5 right-10 font-medium text-lg text-[#000] tracking-widest'>{msg}</span>
+                            }
                             <ul>
 
                                 {/* name */}
