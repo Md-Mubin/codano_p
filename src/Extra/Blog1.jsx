@@ -68,86 +68,67 @@ const Blog1 = ({ show, close }) => {
                                 <li>{blogCard1?.typo4}</li>
                             </ul>
 
-                            <h3 className='text-xl my-5 font-semibold'>5. AI-Driven Personalization</h3>
-                            <p className='mt-5'>Artificial intelligence is transforming how websites adapt to individual users:</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard1?.aiTitle}</h3>
+                            <p className='mt-5'>{blogCard1?.aiIntro}</p>
 
-                            <p className='mt-5'><strong>Key applications include:</strong></p>
+                            <p className='mt-5'><strong>{blogCard1?.aiAppsTitle}</strong></p>
                             <ul>
-                                <li>• Dynamic content that changes based on user behavior</li>
-                                <li>• Predictive navigation that anticipates user needs</li>
-                                <li>• Personalized product recommendations</li>
-                                <li>• Custom color schemes and layouts tailored to user preferences</li>
+                                <li>{blogCard1?.ai1}</li>
+                                <li>{blogCard1?.ai2}</li>
+                                <li>{blogCard1?.ai3}</li>
+                                <li>{blogCard1?.ai4}</li>
                             </ul>
 
-                            <p className='mt-5'>This level of personalization creates unique experiences for each visitor, significantly increasing engagement and conversion rates.</p>
+                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard1?.balanceTitle}</h2>
+                            <p className='mt-5'>{blogCard1?.balanceIntro}</p>
 
-                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>Balancing Trends with Fundamentals</h2>
-                            <p>While these trends offer exciting possibilities, successful web design in 2024 still relies on fundamental principles:</p>
-
-                            <h3 className='text-xl my-5 font-semibold'>Accessibility First</h3>
-                            <p className='mt-5'>Inclusive design ensures websites are usable by people of all abilities:</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard1?.accessibilityTitle}</h3>
+                            <p className='mt-5'>{blogCard1?.accessibilityIntro}</p>
 
                             <ul>
-                                <li>• Proper contrast ratios for text legibility</li>
-                                <li>• Keyboard navigation for those who can't use a mouse</li>
-                                <li>• Alt text for images to support screen readers</li>
-                                <li>• Captions for video content</li>
+                                <li>{blogCard1?.access1}</li>
+                                <li>{blogCard1?.access2}</li>
+                                <li>{blogCard1?.access3}</li>
+                                <li>{blogCard1?.access4}</li>
                             </ul>
 
-                            <p className='mt-5'>The most innovative designs fail if they exclude portions of your audience. Modern web design recognizes accessibility as a necessity, not an afterthought.</p>
-
-                            <h3 className='text-xl my-5 font-semibold'>Performance Optimization</h3>
-                            <p className='mt-5'>Even the most visually stunning website will frustrate users if it loads slowly:</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard1?.performanceTitle}</h3>
+                            <p className='mt-5'>{blogCard1?.performanceIntro}</p>
 
                             <ul>
-                                <li>• Optimize image sizes and formats (WebP, AVIF)</li>
-                                <li>• Implement lazy loading for off-screen content</li>
-                                <li>• Minimize JavaScript execution time</li>
-                                <li>• Utilize effective caching strategies</li>
+                                <li>{blogCard1?.perf1}</li>
+                                <li>{blogCard1?.perf2}</li>
+                                <li>{blogCard1?.perf3}</li>
+                                <li>{blogCard1?.perf4}</li>
                             </ul>
 
-                            <p className='mt-5'>The balance between rich visual experiences and speed remains crucial in 2024.</p>
-
-                            <h3 className='text-xl my-5 font-semibold'>Mobile-First Approach</h3>
-                            <p className='mt-5'>With mobile traffic continuing to dominate, designing for smaller screens first ensures:</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard1?.mobileTitle}</h3>
+                            <p className='mt-5'>{blogCard1?.mobileIntro}</p>
 
                             <ul>
-                                <li>• Content prioritization based on limited screen space</li>
-                                <li>• Touch-friendly interface elements</li>
-                                <li>• Appropriate font sizes and spacing for readability</li>
-                                <li>• Simplified navigation patterns</li>
+                                <li>{blogCard1?.impl1}</li>
+                                <li>{blogCard1?.impl2}</li>
+                                <li>{blogCard1?.impl3}</li>
+                                <li>{blogCard1?.impl4}</li>
                             </ul>
 
-                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>Implementing These Trends in Your Projects</h2>
-                            <p className='mt-5'>For businesses and designers looking to incorporate these trends:</p>
-
-                            <ol>
-                                <li><strong>Start small</strong> - Test new design approaches on specific landing pages before implementing site-wide changes</li>
-                                <li><strong>Gather feedback</strong> - Use A/B testing to measure how users respond to new design elements</li>
-                                <li><strong>Focus on purpose</strong> - Implement trends that enhance your specific goals and user needs</li>
-                                <li><strong>Maintain consistency</strong> - Ensure new design elements align with your overall brand identity</li>
-                            </ol>
-
-                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>The Future Beyond 2024</h2>
-                            <p className='mt-5'>Looking ahead, several emerging technologies are poised to further transform web design:</p>
+                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard1?.futureTitle}</h2>
+                            <p className='mt-5'>{blogCard1?.futureIntro}</p>
 
                             <ul>
-                                <li><strong>WebXR</strong> - Bringing augmented and virtual reality experiences to the browser</li>
-                                <li><strong>Voice User Interfaces (VUI)</strong> - Creating more natural ways to interact with websites</li>
-                                <li><strong>Gesture-based navigation</strong> - Allowing more intuitive interactions, especially on mobile</li>
-                                <li><strong>Sustainability in design</strong> - Optimizing websites to reduce energy consumption and environmental impact</li>
+                                <li><strong>{blogCard1?.future1H}</strong>{blogCard1?.future1}</li>
+                                <li><strong>{blogCard1?.future2H}</strong>{blogCard1?.future2}</li>
+                                <li><strong>{blogCard1?.future3H}</strong>{blogCard1?.future3}</li>
+                                <li><strong>{blogCard1?.future4H}</strong>{blogCard1?.future4}</li>
                             </ul>
 
-                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>Conclusion</h2>
-                            <p className='mt-5'>The evolution of web design in 2024 reflects a deeper understanding of how technology can enhance human experiences. The most successful designs will be those that thoughtfully implement new trends while maintaining focus on user needs, accessibility, and performance.</p>
+                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard1?.conclusionTitle}</h2>
+                            <p className='mt-5'>{blogCard1?.conclusion}</p>
 
-                            <p className='mt-5'>By staying informed about these trends and approaching them with purpose, designers and businesses can create web experiences that not only look impressive but also deliver meaningful results.</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard1?.callToActionTitle}</h3>
+                            <p className='mt-5'>{blogCard1?.callToAction}</p>
 
-
-                            <h3 className='text-xl my-5 font-semibold'>Ready to Update Your Web Presence?</h3>
-                            <p className='mt-5'>If you're looking to implement these design trends and create a website that stands out in 2024, our team of expert designers and developers can help bring your vision to life. <a href="/contact">Contact us today</a> for a consultation.</p>
-
-                            <p>Did you find this article helpful? Share it with your network or leave a comment below with your thoughts on web design trends for 2024.</p>
+                            <p>{blogCard1?.closingNote}</p>
                         </article>
 
                         <button onClick={close} className='absolute top-1 sm:top-10 right-2 sm:right-10 text-4xl hover:text-[#598bc7] cursor-pointer'>
