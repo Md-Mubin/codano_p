@@ -2,14 +2,16 @@
 import CommonHead from '@/Commons/CommonHead'
 import React, { useState } from 'react'
 import { useLanguage } from '../../public/contexts/LanguageContext'
-import { MdOutlineCancel } from "react-icons/md"
+import Blog1 from '@/Extra/Blog1'
 
 const Blog = () => {
 
     const { t } = useLanguage()
 
-    const blogCards = t.blog?.blogCards || []
-    const [showCard, setShowCard] = useState(null)
+    const blogCards = t?.blog || []
+    const [showBlog1, setShowBlog1] = useState(false)
+    const [showBlog2, setShowBlog2] = useState(false)
+    const [showBlog3, setShowBlog3] = useState(false)
 
     return (
         <>
@@ -20,73 +22,108 @@ const Blog = () => {
                     <CommonHead commonHead={t.blog?.head} />
 
                     <div className='flex flex-col xl:flex-row justify-between gap-10 mt-24'>
-                        {
-                            blogCards.map((items) => (
-                                <ul
-                                    key={items.id}
-                                    className='shadow-lg hover:shadow-xl pb-10 rounded-2xl overflow-hidden'>
 
-                                    {/* blog images */}
-                                    <li>
-                                        <img
-                                            className='w-full h-[300px]'
-                                            loading='lazy'
-                                            src={items.img}
-                                            alt="blog images"
-                                        />
-                                    </li>
+                        {/* blog 1 */}
+                        <ul className='shadow-lg hover:shadow-xl pb-10 rounded-2xl overflow-hidden'>
 
-                                    <li className='p-6'>
-                                        {items.date}
-                                    </li>
+                            <li>
+                                <img
+                                    className='w-full h-[300px]'
+                                    loading='lazy'
+                                    src={blogCards?.blogCard1?.img}
+                                    alt="blog1 images"
+                                />
+                            </li>
 
-                                    <li className='mt-2 pl-6 font-bold text-lg tracking-widest'>
-                                        {items.blogHead}
-                                    </li>
+                            <li className='p-6'>
+                                {blogCards?.blogCard1?.date}
+                            </li>
 
-                                    <li className='mt-4 px-6 font-medium text-[16px] tracking-widest'>
-                                        {items.blogDescription}
-                                    </li>
+                            <li className='mt-2 pl-6 font-bold text-lg tracking-widest'>
+                                {blogCards?.blogCard1?.blogHead}
+                            </li>
 
-                                    <li className='mt-4 ml-6'>
-                                        <button onClick={() => setShowCard(items)} className='px-6 py-1 rounded-full bg-blue-100 hover:bg-blue-200 duration-200 cursor-pointer'>Read More</button>
-                                    </li>
-                                </ul>
-                            ))
-                        }
+                            <li className='mt-4 px-6 font-medium text-[16px] tracking-widest'>
+                                {blogCards?.blogCard1?.blogDescription}
+                            </li>
 
-                        {/* read more card */}
-                        {
-                            showCard && (
-                                <div onClick={() => setShowCard(null)} className="fixed inset-0 bg-[#000000cc] xl:flex justify-center items-center z-50">
-                                    <ul onClick={(e) => e.stopPropagation()} className='xl:w-[1200px] pt-10 lg:p-10 bg-[#fff] rounded-xl relative z-[100]'>
-                                        <li>
-                                            <img className='w-[500px] h-[300px]' src={showCard.img} alt="" />
-                                        </li>
+                            <li className='mt-4 ml-6'>
+                                <button onClick={() => setShowBlog1(!showBlog1)} className='px-6 py-1 rounded-full bg-blue-100 hover:bg-blue-200 duration-200 cursor-pointer'>Read More</button>
+                            </li>
+                        </ul>
 
-                                        <li className='p-6'>
-                                            {showCard.date}
-                                        </li>
+                        {/* blog 2 */}
+                        <ul className='shadow-lg hover:shadow-xl pb-10 rounded-2xl overflow-hidden'>
 
-                                        <li className='mt-2 pl-6 font-bold text-lg tracking-widest'>
-                                            {showCard.blogHead}
-                                        </li>
+                            <li>
+                                <img
+                                    className='w-full h-[300px]'
+                                    loading='lazy'
+                                    src={t?.blog?.blogCard2?.img}
+                                    alt="blog1 images"
+                                />
+                            </li>
 
-                                        <li className='mt-4 px-6 font-medium text-[16px] tracking-widest'>
-                                            {showCard.fullDescription}
-                                        </li>
+                            <li className='p-6'>
+                                {t?.blog?.blogCard2?.date}
+                            </li>
 
-                                        <li onClick={()=>setShowCard(null)} className='absolute top-1 sm:top-10 right-2 sm:right-10 text-4xl hover:text-[#598bc7] cursor-pointer'>
-                                            <MdOutlineCancel />
-                                        </li>
-                                    </ul>
-                                </div>
-                            )
-                        }
+                            <li className='mt-2 pl-6 font-bold text-lg tracking-widest'>
+                                {t?.blog?.blogCard2?.blogHead}
+                            </li>
+
+                            <li className='mt-4 px-6 font-medium text-[16px] tracking-widest'>
+                                {t?.blog?.blogCard2?.blogDescription}
+                            </li>
+
+                            <li className='mt-4 ml-6'>
+                                <button onClick={() => setShowBlog2(!showBlog2)} className='px-6 py-1 rounded-full bg-blue-100 hover:bg-blue-200 duration-200 cursor-pointer'>Read More</button>
+                            </li>
+                        </ul>
+
+                        {/* blog 3 */}
+                        <ul className='shadow-lg hover:shadow-xl pb-10 rounded-2xl overflow-hidden'>
+
+                            <li>
+                                <img
+                                    className='w-full h-[300px]'
+                                    loading='lazy'
+                                    src={t?.blog?.blogCard3?.img}
+                                    alt="blog1 images"
+                                />
+                            </li>
+
+                            <li className='p-6'>
+                                {t?.blog?.blogCard3?.date}
+                            </li>
+
+                            <li className='mt-2 pl-6 font-bold text-lg tracking-widest'>
+                                {t?.blog?.blogCard3?.blogHead}
+                            </li>
+
+                            <li className='mt-4 px-6 font-medium text-[16px] tracking-widest'>
+                                {t?.blog?.blogCard3?.blogDescription}
+                            </li>
+
+                            <li className='mt-4 ml-6'>
+                                <button onClick={() => setShowBlog3(!showBlog3)} className='px-6 py-1 rounded-full bg-blue-100 hover:bg-blue-200 duration-200 cursor-pointer'>Read More</button>
+                            </li>
+                        </ul>
+
+
                     </div>
                 </div>
             </section>
             {/* ================== Blog Section End ================== */}
+
+            {/* Blog 1 full Card */}
+            {
+                showBlog1 && (
+                    <div className={`w-full top-0 fixed inset-0 z-[200] overflow-y-auto`}>
+                        <Blog1 show={showBlog1} close={()=>setShowBlog1(false)}/>
+                    </div>
+                )
+            }
         </>
     )
 }

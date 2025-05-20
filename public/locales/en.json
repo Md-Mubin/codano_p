@@ -98,7 +98,7 @@
         "allProjects": [
             {
                 "id": 1,
-                "img" : "/img/eComSS.png",
+                "img": "/img/eComSS.png",
                 "title": "E-Commerce Platform",
                 "description": "Modern online shopping experience with React and Node.js for creating various e-commerce websites. Includes payment processing, product management, and customer accounts. The platform led to a 35% increase in revenue in the first year.",
                 "tags": [
@@ -117,7 +117,7 @@
             },
             {
                 "id": 2,
-                "img" : "/img/mobileApp.png",
+                "img": "/img/mobileApp.png",
                 "title": "Mobile App Development",
                 "description": "Various mobile app development with react native and authentications to make it easy for the user to use the website through thier phone via mobile apps.",
                 "tags": [
@@ -136,7 +136,7 @@
             },
             {
                 "id": 3,
-                "img" : "/img/strapi.png",
+                "img": "/img/strapi.png",
                 "title": "Corporate Branding",
                 "description": "Complete brand design for a technology company, including logo, color palette, typography, and design guidelines for all communication channels. The rebranding led to significantly improved brand perception and recognition in the market.",
                 "tags": [
@@ -155,7 +155,7 @@
             },
             {
                 "id": 4,
-                "img" : "/img/rombo.png",
+                "img": "/img/rombo.png",
                 "title": "Motion UI Library",
                 "description": "A modern animation library built with Tailwind CSS, designed to make motion design simple, performant and accessible. This tool provides seamless integration of animated components with full accessibility support. Ideal for developers looking to add sleek transitions and motion effects without secrificing performance or usability. ",
                 "tags": [
@@ -174,7 +174,7 @@
             },
             {
                 "id": 5,
-                "img" : "/img/antMotion.png",
+                "img": "/img/antMotion.png",
                 "title": "Design with AI",
                 "description": "Motion Design which will outstand and create with Ai integration. Unique motion tanplete for easy to use and eye catching. With build in AI help, you can create unique design which is hard to beat.",
                 "tags": [
@@ -191,7 +191,7 @@
             },
             {
                 "id": 6,
-                "img" : "/img/linkWarden.png",
+                "img": "/img/linkWarden.png",
                 "title": "SEO & Responsive Website",
                 "description": "Websites, portfolio, blog etc websites that are user friendly and SEO to make these outstand on google search optimization. Also, make it faster by using MongoDB Database we can store thousands of data in lower size.",
                 "tags": [
@@ -211,32 +211,102 @@
     },
     "blog": {
         "head": "Blog & Insights",
-        "blogCards": [
-            {
-                "id": 1,
-                "img" : "/img/blog1.jpg",
-                "date": "March 15, 2024",
-                "blogHead": "The Future of Web Design: Trends for 2024",
-                "blogDescription": "Discover the latest design trends that will shape the web in the coming year, from 3D elements to micro-interactions. Over the past few years, web design has evolved rapidly....",
-                "fullDescription" : "Discover the latest design trends that will shape the web in the coming year, from 3D elements to micro-interactions. Web design is evolving rapidly, focusing more on user engagement and interactivity. Elements like animated scroll effects, bold typography, and dark mode are becoming essential features rather than just add-ons. Designers are leaning into 3D visuals and immersive layouts to create more realistic and engaging experiences. Micro-interactions, such as hover animations and feedback alerts, help users feel more connected to the interface. Accessibility is also playing a huge role, making websites more inclusive for all users. With AI-driven content personalization and voice UI features emerging, websites are becoming smarter and more responsive. As we move forward, combining aesthetics with performance and usability will be key to effective design. Stay ahead by experimenting, iterating, and keeping the user at the center of every decision."
-            },
-            {
-                "id": 2,
-                "img" : "/img/blog2.jpg",
-                "date": "February 28, 2024",
-                "blogHead": "Why Performance is Crucial for Your Website",
-                "blogDescription": "A fast website is not only good for user experience but also for SEO and conversion rates. In today's digital landscape, where users are becoming increasingly impatient and....",
-                "fullDescription" : "A fast website is not only good for user experience but also for SEO and conversion rates. In today's digital world, users expect instant access to content. Even a one-second delay can lead to higher bounce rates and lost opportunities. Speed impacts how long users stay, how they interact, and whether they return. Search engines also prioritize fast-loading sites, which means better visibility and rankings. Optimizing images, minimizing JavaScript, and using efficient hosting are key strategies. Performance is especially important on mobile, where slower networks can exaggerate delays. A quick, responsive site builds trust and encourages users to take action. Whether it's reading a blog or making a purchase, speed plays a major role. In the end, a fast site isn't just a technical win — it's a business advantage."
-            },
-            {
-                "id": 3,
-                "img" : "/img/blog3.jpg",
-                "date": "February 10, 2024",
-                "blogHead": "The Role of AI in Modern Web Development",
-                "blogDescription": "Artificial intelligence is revolutionizing the way we develop websites and applications. In recent years, AI-powered tools and technologies have had an enormous impact on web....",
-                "fullDescription" : "Artificial intelligence is revolutionizing the way we develop websites and applications. In recent years, AI-powered tools have transformed how we design, code, and optimize digital experiences. From automated design suggestions to content generation and smart chatbots, AI is making development faster and more efficient. Developers can now use AI to detect bugs, write code snippets, and personalize user experiences in real time. Tools like ChatGPT and GitHub Copilot are streamlining workflows and reducing development time. On the user side, AI helps deliver tailored content, improving engagement and satisfaction. It's also enabling advanced analytics that help teams make data-driven decisions. As AI continues to evolve, it's becoming an essential part of modern web development — not just a trend, but a core technology shaping the future."
-            }
-        ]
+        "blogCard1": {
+            "img": "/img/blog1.jpg",
+            "date": "March 15, 2024",
+            "blogHead": "The Future of Web Design: Trends for 2024",
+            "blogDescription": "Discover the latest design trends that will shape the web in the coming year, from 3D elements to micro-interactions. Over the past few years, web design has evolved rapidly....",
+            "headerTime": "Publication Date: March 15, 2024",
+            "introduction": "Introduction",
+            "introInfo": "The digital landscape is constantly evolving, and web design continues to push boundaries with each passing year. As we navigate through 2024, several innovative trends are reshaping how websites look, feel, and function. From immersive 3D elements to subtle micro-interactions, today's web design focuses on creating memorable user experiences that balance aesthetics with functionality. This article explores the cutting-edge trends defining web design in 2024 and offers insights into how businesses and designers can leverage these approaches to create standout digital experiences.",
+            "keyWeb": "Key Web Design Trends for 2024",
+            "immersive": "1. Immersive 3D Elements",
+            "immersInfo": "Three-dimensional design has transcended from a novelty to a mainstream design approach. With improvements in browser capabilities and processing power, websites now incorporate sophisticated 3D elements without sacrificing load times.",
+            "effective": "How to implement it effectively:",
+            "effec1": "• Use 3D elements purposefully to highlight key products or concepts",
+            "effec2": "• Ensure 3D components are interactive to engage users",
+            "effec3": "• Optimize 3D assets for performance across different devices",
+            "effec4": "• Consider using WebGL for more complex implementations",
+            "microInteractionsTitle": "2. Micro-Interactions That Delight",
+            "microInteractionsInfo": "Micro-interactions are subtle animations or feedback mechanisms that respond to user actions. They create moments of delight and guide users through their journey on your website.",
+            "microInteractionsListTitle": "Popular micro-interactions include:",
+            "micro1": "• Button hover effects that provide visual feedback",
+            "micro2": "• Form field animations that confirm user input",
+            "micro3": "• Loading animations that reduce perceived wait time",
+            "micro4": "• Navigation elements that respond to scrolling behavior",
+            "darkModeTitle": "3. Dark Mode as a Standard Feature",
+            "darkModeIntro": "What began as an alternative viewing option has evolved into a standard feature for modern websites. Dark mode offers both aesthetic and functional benefits:",
+            "dark1": "• Reduces eye strain during nighttime browsing",
+            "dark2": "• Decreases battery consumption on OLED/AMOLED screens",
+            "dark3": "• Creates a sophisticated, premium feel for brands",
+            "dark4": "• Provides better contrast for certain visual elements",
+            "typographyTitle": "4. Bold Typography Choices",
+            "typographyIntro": "Typography has moved from supporting element to center stage. In 2024, we're seeing:",
+            "typo1": "• Variable fonts that adjust width, weight, and slant dynamically",
+            "typo2": "• Extra-large headings that make immediate statements",
+            "typo3": "• Custom typefaces that enhance brand identity",
+            "typo4": "• Experimental typography that functions as visual elements",
+            "aiTitle": "5. AI-Driven Personalization",
+            "aiIntro": "Artificial intelligence is transforming how websites adapt to individual users:",
+            "aiAppsTitle": "Key applications include:",
+            "ai1": "• Dynamic content that changes based on user behavior",
+            "ai2": "• Predictive navigation that anticipates user needs",
+            "ai3": "• Personalized product recommendations",
+            "ai4": "• Custom color schemes and layouts tailored to user preferences",
+            "balanceTitle": "Balancing Trends with Fundamentals",
+            "balanceIntro": "While these trends offer exciting possibilities, successful web design in 2024 still relies on fundamental principles:",
+            "accessibilityTitle": "Accessibility First",
+            "accessibilityIntro": "Inclusive design ensures websites are usable by people of all abilities:",
+            "access1": "• Proper contrast ratios for text legibility",
+            "access2": "• Keyboard navigation for those who can't use a mouse",
+            "access3": "• Alt text for images to support screen readers",
+            "access4": "• Captions for video content",
+            "performanceTitle": "Performance Optimization",
+            "performanceIntro": "Even the most visually stunning website will frustrate users if it loads slowly:",
+            "perf1": "• Optimize image sizes and formats (WebP, AVIF)",
+            "perf2": "• Implement lazy loading for off-screen content",
+            "perf3": "• Minimize JavaScript execution time",
+            "perf4": "• Utilize effective caching strategies",
+            "mobileTitle": "Mobile-First Approach",
+            "mobileIntro": "With mobile traffic continuing to dominate, designing for smaller screens first ensures:",
+            "mobile1": "• Content prioritization based on limited screen space",
+            "mobile2": "• Touch-friendly interface elements",
+            "mobile3": "• Appropriate font sizes and spacing for readability",
+            "mobile4": "• Simplified navigation patterns",
+            "implementTitle": "Implementing These Trends in Your Projects",
+            "implementIntro": "For businesses and designers looking to incorporate these trends:",
+            "impl1": "Start small - Test new design approaches on specific landing pages before implementing site-wide changes",
+            "impl2": "Gather feedback - Use A/B testing to measure how users respond to new design elements",
+            "impl3": "Focus on purpose - Implement trends that enhance your specific goals and user needs",
+            "impl4": "Maintain consistency - Ensure new design elements align with your overall brand identity",
+            "futureTitle": "The Future Beyond 2024",
+            "futureIntro": "Looking ahead, several emerging technologies are poised to further transform web design:",
+            "future1": "• WebXR - Bringing augmented and virtual reality experiences to the browser",
+            "future2": "• Voice User Interfaces (VUI) - Creating more natural ways to interact with websites",
+            "future3": "• Gesture-based navigation - Allowing more intuitive interactions, especially on mobile",
+            "future4": "• Sustainability in design - Optimizing websites to reduce energy consumption and environmental impact",
+            "conclusionTitle": "Conclusion",
+            "conclusion": "The evolution of web design in 2024 reflects a deeper understanding of how technology can enhance human experiences. The most successful designs will be those that thoughtfully implement new trends while maintaining focus on user needs, accessibility, and performance.",
+            "callToActionTitle": "Ready to Update Your Web Presence?",
+            "callToAction": "If you're looking to implement these design trends and create a website that stands out in 2024, our team of expert designers and developers can help bring your vision to life. Contact us today for a consultation.",
+            "closingNote": "Did you find this article helpful? Share it with your network or leave a comment below with your thoughts on web design trends for 2024."
+        },
+        "blogCard2": {
+            "id": 2,
+            "img": "/img/blog2.jpg",
+            "date": "February 28, 2024",
+            "blogHead": "Why Performance is Crucial for Your Website",
+            "blogDescription": "A fast website is not only good for user experience but also for SEO and conversion rates. In today's digital landscape, where users are becoming increasingly impatient and....",
+            "fullDescription": "A fast website is not only good for user experience but also for SEO and conversion rates. In today's digital world, users expect instant access to content. Even a one-second delay can lead to higher bounce rates and lost opportunities. Speed impacts how long users stay, how they interact, and whether they return. Search engines also prioritize fast-loading sites, which means better visibility and rankings. Optimizing images, minimizing JavaScript, and using efficient hosting are key strategies. Performance is especially important on mobile, where slower networks can exaggerate delays. A quick, responsive site builds trust and encourages users to take action. Whether it's reading a blog or making a purchase, speed plays a major role. In the end, a fast site isn't just a technical win — it's a business advantage."
+        },
+        "blogCard3": {
+            "id": 3,
+            "img": "/img/blog3.jpg",
+            "date": "February 10, 2024",
+            "blogHead": "The Role of AI in Modern Web Development",
+            "blogDescription": "Artificial intelligence is revolutionizing the way we develop websites and applications. In recent years, AI-powered tools and technologies have had an enormous impact on web....",
+            "fullDescription": "Artificial intelligence is revolutionizing the way we develop websites and applications. In recent years, AI-powered tools have transformed how we design, code, and optimize digital experiences. From automated design suggestions to content generation and smart chatbots, AI is making development faster and more efficient. Developers can now use AI to detect bugs, write code snippets, and personalize user experiences in real time. Tools like ChatGPT and GitHub Copilot are streamlining workflows and reducing development time. On the user side, AI helps deliver tailored content, improving engagement and satisfaction. It's also enabling advanced analytics that help teams make data-driven decisions. As AI continues to evolve, it's becoming an essential part of modern web development — not just a trend, but a core technology shaping the future."
+        }
     },
     "nextProject": {
         "head": "Ready for your next project?",
@@ -258,9 +328,9 @@
             "companyPlaceholder": "Your Company",
             "budget": "Budget*",
             "budgetPlaceholder": "Please Select",
-            "budget1" : "$500 - $1000",
-            "budget2" : "$1000 - $2500",
-            "budget3" : "$2500 - $10000",
+            "budget1": "$500 - $1000",
+            "budget2": "$1000 - $2500",
+            "budget3": "$2500 - $10000",
             "projectDes": "Project Description*",
             "projectDesPlaceholder": "Describe Your Project",
             "sendBtn": "Send Inquiry"
