@@ -124,6 +124,24 @@ const Blog = () => {
                     </div>
                 )
             }
+
+            {/* Blog 2 full Card */}
+            {
+                showBlog2 && (
+                    <div className={`w-full top-0 fixed inset-0 z-[200] overflow-y-auto`}>
+                        <Blog1 show={showBlog2} close={()=>setShowBlog2(false)}/>
+                    </div>
+                )
+            }
+
+            {/* Blog 3 full Card */}
+            {
+                showBlog3 && (
+                    <div className={`w-full top-0 fixed inset-0 z-[200] overflow-y-auto`}>
+                        <Blog1 show={showBlog3} close={()=>setShowBlog3(false)}/>
+                    </div>
+                )
+            }
         </>
     )
 }

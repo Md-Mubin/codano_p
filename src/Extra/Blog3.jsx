@@ -169,68 +169,65 @@ const Blog3 = ({ show, close }) => {
                             <p className='mt-5'>AI streamlines content creation and ensures it performs well:</p>
 
                             <ul>
-                                <li><strong>Automated blog post generation</strong> based on topic outlines</li>
-                                <li><strong>SEO optimization</strong> with keyword suggestions and readability improvements</li>
-                                <li><strong>Personalized product descriptions</strong> for e-commerce sites</li>
-                                <li><strong>Multilingual content</strong> creation without traditional translation costs</li>
+                                <li>{blogCard3?.contentGen1}</li>
+                                <li>{blogCard3?.contentGen2}</li>
+                                <li>{blogCard3?.contentGen3}</li>
+                                <li>{blogCard3?.contentGen4}</li>
                             </ul>
 
-                            <p className='mt-5'>These tools help maintain fresh, relevant content without the traditional resource investment.</p>
+                            <p className='mt-5'>{blogCard3?.contentGenNote2}</p>
 
-                            <h3 className='text-xl my-5 font-semibold'>Smart Forms and Data Validation</h3>
-                            <p className='mt-5'>AI improves data collection through intelligent form interfaces:</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard3?.smartForms}</h3>
+                            <p className='mt-5'>{blogCard3?.smartFormsNote}</p>
 
                             <ul>
-                                <li><strong>Predictive form filling</strong> that suggests likely responses</li>
-                                <li><strong>Dynamic form fields</strong> that appear based on previous answers</li>
-                                <li><strong>Real-time validation</strong> that catches errors before submission</li>
-                                <li><strong>Fraud detection</strong> to identify suspicious submissions</li>
+                               <li>{blogCard3?.smartForms1}</li>
+                               <li>{blogCard3?.smartForms2}</li>
+                               <li>{blogCard3?.smartForms3}</li>
+                               <li>{blogCard3?.smartForms4}</li>
                             </ul>
 
-                            <p className='mt-5'>These improvements increase form completion rates while ensuring data quality.</p>
+                            <p className='mt-5'>{blogCard3?.smartFormsNote2}</p>
 
-                            <h3 className='text-xl my-5 font-semibold'>Performance Optimization</h3>
-                            <p className='mt-5'>AI helps identify and resolve performance issues:</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard3?.performanceOpt}</h3>
+                            <p className='mt-5'>{blogCard3?.performanceOptNote}</p>
 
                             <ul>
-                                <li><strong>Automatic image optimization</strong> based on network conditions</li>
-                                <li><strong>Predictive preloading</strong> of content users are likely to request</li>
-                                <li><strong>Server scaling</strong> based on anticipated traffic patterns</li>
-                                <li><strong>Resource prioritization</strong> based on user behavior</li>
+                                <li>{blogCard3?.performanceOpt1}</li>
+                                <li>{blogCard3?.performanceOpt2}</li>
+                                <li>{blogCard3?.performanceOpt3}</li>
+                                <li>{blogCard3?.performanceOpt4}</li>
                             </ul>
 
-                            <p className='mt-5'>These optimizations create faster, more responsive websites.</p>
+                            <p className='mt-5'>{blogCard3?.performanceOptNote2}.</p>
 
-                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>Implementing AI in Your Web Development Workflow</h2>
+                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard3?.implementingAI}</h2>
 
-                            <h3 className='text-xl my-5 font-semibold'>Getting Started with AI Tools</h3>
-                            <p className='mt-5'>For teams new to AI integration, consider these entry points:</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard3?.gettingStarted}</h3>
+                            <p className='mt-5'>{blogCard3?.gettingStartedNote}</p>
 
                             <ol>
-                                <li><strong>Start with coding assistants</strong> like GitHub Copilot or Tabnine</li>
-                                <li><strong>Implement pre-built AI services</strong> through APIs (e.g., Google Cloud Vision, Azure Cognitive Services)</li>
-                                <li><strong>Explore no-code AI platforms</strong> for specific use cases (e.g., chatbot builders, personalization engines)</li>
-                                <li><strong>Experiment with content generation tools</strong> to streamline marketing efforts</li>
+                               <li>{blogCard3?.gettingStarted1}</li>
+                               <li>{blogCard3?.gettingStarted2}</li>
+                               <li>{blogCard3?.gettingStarted3}</li>
+                               <li>{blogCard3?.gettingStarted4}</li>
                             </ol>
 
-                            <p className='mt-5'>These approaches provide immediate benefits without requiring deep AI expertise.</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard3?.challenges}</h3>
+                            <p className='mt-5'>{blogCard3?.challengesNote}</p>
 
-                            <h3 className='text-xl my-5 font-semibold'>Challenges and Considerations</h3>
-                            <p className='mt-5'>While AI offers significant advantages, several challenges must be addressed:</p>
-
-                            <h4 className='text-xl my-5 font-semibold'>Technical Challenges</h4>
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.technicalChallenges}</h4>
                             <ul>
-                                <li>Integration with existing systems and workflows</li>
-                                <li>Data privacy and security concerns</li>
-                                <li>Ensuring accessibility of AI-generated content</li>
-                                <li>Managing computational requirements</li>
+                                <li>{blogCard3?.technicalChallenges1}</li>
+                                <li>{blogCard3?.technicalChallenges2}</li>
+                                <li>{blogCard3?.technicalChallenges3}</li>
+                                <li>{blogCard3?.technicalChallenges4}</li>
                             </ul>
 
-                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>Conclusion</h2>
-                            <p>AI is no longer just a buzzword in web development—it's a transformative force that's already reshaping how websites and applications are created. From streamlining workflows to enabling entirely new capabilities, AI tools have become essential for developers looking to stay competitive in a rapidly evolving landscape.</p>
-                            <p>By thoughtfully integrating AI into web development processes, organizations can create better user experiences, reduce development time and costs, and ultimately deliver more value to their users. Those who embrace these technologies now will be well-positioned to leverage the even more powerful capabilities that will emerge in the coming years.</p>
-                            <p>The question is no longer whether AI has a role in web development, but how developers and organizations can best harness its potential while addressing the technical and ethical challenges it presents.</p>
-
+                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard3?.conclusion}</h2>
+                            <p>{blogCard3?.conclusion1}</p>
+                            <p>{blogCard3?.conclusion2}</p>
+                            <p>{blogCard3?.conclusion3}</p>
                         </article>
 
                         <button onClick={close} className='absolute top-1 sm:top-10 right-2 sm:right-10 text-4xl hover:text-[#598bc7] cursor-pointer'>
