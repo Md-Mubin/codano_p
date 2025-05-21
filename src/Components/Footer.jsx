@@ -126,6 +126,22 @@ const Footer = () => {
                             <button onClick={() => setShowTerms(!showTerms)} className='hover:translate-y-[-2px] hover:text-[#888888] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02] cursor-pointer'>{t.footer?.footerTerms}</button>
                             <button onClick={() => setShowImprint(!showImprint)} className='hover:translate-y-[-2px] hover:text-[#888888] duration-200 hover:will-change-transform will-change-transform hover:scale-[1.02] cursor-pointer'>{t.footer?.footerImprint}</button>
                         </li>
+
+                        <div
+                            dangerouslySetInnerHTML={{
+                                __html: `<!--
+  ==========================================================
+  *                     Codaro
+  * --------------------------------------------------------
+  * Author    : Md.Irfan Rahman Mubin
+  * Email     : mubin.webdev@gmail.com
+  * Phone     : +8801998401588
+  * Linked-in : https://www.linkedin.com/in/webdev-mubin
+  * Git-hub   : https://github.com/Md-Mubin
+  ==========================================================
+  -->`,
+                            }}
+                        />
                     </ul>
                 </div>
 
