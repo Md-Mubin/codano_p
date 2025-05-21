@@ -18,7 +18,7 @@ const Blog1 = ({ show, close }) => {
                             <time className='text-[16px] sm:text-lg lg:text-xl'>{blogCard1?.headerTime}</time>
                         </header>
 
-                        <img className='mt-10 ' src={blogCard1?.img} alt='imaage' />
+                        <img loading='lazy' className='mt-10 ' src={blogCard1?.img} alt='imaage' />
 
                         <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard1?.introduction}</h2>
                         <p>{blogCard1?.introInfo}</p>

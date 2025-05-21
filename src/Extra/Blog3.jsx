@@ -18,7 +18,7 @@ const Blog3 = ({ show, close }) => {
                                 <time className='text-[16px] sm:text-lg lg:text-xl'>{blogCard3?.date}</time>
                             </header>
 
-                            <img className='mt-10' src={blogCard3?.img} alt="AI concept with 3D AI letters on blue circuit board background" />
+                            <img loading='lazy' className='mt-10' src={blogCard3?.img} alt="AI concept with 3D AI letters on blue circuit board background" />
 
                             <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard3?.introduction}</h2>
                             <p className='mt-5'>{blogCard3?.introInfo}</p>
