@@ -3,6 +3,8 @@ import CommonHead from '@/Commons/CommonHead'
 import React, { useState } from 'react'
 import { useLanguage } from '../../public/contexts/LanguageContext'
 import Blog1 from '@/Extra/Blog1'
+import Blog2 from '@/Extra/Blog2'
+import Blog3 from '@/Extra/Blog3'
 
 const Blog = () => {
 
@@ -129,7 +131,7 @@ const Blog = () => {
             {
                 showBlog2 && (
                     <div className={`w-full top-0 fixed inset-0 z-[200] overflow-y-auto`}>
-                        <Blog1 show={showBlog2} close={()=>setShowBlog2(false)}/>
+                        <Blog2 show={showBlog2} close={()=>setShowBlog2(false)}/>
                     </div>
                 )
             }
@@ -138,7 +140,7 @@ const Blog = () => {
             {
                 showBlog3 && (
                     <div className={`w-full top-0 fixed inset-0 z-[200] overflow-y-auto`}>
-                        <Blog1 show={showBlog3} close={()=>setShowBlog3(false)}/>
+                        <Blog3 show={showBlog3} close={()=>setShowBlog3(false)}/>
                     </div>
                 )
             }

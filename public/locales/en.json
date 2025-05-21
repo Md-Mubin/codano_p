@@ -312,9 +312,9 @@
             "exp3": "• Users who experience a negative loading experience are 88% less likely to return to the site",
             "conversionTitle": "Conversion and Revenue",
             "conversionParagraph1": "Performance directly affects your business outcomes:",
-            "conversionList1": "A 100ms delay in website load time can reduce conversion rates by 7%",
-            "conversionList2": "79% of shoppers who are dissatisfied with site performance are less likely to purchase from the same site again",
-            "conversionList3": "Retail websites that improved load time by just 0.1 seconds saw a 9.2% increase in conversion rates",
+            "conversionList1": "• A 100ms delay in website load time can reduce conversion rates by 7%",
+            "conversionList2": "• 79% of shoppers who are dissatisfied with site performance are less likely to purchase from the same site again",
+            "conversionList3": "• Retail websites that improved load time by just 0.1 seconds saw a 9.2% increase in conversion rates",
             "conversionParagraph2": "For e-commerce sites, this translates to significant revenue implications. One study found that Amazon would lose approximately $1.6 billion in sales per year if their site slowed down by just one second.",
             "seoTitle": "SEO and Visibility",
             "seoParagraph": "Search engines prioritize user experience, making site speed a crucial ranking factor:",
@@ -337,10 +337,14 @@
             "additionalMetrics4": "Speed Index - How quickly content is visually displayed during page load",
             "bottlenecksTitle": "Common Performance Bottlenecks",
             "bottlenecksIntro": "Understanding what slows websites down is the first step toward optimization:",
+            "unoptimizeImg" : "Unoptimized Images",
+            "unoptimizeImgNote" : "Images often account for the majority of a webpage's size. Common issues include:",
             "imageIssue1": "• Unnecessarily large dimensions",
             "imageIssue2": "• Using inefficient formats (e.g., PNG for photographs)",
             "imageIssue3": "• Missing compression opportunities",
             "imageIssue4": "• Not implementing responsive images",
+            "renderBlock" : "Render-Blocking Resources",
+            "renderBlockNote" : "When browsers encounter certain resources, they must pause rendering until these assets are processed:",
             "renderBlocking1": "• Unoptimized CSS files",
             "renderBlocking2": "• Non-async JavaScript",
             "renderBlocking3": "• Third-party scripts loading synchronously",
@@ -400,7 +404,7 @@
             "conclusion2": "In an increasingly competitive digital landscape, the speed and responsiveness of your website may be the deciding factor that sets you apart from competitors and keeps users coming back.",
             "ctaTitle": "Need Help Optimizing Your Website?",
             "ctaText": "Our team of performance experts can help identify bottlenecks and implement optimization strategies tailored to your specific website needs. Contact us today for a performance audit and personalized recommendations.",
-            "endNote": "Did you find this article helpful? Share it with colleagues who manage websites or leave a comment below with your own performance optimization tips."
+            "closingNote": "Did you find this article helpful? Share it with colleagues who manage websites or leave a comment below with your own performance optimization tips."
         },
         "blogCard3": {
             "img": "/img/blog3.jpg",
@@ -526,7 +530,7 @@
             "conclusion": "Conclusion",
             "conclusion1": "AI is no longer just a buzzword in web development—it's a transformative force that's already reshaping how websites and applications are created. From streamlining workflows to enabling entirely new capabilities, AI tools have become essential for developers looking to stay competitive in a rapidly evolving landscape.",
             "conclusion2": "By thoughtfully integrating AI into web development processes, organizations can create better user experiences, reduce development time and costs, and ultimately deliver more value to their users. Those who embrace these technologies now will be well-positioned to leverage the even more powerful capabilities that will emerge in the coming years.",
-            "conclusion3": "The question is no longer whether AI has a role in web development, but how developers and organizations can best harness its potential while addressing the technical and ethical challenges it presents."
+            "closingNote": "The question is no longer whether AI has a role in web development, but how developers and organizations can best harness its potential while addressing the technical and ethical challenges it presents."
         }
     },
     "nextProject": {

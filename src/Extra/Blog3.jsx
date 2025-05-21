@@ -10,12 +10,11 @@ const Blog3 = ({ show, close }) => {
     return (
         <>
             <div className={show ? "block" : "hidden"}>
-                <div onClick={close} className='w-full inset-0 bg-[#000000cc] xl:flex justify-center items-center z-50 tracking-widest py-10'>
-                    <ul onClick={(e) => e.stopPropagation()} className='xl:w-[1200px] pt-10 lg:p-10 bg-[#fff] rounded-xl relative z-[100] text-lg '>
+                <div onClick={close} className='w-full inset-0 bg-[#000000cc] xl:flex justify-center items-center z-50 tracking-widest py-10 px-5'>
+                    <ul onClick={(e) => e.stopPropagation()} className='xl:w-[1400px] pt-10 lg:p-10 bg-[#fff] rounded-xl relative z-[100] text-lg tracking-widest p-5'>
 
-                        <article className='tracking-widest p-10'>
-                            <header>
-                                <h1 className='text-3xl'>{blogCard3?.blogHead}</h1>
+                            <header className='mt-5'>
+                                <h1 className='text-4xl'>{blogCard3?.blogHead}</h1>
                                 <time className='text-[16px] sm:text-lg lg:text-xl'>{blogCard3?.date}</time>
                             </header>
 
@@ -45,128 +44,122 @@ const Blog3 = ({ show, close }) => {
                                 <li>{blogCard3?.autoPrototype3}</li>
                             </ul>
 
-                            <p className='mt-5'>The result is a dramatically accelerated design process where developers and designers can quickly explore multiple concepts and iterations.</p>
+                            <p className='mt-5'>{blogCard3?.designProcessNote}</p>
 
-                            <h3 className='text-xl my-5 font-semibold'>Automated Code Generation</h3>
-                            <p className='mt-5'>Perhaps the most visible impact of AI in web development is in code generation:</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard3?.autoCode}</h3>
+                            <p className='mt-5'>{blogCard3?.autoCodeNote}</p>
 
-                            <h4 className='text-xl my-5 font-semibold'>AI Coding Assistants</h4>
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.aiCodeAssist}</h4>
                             <ul>
-                                <li>GitHub Copilot and similar tools can generate entire functions from comments</li>
-                                <li>Intelligent code completion that understands context beyond simple autocomplete</li>
-                                <li>Automatic refactoring suggestions that improve code quality</li>
+                                <li>{blogCard3?.aiCodeAssist1}</li>
+                                <li>{blogCard3?.aiCodeAssist2}</li>
+                                <li>{blogCard3?.aiCodeAssist3}</li>
                             </ul>
 
-                            <h4 className='text-xl my-5 font-semibold'>Low-Code/No-Code Platforms</h4>
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.lowCode}</h4>
                             <ul>
-                                <li>AI-powered platforms allow non-developers to create functional websites</li>
-                                <li>Automatic translation of visual designs into production-ready code</li>
-                                <li>Generation of accessibility-compliant markup without specialized knowledge</li>
+                                <li>{blogCard3?.lowCode1}</li>
+                                <li>{blogCard3?.lowCode2}</li>
+                                <li>{blogCard3?.lowCode3}</li>
                             </ul>
 
-                            <p className='mt-5'>A Stanford study found that developers using AI assistants completed tasks <span class="ai-highlight">55% faster</span> than those working without AI support, while maintaining similar quality levels.</p>
+                            <p className='mt-5'>{blogCard3?.stanfordStudy}</p>
 
-                            <h3 className='text-xl my-5 font-semibold'>Personalization and User Experience</h3>
-                            <p className='mt-5'>AI enables websites to adapt to individual users in ways previously impossible:</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard3?.personalization}</h3>
+                            <p className='mt-5'>{blogCard3?.personalizationNote}</p>
 
-                            <h4 className='text-xl my-5 font-semibold'>Dynamic Content Delivery</h4>
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.dynamicContent}</h4>
                             <ul>
-                                <li>Content recommendations based on browsing history and behavior patterns</li>
-                                <li>Automatic A/B testing that optimizes page elements based on performance</li>
-                                <li>Personalized navigation paths that prioritize relevant sections for each user</li>
+                                <li>{blogCard3?.dynamicContent1}</li>
+                                <li>{blogCard3?.dynamicContent2}</li>
+                                <li>{blogCard3?.dynamicContent3}</li>
                             </ul>
 
-                            <h4 className='text-xl my-5 font-semibold'>Behavioral Prediction</h4>
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.behaviorPrediction}</h4>
                             <ul>
-                                <li>Anticipating user needs before they're explicitly expressed</li>
-                                <li>Identifying potential friction points in user journeys</li>
-                                <li>Suggesting proactive interventions to improve conversion rates</li>
+                                <li>{blogCard3?.behaviorPrediction1}</li>
+                                <li>{blogCard3?.behaviorPrediction2}</li>
+                                <li>{blogCard3?.behaviorPrediction3}</li>
                             </ul>
 
-                            <p className='mt-5'>These capabilities create websites that feel custom-designed for each visitor, significantly improving engagement metrics.</p>
+                            <p className='mt-5'>{blogCard3?.personalizationNote2}</p>
 
-                            <h3 className='text-xl my-5 font-semibold'>Testing and Quality Assurance</h3>
-                            <p className='mt-5'>AI has transformed testing from a manual, time-consuming process to an automated, continuous activity:</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard3?.testingQA}</h3>
+                            <p className='mt-5'>{blogCard3?.testingQANote}</p>
 
-                            <h4 className='text-xl my-5 font-semibold'>Automated Testing</h4>
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.autoTesting}</h4>
                             <ul>
-                                <li>Generation of comprehensive test cases without manual scripting</li>
-                                <li>Visual regression testing that identifies UI changes between versions</li>
-                                <li>Intelligent test prioritization based on code changes and risk assessment</li>
+                                <li>{blogCard3?.autoTesting1}</li>
+                                <li>{blogCard3?.autoTesting2}</li>
+                                <li>{blogCard3?.autoTesting3}</li>
                             </ul>
 
-                            <h4 className='text-xl my-5 font-semibold'>Bug Detection and Prevention</h4>
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.bugDetection}</h4>
                             <ul>
-                                <li>Identifying potential bugs before deployment</li>
-                                <li>Analyzing patterns in historical bugs to prevent similar issues</li>
-                                <li>Automatic generation of bug fixes for common problems</li>
+                                <li>{blogCard3?.bugDetection1}</li>
+                                <li>{blogCard3?.bugDetection2}</li>
+                                <li>{blogCard3?.bugDetection3}</li>
                             </ul>
 
-                            <p className='mt-5'>According to a report by Deloitte, AI-powered testing can reduce QA costs by up to <span class="ai-highlight">40%</span> while increasing test coverage by <span class="ai-highlight">30%</span>.</p>
+                            <p className='mt-5'>{blogCard3?.deloitteReport}</p>
 
-                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>Key AI Technologies Powering Web Development</h2>
+                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard3?.keyTech}</h2>
 
-                            <div class="tech-box">
-                                <h4 className='text-xl my-5 font-semibold'>Natural Language Processing (NLP)</h4>
-                                <p className='mt-5'>NLP enables machines to understand and generate human language:</p>
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.nlp}</h4>
+                            <p className='mt-5'>{blogCard3?.nlpNote}</p>
 
-                                <p className='mt-5'><strong>Applications in Web Development:</strong></p>
-                                <ul>
-                                    <li>Powering conversational interfaces and chatbots</li>
-                                    <li>Converting natural language requirements into code</li>
-                                    <li>Generating and optimizing content for websites</li>
-                                    <li>Improving search functionality through semantic understanding</li>
-                                </ul>
-
-                                <p className='mt-5'>The evolution of large language models (LLMs) like GPT-4 has dramatically improved the capabilities of these systems, making them valuable collaborators in the development process.</p>
-                            </div>
-
-                            <div class="tech-box">
-                                <h4 className='text-xl my-5 font-semibold'>Computer Vision</h4>
-                                <p className='mt-5'>Computer vision allows machines to interpret and understand visual information:</p>
-
-                                <p className='mt-5'><strong>Applications in Web Development:</strong></p>
-                                <ul>
-                                    <li>Analyzing user-generated images for moderation</li>
-                                    <li>Creating alt text automatically for better accessibility</li>
-                                    <li>Enabling visual search capabilities on e-commerce sites</li>
-                                    <li>Identifying UI elements from mockups to automate coding</li>
-                                </ul>
-
-                                <p className='mt-5'>These capabilities reduce manual effort while improving the visual aspects of web development.</p>
-                            </div>
-
-                            <div class="tech-box">
-                                <h4 className='text-xl my-5 font-semibold'>Machine Learning and Predictive Analytics</h4>
-                                <p className='mt-5'>Machine learning algorithms identify patterns and make predictions based on data:</p>
-
-                                <p className='mt-5'><strong>Applications in Web Development:</strong></p>
-                                <ul>
-                                    <li>Predicting user behavior to optimize user flows</li>
-                                    <li>Identifying performance bottlenecks before they impact users</li>
-                                    <li>Personalizing content and recommendations</li>
-                                    <li>Detecting security threats through anomaly detection</li>
-                                </ul>
-
-                                <p className='mt-5'>These systems improve with more data, creating a virtuous cycle of enhancement.</p>
-                            </div>
-
-                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>Practical Applications of AI in Web Development Projects</h2>
-
-                            <h3 className='text-xl my-5 font-semibold'>AI-Powered Chatbots and Virtual Assistants</h3>
-                            <p className='mt-5'>Modern chatbots go far beyond simple scripted responses:</p>
-
+                            <p className='mt-5'><strong>{blogCard3?.nlpApplications}</strong></p>
                             <ul>
-                                <li><strong>Contextual understanding</strong> that maintains conversation history</li>
-                                <li><strong>Sentiment analysis</strong> to detect user frustration and escalate when necessary</li>
-                                <li><strong>Integration with backend systems</strong> to provide personalized information</li>
-                                <li><strong>Multilingual support</strong> without requiring manual translations</li>
+                                <li>{blogCard3?.nlp1}</li>
+                                <li>{blogCard3?.nlp2}</li>
+                                <li>{blogCard3?.nlp3}</li>
+                                <li>{blogCard3?.nlp4}</li>
                             </ul>
 
-                            <p className='mt-5'>Implementing these assistants can reduce support costs while improving user satisfaction.</p>
+                            <p className='mt-5'>{blogCard3?.nlpNote2}</p>
 
-                            <h3 className='text-xl my-5 font-semibold'>Content Generation and Optimization</h3>
-                            <p className='mt-5'>AI streamlines content creation and ensures it performs well:</p>
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.computerVision}</h4>
+                            <p className='mt-5'>{blogCard3?.computerVisionNote}</p>
+
+                            <p className='mt-5'><strong>{blogCard3?.computerVisionApplications}</strong></p>
+                            <ul>
+                                <li>{blogCard3?.computerVision1}</li>
+                                <li>{blogCard3?.computerVision2}</li>
+                                <li>{blogCard3?.computerVision3}</li>
+                                <li>{blogCard3?.computerVision4}</li>
+                            </ul>
+
+                            <p className='mt-5'>{blogCard3?.computerVisionNote2}</p>
+
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.mlPredictive}</h4>
+                            <p className='mt-5'>{blogCard3?.mlPredictiveNote}</p>
+
+                            <p className='mt-5'><strong>{blogCard3?.mlPredictiveApplications}</strong></p>
+                            <ul>
+                                <li>{blogCard3?.mlPredictive1}</li>
+                                <li>{blogCard3?.mlPredictive2}</li>
+                                <li>{blogCard3?.mlPredictive3}</li>
+                                <li>{blogCard3?.mlPredictive4}</li>
+                            </ul>
+
+                            <p className='mt-5'>{blogCard3?.mlPredictiveNote2}</p>
+
+                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard3?.practicalApplications}</h2>
+
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard3?.aiChatbots}</h3>
+                            <p className='mt-5'>{blogCard3?.aiChatbotsNote}</p>
+
+                            <ul>
+                                <li>{blogCard3?.aiChatbots1}</li>
+                                <li>{blogCard3?.aiChatbots2}</li>
+                                <li>{blogCard3?.aiChatbots3}</li>
+                                <li>{blogCard3?.aiChatbots4}</li>
+                            </ul>
+
+                            <p className='mt-5'>{blogCard3?.aiChatbotsNote2}</p>
+
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard3?.contentGen}</h3>
+                            <p className='mt-5'>{blogCard3?.contentGenNote}</p>
 
                             <ul>
                                 <li>{blogCard3?.contentGen1}</li>
@@ -181,10 +174,10 @@ const Blog3 = ({ show, close }) => {
                             <p className='mt-5'>{blogCard3?.smartFormsNote}</p>
 
                             <ul>
-                               <li>{blogCard3?.smartForms1}</li>
-                               <li>{blogCard3?.smartForms2}</li>
-                               <li>{blogCard3?.smartForms3}</li>
-                               <li>{blogCard3?.smartForms4}</li>
+                                <li>{blogCard3?.smartForms1}</li>
+                                <li>{blogCard3?.smartForms2}</li>
+                                <li>{blogCard3?.smartForms3}</li>
+                                <li>{blogCard3?.smartForms4}</li>
                             </ul>
 
                             <p className='mt-5'>{blogCard3?.smartFormsNote2}</p>
@@ -207,10 +200,10 @@ const Blog3 = ({ show, close }) => {
                             <p className='mt-5'>{blogCard3?.gettingStartedNote}</p>
 
                             <ol>
-                               <li>{blogCard3?.gettingStarted1}</li>
-                               <li>{blogCard3?.gettingStarted2}</li>
-                               <li>{blogCard3?.gettingStarted3}</li>
-                               <li>{blogCard3?.gettingStarted4}</li>
+                                <li>{blogCard3?.gettingStarted1}</li>
+                                <li>{blogCard3?.gettingStarted2}</li>
+                                <li>{blogCard3?.gettingStarted3}</li>
+                                <li>{blogCard3?.gettingStarted4}</li>
                             </ol>
 
                             <h3 className='text-xl my-5 font-semibold'>{blogCard3?.challenges}</h3>
@@ -227,10 +220,9 @@ const Blog3 = ({ show, close }) => {
                             <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard3?.conclusion}</h2>
                             <p>{blogCard3?.conclusion1}</p>
                             <p>{blogCard3?.conclusion2}</p>
-                            <p>{blogCard3?.conclusion3}</p>
-                        </article>
+                            <p>{blogCard3?.closingNote}</p>
 
-                        <button onClick={close} className='absolute top-1 sm:top-10 right-2 sm:right-10 text-4xl hover:text-[#598bc7] cursor-pointer'>
+                        <button onClick={close} className='absolute top-1 lg:top-10 right-2 lg:right-10 text-4xl hover:text-[#598bc7] cursor-pointer'>
                             <MdOutlineCancel />
                         </button>
                     </ul>
