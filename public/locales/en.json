@@ -403,12 +403,24 @@
             "endNote": "Did you find this article helpful? Share it with colleagues who manage websites or leave a comment below with your own performance optimization tips."
         },
         "blogCard3": {
-            "id": 3,
             "img": "/img/blog3.jpg",
             "date": "February 10, 2024",
             "blogHead": "The Role of AI in Modern Web Development",
             "blogDescription": "Artificial intelligence is revolutionizing the way we develop websites and applications. In recent years, AI-powered tools and technologies have had an enormous impact on web....",
-            "fullDescription": "Artificial intelligence is revolutionizing the way we develop websites and applications. In recent years, AI-powered tools have transformed how we design, code, and optimize digital experiences. From automated design suggestions to content generation and smart chatbots, AI is making development faster and more efficient. Developers can now use AI to detect bugs, write code snippets, and personalize user experiences in real time. Tools like ChatGPT and GitHub Copilot are streamlining workflows and reducing development time. On the user side, AI helps deliver tailored content, improving engagement and satisfaction. It's also enabling advanced analytics that help teams make data-driven decisions. As AI continues to evolve, it's becoming an essential part of modern web development — not just a trend, but a core technology shaping the future."
+            "introduction": "Introduction",
+            "introInfo" : "The web development landscape has undergone a remarkable transformation in recent years, with artificial intelligence (AI) emerging as a powerful force reshaping how websites and applications are designed, built, and maintained. Far from being a futuristic concept, AI has become an integral part of the modern developer's toolkit, streamlining workflows and enabling capabilities that were once considered impossible.",
+            "explore" : "This article explores how AI is revolutionizing web development, the key technologies driving this change, and practical ways developers and businesses can leverage these tools to create better digital experiences.",
+            "aiWeb" : "How AI is Transforming Web Development",
+            "design" : "Design and Prototyping",
+            "designNote" : "Traditional design processes are being reimagined through AI-powered tools:",
+            "aiImgGenerate" : "AI-Assisted Design Generation",
+            "aiImgGenerate1" : "• Systems like Midjourney and DALL-E can generate custom imagery based on text prompts",
+            "aiImgGenerate2" : "• Tools like Visly and Builder.io can suggest entire layouts based on basic requirements",
+            "aiImgGenerate3" : "• Color scheme generators use AI to create harmonious palettes aligned with brand guidelines",
+            "autoPrototype" : "Automated Prototyping",
+            "autoPrototype1" : "Converting rough sketches into functional prototypes",
+            "autoPrototype2" : "Generating responsive layouts that adapt to different screen sizes",
+            "autoPrototype3" : "Creating interactive elements without manual coding"
         }
     },
     "nextProject": {

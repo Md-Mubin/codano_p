@@ -15,34 +15,34 @@ const Blog3 = ({ show, close }) => {
 
                         <article className='tracking-widest p-10'>
                             <header>
-                                <h1 className='text-3xl'>The Role of AI in Modern Web Development</h1>
-                                <time className='text-[16px] sm:text-lg lg:text-xl'>Publication Date: February 10, 2024</time>
+                                <h1 className='text-3xl'>{blogCard3?.blogHead}</h1>
+                                <time className='text-[16px] sm:text-lg lg:text-xl'>{blogCard3?.date}</time>
                             </header>
 
-                            <img className='mt-10' src="ai-web-development.jpg" alt="AI concept with 3D AI letters on blue circuit board background" />
+                            <img className='mt-10' src={blogCard3?.img} alt="AI concept with 3D AI letters on blue circuit board background" />
 
-                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>Introduction</h2>
-                            <p className='mt-5'>The web development landscape has undergone a remarkable transformation in recent years, with artificial intelligence (AI) emerging as a powerful force reshaping how websites and applications are designed, built, and maintained. Far from being a futuristic concept, AI has become an integral part of the modern developer's toolkit, streamlining workflows and enabling capabilities that were once considered impossible.</p>
+                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard3?.introduction}</h2>
+                            <p className='mt-5'>{blogCard3?.introInfo}</p>
 
-                            <p className='mt-5'>This article explores how AI is revolutionizing web development, the key technologies driving this change, and practical ways developers and businesses can leverage these tools to create better digital experiences.</p>
+                            <p className='mt-5'>{blogCard3?.explore}</p>
 
-                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>How AI is Transforming Web Development</h2>
+                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>{blogCard3?.aiWeb}</h2>
 
-                            <h3 className='text-xl my-5 font-semibold'>Design and Prototyping</h3>
-                            <p className='mt-5'>Traditional design processes are being reimagined through AI-powered tools:</p>
+                            <h3 className='text-xl my-5 font-semibold'>{blogCard3?.design}</h3>
+                            <p className='mt-5'>{blogCard3?.designNote}</p>
 
-                            <h4 className='text-xl my-5 font-semibold'>AI-Assisted Design Generation</h4>
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.aiImgGenerate}</h4>
                             <ul>
-                                <li>Systems like Midjourney and DALL-E can generate custom imagery based on text prompts</li>
-                                <li>Tools like Visly and Builder.io can suggest entire layouts based on basic requirements</li>
-                                <li>Color scheme generators use AI to create harmonious palettes aligned with brand guidelines</li>
+                                <li>{blogCard3?.aiImgGenerate1}</li>
+                                <li>{blogCard3?.aiImgGenerate2}</li>
+                                <li>{blogCard3?.aiImgGenerate3}</li>
                             </ul>
 
-                            <h4 className='text-xl my-5 font-semibold'>Automated Prototyping</h4>
+                            <h4 className='text-xl my-5 font-semibold'>{blogCard3?.autoPrototype}</h4>
                             <ul>
-                                <li>Converting rough sketches into functional prototypes</li>
-                                <li>Generating responsive layouts that adapt to different screen sizes</li>
-                                <li>Creating interactive elements without manual coding</li>
+                                <li>{blogCard3?.autoPrototype1}</li>
+                                <li>{blogCard3?.autoPrototype2}</li>
+                                <li>{blogCard3?.autoPrototype3}</li>
                             </ul>
 
                             <p className='mt-5'>The result is a dramatically accelerated design process where developers and designers can quickly explore multiple concepts and iterations.</p>
@@ -220,7 +220,18 @@ const Blog3 = ({ show, close }) => {
 
                             <h4 className='text-xl my-5 font-semibold'>Technical Challenges</h4>
                             <ul>
-                            </ul></article>
+                                <li>Integration with existing systems and workflows</li>
+                                <li>Data privacy and security concerns</li>
+                                <li>Ensuring accessibility of AI-generated content</li>
+                                <li>Managing computational requirements</li>
+                            </ul>
+
+                            <h2 className='text-2xl mt-10 mb-5 font-semibold'>Conclusion</h2>
+                            <p>AI is no longer just a buzzword in web development—it's a transformative force that's already reshaping how websites and applications are created. From streamlining workflows to enabling entirely new capabilities, AI tools have become essential for developers looking to stay competitive in a rapidly evolving landscape.</p>
+                            <p>By thoughtfully integrating AI into web development processes, organizations can create better user experiences, reduce development time and costs, and ultimately deliver more value to their users. Those who embrace these technologies now will be well-positioned to leverage the even more powerful capabilities that will emerge in the coming years.</p>
+                            <p>The question is no longer whether AI has a role in web development, but how developers and organizations can best harness its potential while addressing the technical and ethical challenges it presents.</p>
+
+                        </article>
 
                         <button onClick={close} className='absolute top-1 sm:top-10 right-2 sm:right-10 text-4xl hover:text-[#598bc7] cursor-pointer'>
                             <MdOutlineCancel />
